@@ -715,30 +715,30 @@ section {
     font-family: var(--font-secondary);
 }
 
-.about .call-us {
-    left: 8%;
-    right: 8%;
-    bottom: 8%;
-    background-color: #fff;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-    padding: 20px;
-    text-align: center;
-    opacity: 70%;
-    border-radius: 20px;
-}
+/*.about .call-us {*/
+/*    left: 8%;*/
+/*    right: 8%;*/
+/*    bottom: 8%;*/
+/*    background-color: #fff;*/
+/*    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);*/
+/*    padding: 20px;*/
+/*    text-align: center;*/
+/*    opacity: 70%;*/
+/*    border-radius: 20px;*/
+/*}*/
 
-.about .call-us h4 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    font-family: var(--font-default);
-}
+/*.about .call-us h4 {*/
+/*    font-size: 24px;*/
+/*    font-weight: 700;*/
+/*    margin-bottom: 5px;*/
+/*    font-family: var(--font-default);*/
+/*}*/
 
-.about .call-us p {
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--color-primary);
-}
+/*.about .call-us p {*/
+/*    font-size: 28px;*/
+/*    font-weight: 700;*/
+/*    color: var(--color-primary);*/
+/*}*/
 
 .about .content ul {
     list-style: none;
