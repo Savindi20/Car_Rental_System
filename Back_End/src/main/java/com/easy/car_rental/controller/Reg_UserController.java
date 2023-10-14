@@ -15,5 +15,12 @@ public class Reg_UserController {
     @Autowired
     private Reg_UserService service;
 
+    @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping
+    public ResponseUtil saveCustomer(@ModelAttribute Reg_UserDTO dto) {
+
+        service.saveUser(dto);
+        return new ResponseUtil("OK", "Successfully Registered.!", null);
+    }
 
 }
