@@ -18,4 +18,11 @@ public class Reg_UserServiceImpl implements Reg_UserService {
     @Autowired
     private ModelMapper mapper;
 
+    @Override
+    public void saveUser(Reg_UserDTO dto) {
+        if (repo.existsById(dto.getUser_Id())) {
+            throw new RuntimeException("User Already Exist. Please enter another id..!");
+        }
+        repo.save(mapper.map(dto, Reg_User.class));
+    }
 }
