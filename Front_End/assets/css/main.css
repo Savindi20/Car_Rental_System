@@ -707,6 +707,55 @@ section {
     background-position: center;
 }
 
+/*.Register-customer-new .register-form-bg {*/
+/*    background: #dcdde1; !* fallback for old browsers *!*/
+/*    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #dcdde1); !* Chrome 10-25, Safari 5.1-6 *!*/
+/*    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #dcdde1); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+/*    border-bottom-right-radius: 20px;*/
+/*    border-top-right-radius: 20px;*/
+
+/*}*/
+
+.Register-customer-new .reg-customer-form {
+    padding: 40px;
+}
+
+@media (max-width: 575px) {
+    .Register-customer-new .reg-customer-form {
+        padding: 20px;
+    }
+}
+
+.Register-customer-new .reg-customer-form h3 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.Register-customer-new .reg-customer-form h4 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 20px 0 0 0;
+}
+
+.Register-customer-new .reg-customer-form p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.Register-customer-new .reg-customer-form .error-message {
+    display: none;
+    color: #fff;
+    background: #1566df;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
 
 
 
