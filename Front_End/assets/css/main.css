@@ -699,6 +699,47 @@ section {
         max-width: 100%;
     }
 }
+
+/* ================= # About Section =================*/
+
+.about .about-img {
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about h3 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: var(--font-secondary);
+}
+
+.about .call-us {
+    left: 8%;
+    right: 8%;
+    bottom: 8%;
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    text-align: center;
+    opacity: 70%;
+    border-radius: 20px;
+}
+
+.about .call-us h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: var(--font-default);
+}
+
+.about .call-us p {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
 /* # =========== Register New Customer Section ==================*/
 .Register-customer-new .register-img {
     min-height: 500px;
