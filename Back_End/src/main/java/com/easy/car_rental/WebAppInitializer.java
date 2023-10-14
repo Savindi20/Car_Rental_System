@@ -1,7 +1,6 @@
 package com.easy.car_rental;
 
 import com.easy.car_rental.config.WebAppConfig;
-import com.easy.car_rental.config.WebRootConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
