@@ -1,16 +1,32 @@
 package com.easy.car_rental.entity;
 
-public class Reg_User {
-    String user_Id;
-    String role_Type;
-    String name;
-    String contact_No;
-    String address;
-    String email;
-    String nic;
-    String license_No;
-    String password;
-    String nic_Img;
-    String license_Img;
+import com.easy.car_rental.embeded.Name;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+public class Reg_User {
+    @Id
+    private String user_Id;
+    private String role_Type;
+    @Embedded
+    private Name name;
+    private String contact_No;
+    private String address;
+    private String email;
+    private String nic;
+    private String license_No;
+    private String password;
+    private String nic_Img;
+    private String license_Img;
 }
