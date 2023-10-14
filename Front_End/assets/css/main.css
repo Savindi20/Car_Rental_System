@@ -855,9 +855,12 @@ section {
 /* ======================= # Footer ======================*/
 .footer {
     font-size: 14px;
-    background: #0f1b27;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 50px 0;
     color: rgba(255, 255, 255, 0.7);
 }
@@ -870,7 +873,14 @@ section {
 
 .footer h4 {
     font-size: 16px;
+    position: relative;
     font-weight: bold;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.text {
+    font-size: 15px;
     position: relative;
     padding-bottom: 5px;
     color: #fff;
@@ -930,4 +940,17 @@ section {
     text-align: center;
     padding-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+form .form-label,.input-group-text{
+    font-size: 0.9em;
+    font-weight: bolder;
+    color: #2c3e50;
+}
+
+form .form-control {
+    font-size: 0.9em;
+    font-weight: bolder;
+    color: #2f3640;
+    border-radius: 10px!important;
 }
