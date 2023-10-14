@@ -3,22 +3,41 @@
     --font-primary: "Amatic SC", sans-serif;
     --font-secondary: "Inter", sans-serif;
 }
+/* ========= Colors ================ */
 
-/*========= Colors =========== */
 :root {
     --color-default: #212529;
-    --color-primary: #1257ce;
+    --color-primary: #128cce;
     --color-secondary: #37373f;
-    --color-primary-red: #5c97fc;
-
+    --color-primary-red: #5c71fc;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
-/* Smooth scroll behavior */
+
+/* ============ Error ============== */
+.control-error {
+    color: var(--color-primary);
+    font-size: 0.9em;
+}
+
+
+/* ============== Section Border ========== */
+
+.sectionBorder {
+    box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+    border-radius: 8px;
+}
+
+
+/* ========== Smooth scroll behavior =========== */
+
 :root {
     scroll-behavior: smooth;
 }
 
-/* # ========= General ============ */
+
+/* # ============= General =============== */
+
 body {
     font-family: var(--font-default);
     color: var(--color-default);
@@ -30,7 +49,7 @@ a {
 }
 
 a:hover {
-    color: #27aeec;
+    color: #272aec;
     text-decoration: none;
 }
 
@@ -43,7 +62,9 @@ h6 {
     font-family: var(--font-secondary);
 }
 
-/* # ================= Sections & Section Header ================*/
+
+/* # ============ Sections & Section Header =========*/
+
 section {
     overflow: hidden;
     padding: 80px 0;
