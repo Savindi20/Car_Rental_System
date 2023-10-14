@@ -700,6 +700,13 @@ section {
     }
 }
 
+/* # =========== Register New Customer Section ==================*/
+.Register-customer-new .register-img {
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
 
 
 
