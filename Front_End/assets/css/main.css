@@ -699,7 +699,6 @@ section {
         max-width: 100%;
     }
 }
-
 /* # =========== Register New Customer Section ==================*/
 .Register-customer-new .register-img {
     min-height: 500px;
@@ -749,11 +748,61 @@ section {
 .Register-customer-new .reg-customer-form .error-message {
     display: none;
     color: #fff;
-    background: #1566df;
+    background: #df1529;
     text-align: left;
     padding: 15px;
     margin-bottom: 24px;
     font-weight: 600;
+}
+
+.Register-customer-new .reg-customer-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #059652;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.Register-customer-new .reg-customer-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+}
+
+.Register-customer-new .reg-customer-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #059652;
+    border-top-color: #fff;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+
+.Register-customer-new .reg-customer-form input,
+.Register-customer-new .reg-customer-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.Register-customer-new .reg-customer-form input:focus {
+    border-color: var(--color-primary);
+}
+
+.Register-customer-new .reg-customer-form input {
+    padding: 12px 15px;
+}
+
+.Register-customer-new .width {
+    width: 78%;
 }
 
 
