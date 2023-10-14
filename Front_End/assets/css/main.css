@@ -805,6 +805,39 @@ section {
     width: 78%;
 }
 
+.Register-customer-new .reg-customer-form button[type=button] {
+    background: #21618c;
+    border: 0;
+    padding: 14px 60px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.Register-customer-new .reg-customer-form button[type=button]:hover {
+    background: #207fbf;
+}
+
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 
 
