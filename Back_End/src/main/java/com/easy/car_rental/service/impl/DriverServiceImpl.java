@@ -1,9 +1,9 @@
 package com.easy.car_rental.service.impl;
 
 import com.easy.car_rental.dto.DriverDTO;
-import com.easy.car_rental.repo.AdminRepo;
 import com.easy.car_rental.repo.DriverRepo;
 import com.easy.car_rental.service.DriverService;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,6 +16,9 @@ public class DriverServiceImpl implements DriverService {
 
     @Autowired
     private DriverRepo repo;
+
+    @Autowired
+    private ModelMapper mapper;
 
     @Override
     public void saveDriver(DriverDTO dto) {
