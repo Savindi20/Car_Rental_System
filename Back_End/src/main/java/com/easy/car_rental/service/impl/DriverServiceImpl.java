@@ -38,8 +38,11 @@ public class DriverServiceImpl implements DriverService {
     }
 
     @Override
-    public void deleteDriver(String reg_ID) {
-
+    public void deleteDriver(String driver_ID) {
+        if (!repo.existsById(driver_ID)) {
+            throw new RuntimeException("Wrong ID..Please enter valid id..!");
+        }
+        repo.deleteById(driver_ID);
     }
 
     @Override
