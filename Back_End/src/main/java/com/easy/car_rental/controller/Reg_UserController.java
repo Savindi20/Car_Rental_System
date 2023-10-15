@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 public class Reg_UserController {
     @Autowired
     private Reg_UserService service;
-
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil saveUser(@RequestBody Reg_UserDTO dto) {
@@ -21,4 +20,12 @@ public class Reg_UserController {
         System.out.println(dto);
         return new ResponseUtil("OK", "Successfully Registered.!", null);
     }
+    @PutMapping
+    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseUtil updateUser(@RequestBody Reg_UserDTO dto) {
+        service.updateUser(dto);
+        return new ResponseUtil("OK", "Successfully Updated. :" + dto.getUser_Id(), null);
+    }
+
+
 }
