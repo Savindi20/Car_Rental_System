@@ -304,7 +304,35 @@
           </div>
         </div>
         <!-- End Info Item -->
-
+        <form action=" " class="email-form p-3 p-md-4 " method="post " role="form ">
+          <div class="row ">
+            <div class="col-xl-6 form-group ">
+              <input class="form-control " id="contactName " name="name " placeholder="Your Name "
+                     required type="text ">
+            </div>
+            <div class="col-xl-6 form-group ">
+              <input class="form-control " id="contactEmail " name="email " placeholder="Your Email "
+                     required type="email ">
+            </div>
+          </div>
+          <div class="form-group ">
+            <input class="form-control " id="contactSubject " name="subject " placeholder="Subject "
+                   required type="text ">
+          </div>
+          <div class="form-group ">
+                    <textarea class="form-control " name="message " placeholder="Message " required
+                              rows="5 "></textarea>
+          </div>
+          <div class="my-3 ">
+            <div class="loading ">Loading</div>
+            <div class="error-message "></div>
+            <div class="sent-message ">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center ">
+            <button class="btnSendForm" type="submit">Send Message</button>
+          </div>
+        </form>
+        <!--End Contact Form -->
       </div>
     </div>
   </section>
