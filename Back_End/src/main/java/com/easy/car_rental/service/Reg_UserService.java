@@ -15,4 +15,6 @@ public interface Reg_UserService {
 
     void deleteUser(String reg_ID);
 
+    ArrayList<Reg_UserDTO> getAllUser();
+
 }
