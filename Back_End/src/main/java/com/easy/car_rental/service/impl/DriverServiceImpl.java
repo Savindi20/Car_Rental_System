@@ -31,7 +31,10 @@ public class DriverServiceImpl implements DriverService {
 
     @Override
     public void updateDriver(DriverDTO dto) {
-
+        if (!repo.existsById(dto.getDriver_Id())) {
+            throw new RuntimeException("Admin Not Exist. Please enter Valid id..!");
+        }
+        repo.save(mapper.map(dto, Driver.class));
     }
 
     @Override
