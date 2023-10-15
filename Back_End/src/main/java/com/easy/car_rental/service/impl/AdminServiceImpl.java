@@ -39,7 +39,10 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public void deleteAdmin(String reg_ID) {
-
+        if (!repo.existsById(reg_ID)) {
+            throw new RuntimeException("Wrong ID..Please enter valid id..!");
+        }
+        repo.deleteById(reg_ID);
     }
 
     @Override
