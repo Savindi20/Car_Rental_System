@@ -2,6 +2,9 @@ package com.easy.car_rental.dto;
 
 import com.easy.car_rental.embeded.Image;
 import com.easy.car_rental.embeded.Rate;
+import com.easy.car_rental.enums.CarType;
+import com.easy.car_rental.enums.FuelType;
+import com.easy.car_rental.enums.TransmissionType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,17 +15,18 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class CarDTO {
+
     private String car_Id;
     private String name;
     private String brand;
-    private String type;
+    private CarType type;
     private Image image;
     private int number_Of_Passengers;
-    private String transmission_Type;
-    private String fuel_Type;
+    private TransmissionType transmission_Type;
+    private FuelType fuel_Type;
     private Rate rent_Duration_Price;
     private double price_Extra_KM;
-    private  String registration_Number;
+    private String registration_Number;
     private double free_Mileage;
     private String color;
 }
