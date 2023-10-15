@@ -27,7 +27,7 @@ public class DriverController {
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil updateDriver(@RequestBody DriverDTO dto) {
         service.updateDriver(dto);
-        return new ResponseUtil("OK", "Successfully Updated. :" + dto.getDriver_Id(), null);
+        return new ResponseUtil("OK", "Successfully Updated. :" + dto.getUser_Id(), null);
     }
 
     @ResponseStatus(HttpStatus.CREATED)
