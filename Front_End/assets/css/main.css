@@ -1077,6 +1077,21 @@ section {
 .contact .email-form .error-message br + br {
     margin-top: 25px;
 }
+.contact .email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #059652;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
 
 
 
