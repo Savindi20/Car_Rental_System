@@ -32,7 +32,10 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public void updateCar(CarDTO dto) {
-
+        if (!repo.existsById(dto.getCar_Id())) {
+            throw new RuntimeException("Car Not Exist. Please enter Valid id..!");
+        }
+        repo.save(mapper.map(dto, Car.class));
     }
 
     @Override
