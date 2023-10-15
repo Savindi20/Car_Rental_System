@@ -1133,6 +1133,19 @@ section {
     border-radius: 50px;
 }
 
+.contact .email-form button[type=submit]:hover {
+    background: #275fec;
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 
 /* ======================= # Footer ======================*/
