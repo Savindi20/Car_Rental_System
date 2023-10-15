@@ -1116,6 +1116,23 @@ section {
     border-color: var(--color-primary);
 }
 
+.contact .email-form input {
+    height: 48px;
+}
+
+.contact .email-form textarea {
+    padding: 10px 12px;
+}
+
+.contact .email-form button[type=submit] {
+    background: var(--color-primary);
+    border: 0;
+    padding: 12px 40px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
 
 
 /* ======================= # Footer ======================*/
