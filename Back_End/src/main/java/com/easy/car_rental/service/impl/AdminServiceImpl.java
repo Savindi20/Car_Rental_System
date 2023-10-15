@@ -15,7 +15,11 @@ import java.util.ArrayList;
 @Service
 @Transactional
 public class AdminServiceImpl implements AdminService {
+    @Autowired
+    private AdminRepo repo;
 
+    @Autowired
+    private ModelMapper mapper;
 
     @Override
     public void saveAdmin(AdminDTO dto) {
