@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import javax.persistence.Embedded;
 
 @Data
 @NoArgsConstructor
@@ -14,7 +13,6 @@ import javax.persistence.Embedded;
 public class Reg_UserDTO {
     private String user_Id;
     private String role_Type;
-    @Embedded
     private Name name;
     private String contact_No;
     private String address;

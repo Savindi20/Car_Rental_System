@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import javax.persistence.Embedded;
 
 @Data
 @NoArgsConstructor
@@ -17,12 +16,10 @@ public class CarDTO {
     private String name;
     private String brand;
     private String type;
-    @Embedded
     private Image image;
     private int number_Of_Passengers;
     private String transmission_Type;
     private String fuel_Type;
-    @Embedded
     private Rate rent_Duration_Price;
     private double price_Extra_KM;
     private  String registration_Number;
