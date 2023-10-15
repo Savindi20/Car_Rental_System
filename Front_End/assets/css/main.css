@@ -1004,6 +1004,28 @@ section {
     }
 }
 
+/* #================ Contact Section =====================*/
+.contact .info-item {
+    background: #f4f4f4;
+    padding: 30px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.contact .info-item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    line-height: 0;
+    color: #fff;
+    background: var(--color-primary);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
 
 
 /* ======================= # Footer ======================*/
