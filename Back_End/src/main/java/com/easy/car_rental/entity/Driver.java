@@ -6,9 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
@@ -17,17 +15,18 @@ import javax.persistence.Id;
 @ToString
 public class Driver {
     @Id
-    private String driver_Id;
-    private String role_Type;
+    private String user_Id;
+
     @Embedded
     private Name name;
     private String contact_No;
     private String address;
     private String email;
-    private String nic;
+    private String nic_No;
     private String license_No;
-    private String password;
-    private String nic_Img;
     private String license_Img;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private User user;
 
 }

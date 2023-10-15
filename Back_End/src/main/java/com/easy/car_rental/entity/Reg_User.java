@@ -6,9 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
@@ -18,7 +16,6 @@ import javax.persistence.Id;
 public class Reg_User {
     @Id
     private String user_Id;
-    private String role_Type;
     @Embedded
     private Name name;
     private String contact_No;
@@ -26,7 +23,9 @@ public class Reg_User {
     private String email;
     private String nic;
     private String license_No;
-    private String password;
     private String nic_Img;
     private String license_Img;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private User user;
 }

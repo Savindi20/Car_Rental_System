@@ -6,9 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
@@ -17,14 +15,14 @@ import javax.persistence.Id;
 @ToString
 public class Admin {
     @Id
-    private String admin_Id;
-    private String role_Type;
+    private String user_Id;
     @Embedded
     private Name name;
     private String contact_No;
     private String address;
     private String email;
     private String nic;
-    private String password;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    private User user;
 }
