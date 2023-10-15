@@ -32,4 +32,11 @@ public class AdminController {
         service.updateAdmin(dto);
         return new ResponseUtil("OK", "Successfully Updated. :" + dto.getAdmin_Id(), null);
     }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @DeleteMapping(params = {"user_Id"})
+    public ResponseUtil deleteUser(@RequestParam String admin_Id) {
+        service.deleteAdmin(admin_Id);
+        return new ResponseUtil("OK", "Successfully Deleted. :" + admin_Id, null);
+    }
 }
