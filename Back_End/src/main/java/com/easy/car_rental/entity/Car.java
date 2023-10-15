@@ -2,6 +2,7 @@ package com.easy.car_rental.entity;
 
 import com.easy.car_rental.embeded.Image;
 import com.easy.car_rental.embeded.Rate;
+import com.easy.car_rental.enums.AvailabilityType;
 import com.easy.car_rental.enums.CarType;
 import com.easy.car_rental.enums.FuelType;
 import com.easy.car_rental.enums.TransmissionType;
@@ -37,5 +38,7 @@ public class Car {
     private String registration_Number;
     private double free_Mileage;
     private String color;
+    @Enumerated(EnumType.STRING)
+    private AvailabilityType vehicleAvailabilityType;
 
 }
