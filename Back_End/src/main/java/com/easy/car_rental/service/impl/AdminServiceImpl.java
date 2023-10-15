@@ -1,5 +1,4 @@
 package com.easy.car_rental.service.impl;
-
 import com.easy.car_rental.dto.AdminDTO;
 import com.easy.car_rental.entity.Admin;
 import com.easy.car_rental.repo.AdminRepo;
@@ -9,7 +8,6 @@ import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.ArrayList;
 
 @Service
@@ -24,11 +22,10 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public void saveAdmin(AdminDTO dto) {
         if (repo.existsById(dto.getAdmin_Id())) {
-            throw new RuntimeException("User Already Exist. Please enter another id..!");
+            throw new RuntimeException("Admin Already Exist. Please enter another id..!");
         }
         repo.save(mapper.map(dto, Admin.class));
     }
-
     @Override
     public void updateAdmin(AdminDTO dto) {
         if (!repo.existsById(dto.getAdmin_Id())) {
@@ -36,7 +33,6 @@ public class AdminServiceImpl implements AdminService {
         }
         repo.save(mapper.map(dto, Admin.class));
     }
-
     @Override
     public void deleteAdmin(String reg_ID) {
         if (!repo.existsById(reg_ID)) {
@@ -47,6 +43,7 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public ArrayList<AdminDTO> getAllAdmin() {
-        return null;
+        return mapper.map(repo.findAll(), new TypeToken<ArrayList<Admin>>() {
+        }.getType());
     }
 }
