@@ -1106,12 +1106,14 @@ section {
     animation: animate-loading 1s linear infinite;
 }
 
+.contact .email-form input,
 .contact .email-form textarea {
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
 }
 
+.contact .email-form input:focus,
 .contact .email-form textarea:focus {
     border-color: var(--color-primary);
 }
@@ -1134,7 +1136,7 @@ section {
 }
 
 .contact .email-form button[type=submit]:hover {
-    background: #275fec;
+    background: #2752ec;
 }
 
 @keyframes animate-loading {
