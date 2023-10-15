@@ -29,4 +29,11 @@ public class DriverController {
         service.updateDriver(dto);
         return new ResponseUtil("OK", "Successfully Updated. :" + dto.getDriver_Id(), null);
     }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @DeleteMapping(params = {"driver_Id"})
+    public ResponseUtil deleteDriver(@RequestParam String driver_Id) {
+        service.deleteDriver(driver_Id);
+        return new ResponseUtil("OK", "Successfully Deleted. :" + driver_Id, null);
+    }
 }
