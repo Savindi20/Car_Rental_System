@@ -1,6 +1,7 @@
 package com.easy.car_rental.dto;
 
 import com.easy.car_rental.embeded.Name;
+import com.easy.car_rental.enums.AvailabilityType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,6 +21,7 @@ public class DriverDTO {
     private String nic_No;
     private String license_No;
     private MultipartFile license_Img;
+    private AvailabilityType driverAvailability;
     private UserDTO user;
 
 }
