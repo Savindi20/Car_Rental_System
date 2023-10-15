@@ -5,6 +5,7 @@ import com.easy.car_rental.entity.Driver;
 import com.easy.car_rental.repo.DriverRepo;
 import com.easy.car_rental.service.DriverService;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -47,6 +48,7 @@ public class DriverServiceImpl implements DriverService {
 
     @Override
     public ArrayList<DriverDTO> getAllDriver() {
-        return null;
+        return mapper.map(repo.findAll(), new TypeToken<ArrayList<Driver>>() {
+        }.getType());
     }
 }
