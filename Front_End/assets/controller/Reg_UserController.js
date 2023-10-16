@@ -197,3 +197,17 @@ $("#btnUpdateCustomer").click(function () {
         }
     });
 });
+
+/* ================ Delete Action ===================*/
+$("#btnDeleteCustomer").click(function () {
+    let id = $("#user_Id").val();
+    $.ajax({
+        url: userBaseUrl + "reg_User?id=" + id + "", method: "delete", dataType: "json", success: function (resp) {
+            saveUpdateAlert("User", resp.message);
+            loadAllRegUsers();
+        }, error: function (error) {
+            let message = JSON.parse(error.responseText).message;
+            unSuccessUpdateAlert("User", message);
+        }
+    });
+});
