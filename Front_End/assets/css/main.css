@@ -649,30 +649,6 @@ section {
     box-shadow: 0 8px 28px rgba(18, 103, 206, 0.45);
 }
 
-/*.hero .btn-watch-video {*/
-/*    font-size: 16px;*/
-/*    transition: 0.5s;*/
-/*    margin-left: 25px;*/
-/*    color: var(--font-secondary);*/
-/*    font-weight: 600;*/
-/*}*/
-
-/*.hero .btn-watch-video i {*/
-/*    color: var(--color-primary);*/
-/*    font-size: 32px;*/
-/*    transition: 0.3s;*/
-/*    line-height: 0;*/
-/*    margin-right: 8px;*/
-/*}*/
-
-/*.hero .btn-watch-video:hover {*/
-/*    color: var(--color-primary);*/
-/*}*/
-
-/*.hero .btn-watch-video:hover i {*/
-/*    color: rgba(18, 125, 206, 0.8);*/
-/*}*/
-
 .img-size {
     max-width: max-content;
 }
@@ -714,31 +690,6 @@ section {
     margin-bottom: 30px;
     font-family: var(--font-secondary);
 }
-
-/*.about .call-us {*/
-/*    left: 8%;*/
-/*    right: 8%;*/
-/*    bottom: 8%;*/
-/*    background-color: #fff;*/
-/*    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);*/
-/*    padding: 20px;*/
-/*    text-align: center;*/
-/*    opacity: 70%;*/
-/*    border-radius: 20px;*/
-/*}*/
-
-/*.about .call-us h4 {*/
-/*    font-size: 24px;*/
-/*    font-weight: 700;*/
-/*    margin-bottom: 5px;*/
-/*    font-family: var(--font-default);*/
-/*}*/
-
-/*.about .call-us p {*/
-/*    font-size: 28px;*/
-/*    font-weight: 700;*/
-/*    color: var(--color-primary);*/
-/*}*/
 
 .about .content ul {
     list-style: none;
@@ -859,17 +810,6 @@ section {
     background-size: cover;
     background-position: center;
 }
-
-/*.Register-customer-new .register-form-bg {*/
-/*    background: #dcdde1;*/
-/*    !* fallback for old browsers *!*/
-/*    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #dcdde1);*/
-/*    !* Chrome 10-25, Safari 5.1-6 *!*/
-/*    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #dcdde1);*/
-/*    !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
-/*    border-bottom-right-radius: 20px;*/
-/*    border-top-right-radius: 20px;*/
-/*}*/
 
 .Register-customer-new .reg-customer-form {
     padding: 40px;
@@ -1147,8 +1087,6 @@ section {
         transform: rotate(360deg);
     }
 }
-
-
 
 /* ======================= # Footer ======================*/
 .footer {
