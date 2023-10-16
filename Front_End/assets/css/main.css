@@ -960,6 +960,28 @@ section {
     color: var(--color-primary);
 }
 
+.txt-head {
+    font-weight: bolder;
+    color: var(--color-default);
+    font-family: "sans-serif", serif;
+    font-size: 30px;
+}
+
+.txt-head span {
+    font-weight: bolder;
+    color: var(--color-primary);
+    font-family: "sans-serif", serif;
+    font-size: 30px;
+    opacity: 0.7;
+}
+
+.list-group .listStyle {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+}
+
 /* # =========== Register New Customer Section ==================*/
 .Register-customer-new .register-img {
     min-height: 500px;
