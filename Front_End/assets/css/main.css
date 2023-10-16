@@ -934,6 +934,32 @@ section {
     text-align-last: center;
 }
 
+.cars-img {
+    padding: 0 60px;
+    margin-bottom: 15px;
+    width: 25rem;
+}
+
+.cars .tab-content .cars-item h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-secondary);
+    font-family: var(--font-secondary);
+    margin-bottom: 5px;
+}
+
+.cars .tab-content .cars-item .ingredients {
+    font-family: var(--font-secondary);
+    color: #8d8d9b;
+    margin-bottom: 5px;
+}
+
+.cars .tab-content .cars-item .price {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
 /* # =========== Register New Customer Section ==================*/
 .Register-customer-new .register-img {
     min-height: 500px;
