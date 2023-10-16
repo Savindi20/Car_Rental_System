@@ -838,6 +838,26 @@ section {
     font-size: 1rem;
 }
 
+.form-container .btn {
+    font-weight: 500;
+    height: 40px;
+    margin: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 9px 36px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: var(--color-primary);
+    box-shadow: 0 8px 28px rgba(18, 103, 206, 0.2);
+}
+
+.form-container .btn:hover {
+    background: rgba(18, 59, 206, 0.8);
+    box-shadow: 0 8px 28px rgba(18, 87, 206, 0.45);
+}
+
 
 /* # =========== Register New Customer Section ==================*/
 .Register-customer-new .register-img {
