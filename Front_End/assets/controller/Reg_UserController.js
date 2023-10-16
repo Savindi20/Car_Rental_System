@@ -144,3 +144,36 @@ $("#search_Id").on("keypress", function (event) {
     }
 
 });
+
+/* =========== Table Listener Click and Load textFields ============*/
+function blindClickEvents() {
+    $("#customerTable>tr").on("click", function () {
+        let user_Id = $(this).children().eq(0).text();
+        let firstName = $(this).children().eq(1).text();
+        let lastName = $(this).children().eq(2).text();
+        let address = $(this).children().eq(3).text();
+        let contact_No = $(this).children().eq(4).text();
+        let email = $(this).children().eq(5).text();
+        let nic = $(this).children().eq(6).text();
+        let license_No = $(this).children().eq(7).text();
+        let role_Type = $(this).children().eq(8).text();
+        let user_Name = $(this).children().eq(9).text();
+        let password = $(this).children().eq(10).text();
+
+
+        console.log(user_Id, firstName, lastName, address, contact_No, email, nic, license_No, role_Type, user_Name, password);
+
+        $("#user_Id").val(user_Id);
+        $("#firstName").val(firstName);
+        $("#lastName").val(lastName);
+        $("#contact_No").val(address);
+        $("#address").val(contact_No);
+        $("#email").val(email);
+        $("#nic").val(nic);
+        $("#license_No").val(license_No);
+        $("#role_Type").val(role_Type);
+        $("#user_Name").val(user_Name);
+        $("#password").val(password);
+    });
+    $("#btnSaveCustomer").attr('disabled', true);
+}
