@@ -804,6 +804,41 @@ section {
     }
 }
 
+/* # =================== Car Section =====================*/
+
+.form-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+    top: 1rem;
+    background: white;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    font-size: 15px;
+}
+
+.input-box {
+    flex: 1 1 7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box span {
+    font-weight: 500;
+}
+
+.input-box input {
+    padding: 7px;
+    outline: none;
+    border: none;
+    background: #eeeff1;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+
 /* # =========== Register New Customer Section ==================*/
 .Register-customer-new .register-img {
     min-height: 500px;
