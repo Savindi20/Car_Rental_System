@@ -912,6 +912,28 @@ section {
     border-color: var(--color-primary);
 }
 
+.cars .tab-content .tab-header {
+    padding: 30px 0;
+}
+
+.cars .tab-content .tab-header p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #676775;
+    margin-bottom: 0;
+}
+
+.cars .tab-content .tab-header h3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.cars .tab-content .cars-item {
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
 /* # =========== Register New Customer Section ==================*/
 .Register-customer-new .register-img {
     min-height: 500px;
