@@ -49,7 +49,7 @@ public class Reg_UserServiceImpl implements Reg_UserService {
 
     @Override
     public CustomDTO userIdGenerate() {
-        return null;
+        return new CustomDTO(repo.getLastIndex());
     }
 
 }
