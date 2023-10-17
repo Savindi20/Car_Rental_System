@@ -33,6 +33,7 @@ public class JPAConfig {
         factoryBean.setJpaVendorAdapter(va);
         return factoryBean;
     }
+
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource ds = new DriverManagerDataSource();
@@ -42,6 +43,8 @@ public class JPAConfig {
         ds.setPassword(env.getRequiredProperty("pro.password"));
         return ds;
     }
+
+
     @Bean
     public JpaVendorAdapter jpaVendorAdapter() {
         HibernateJpaVendorAdapter va = new HibernateJpaVendorAdapter();
@@ -51,6 +54,7 @@ public class JPAConfig {
         va.setShowSql(true);
         return va;
     }
+
     @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
         return new JpaTransactionManager(emf);

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Import;
 
 @Configuration
 @Import(JPAConfig.class)
-@ComponentScan()
+@ComponentScan(basePackages = "com.easy.car_rental.service")
 public class WebRootConfig {
     @Bean
     public ModelMapper modelMapper(){
