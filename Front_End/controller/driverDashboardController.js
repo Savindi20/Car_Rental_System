@@ -11,3 +11,34 @@ $.ajax({
         $("#search_Id").val(res.data.user_Id);
     }
 });
+
+/* =============== current user profile =========== */
+$.ajax({
+    url: userbasurl + "driver/loadAllDrivers",
+    method: "get",
+    contentType: "application/json",
+    dataType: "json",
+    success: function (res) {
+        for (var driver of res.data) {
+
+            if (user === driver.user_Id) {
+                console.log(res.data)
+                $("#cusUserID").val(driver.user_Id);
+                $("#userFirstName").val(driver.name.firstName);
+                $("#userLastName").val(driver.name.lastName);
+                $("#customerContactNo").val(driver.contact_No);
+                $("#customerAddress").val(driver.address);
+                $("#customerDriverEmail").val(driver.email);
+                $("#customerNic").val(driver.nic_No);
+                $("#customerLicence").val(driver.license_No);
+                $("#customerUserName").val(driver.user.user_Name);
+                $("#customerPassword").val(driver.user.password);
+                let url1 = driver.license_Img;
+                console.log(url1);
+                $("#photoImg").css({
+                    "background": `url(${userbasurl + url1})`, "background-size": "cover"
+                });
+            }
+        }
+    }
+});
