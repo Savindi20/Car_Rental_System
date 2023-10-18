@@ -881,3 +881,27 @@ form .btn {
     color: #2f3542;
     background: #dfe4ea;
 }
+
+/* === Activity === */
+
+.dashboard .activity {
+    font-size: 14px;
+}
+
+.dashboard .activity .activity-item .activite-label {
+    color: #888;
+    position: relative;
+    flex-shrink: 0;
+    flex-grow: 0;
+    min-width: 64px;
+}
+
+.dashboard .activity .activity-item .activite-label::before {
+    content: "";
+    position: absolute;
+    right: -11px;
+    width: 4px;
+    top: 0;
+    bottom: 0;
+    background-color: #eceefe;
+}
