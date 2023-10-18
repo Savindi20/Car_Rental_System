@@ -258,3 +258,20 @@ h6 {
 .card-img-overlay {
     background-color: rgba(255, 255, 255, 0.6);
 }
+
+/* === Alerts === */
+.alert-heading {
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+
+/* === Close Button === */
+.btn-close {
+    background-size: 25%;
+}
+
+.btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+}
