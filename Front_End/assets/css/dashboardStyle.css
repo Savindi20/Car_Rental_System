@@ -10,12 +10,12 @@ body {
 }
 
 a {
-    color: #4167f1;
+    color: #4154f1;
     text-decoration: none;
 }
 
 a:hover {
-    color: #71a1f5;
+    color: #717ff5;
     text-decoration: none;
 }
 
@@ -31,4 +31,17 @@ h6 {
 .control-error {
     color: #ce1212;
     font-size: 1em;
+}
+
+/* ============== # Main ========================= */
+#main {
+    margin-top: 60px;
+    padding: 20px 30px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+    #main {
+        padding: 20px;
+    }
 }
