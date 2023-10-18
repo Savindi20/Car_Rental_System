@@ -980,3 +980,17 @@ form .btn {
     box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
     border-radius: 8px;
 }
+
+/* ============== # Footer =============== */
+
+.footer {
+    padding: 20px 0;
+    font-size: 14px;
+    transition: all 0.3s;
+    border-top: 1px solid #cddfff;
+}
+
+.footer .copyright {
+    text-align: center;
+    color: #2f3640;
+}
