@@ -905,3 +905,39 @@ form .btn {
     bottom: 0;
     background-color: #eceefe;
 }
+
+.btn-success{
+    background: #2eca6a!important;
+    font-weight: bolder;
+    border: none;
+    border-radius: 7px;
+}
+
+.btn-danger{
+    background: #eb3b5a!important;
+    font-weight: bolder;
+    border: none;
+    border-radius: 7px;
+}
+
+.btn-warning{
+    background: #fed330!important;
+    font-weight: bolder;
+    color: white !important;
+    border: none;
+    border-radius: 7px;
+}
+
+.btn-primary{
+    background: #4b7bec!important;
+    font-weight: bolder;
+    border: none;
+    border-radius: 7px;
+}
+
+.btn-secondary{
+    background: #778ca3!important;
+    font-weight: bolder;
+    border: none;
+    border-radius: 7px;
+}
