@@ -97,3 +97,19 @@ $.ajax({
 
     }
 });
+/* ============= User Count ================== */
+$("#customerCount").val("00");
+$.ajax({
+    url: dashboard + "reg_User/customerCount",
+    method: "GET",
+    contentType: "application/json",
+    dataType: "json",
+    success: function (resp) {
+        let num = resp.count;
+        $("#customerCount").text(num);
+
+    },
+    error: function (ob, statusText, error) {
+
+    }
+});
