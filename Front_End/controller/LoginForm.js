@@ -29,7 +29,19 @@ function login() {
                             }
                         })
                         window.location.href = 'driverDashboard.html';
+                    } else if (loginRole_Type === "REGISTERED_USER" && loginUserName === login.user_Name && loginPassword === login.password) {
+                        $.ajax({
+                            url: baseUrlLogin + "loginForm/?username=" + loginUserName + "&password=" + loginPassword,
+                            data:res.data,
+                            method:"get",
+                            success:function (res1) {
+                            }
+                        });
+                        window.location.href = 'reg_UserDashboard.html';
+                    } else if (loginRole_Type === "ADMIN" && loginUserName === login.user_Name && loginPassword === login.password) {
+                        window.location.href = 'adminDashboard.html';
                     }
+                    return;
                 }
             }
         }
