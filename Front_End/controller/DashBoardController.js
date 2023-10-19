@@ -162,3 +162,19 @@ $.ajax({
 
     }
 });
+/* ========== Maintain Car Count ========== */
+$("#maintainCarCount").val("00");
+$.ajax({
+    url: dashboard + "car/maintainCar",
+    method: "GET",
+    contentType: "application/json",
+    dataType: "json",
+    success: function (resp) {
+        let num = resp.count;
+        $("#maintainCarCount").text(num);
+
+    },
+    error: function (ob, statusText, error) {
+
+    }
+});
