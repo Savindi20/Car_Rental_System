@@ -81,4 +81,29 @@ function filterCarDetails() {
     fuel_Type=$("#fuelType").val();
     type=$("#carType").val();
     transmission_Type=$("#cTransmission").val();
+
+    $.ajax({
+        url: carBaseUrl + "car/filterDetails?name=" + name + "&fuel_Type=" + fuel_Type+ "&type=" + type+ "&transmission_Type=" + transmission_Type,
+        method: "GET", dataType: "json",
+        success: function (res) {
+            console.log(res);
+
+            for (let i of res) {
+                let url1 = i.image.front_View;
+                $("#carSection").append(`<div data-aos="fade-up" id="carSection" class="position-relative d-flex justify-content-center mt-5 sectionBorder">
+                <div class="d-flex align-items-center col-lg-12 flex-wrap justify-content-center">
+                    <img class="position-relative cars-img img-fluid m-3 p-2 col-lg-5" src="${carBaseUrl + url1}"
+                         href="">
+                </div>
+            </div>
+ `);
+
+            }
+        },
+        error: function (error) {
+            let message = JSON.parse(error.responseText).message;
+            emptyMassage(message);
+            loadAllCars();
+        }
+    });
 }
