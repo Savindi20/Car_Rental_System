@@ -38,6 +38,31 @@ function loadAllCars() {
                                 </ul>
                             </div>
                         </div>
+
+                        <div class="d-flex mt-2 m-3 p-2 justify-content-around flex-wrap">
+                            <div class="d-flex justify-content-center mb-4">
+                                <div class="px-2">
+                                    <i class="fa-solid fa-car m-2 fontSize"></i>
+                                    <span class="span">2020</span>
+                                </div>
+                                <div class="px-2 border-left border-right">
+                                    <i class="fa-solid fa-gears m-2 fontSize"></i>
+                                    <span class="span">${i.transmission_Type}</span>
+                                </div>
+                                <div class="px-2">
+                                    <i class="fa-solid fa-chair m-2 fontSize"></i>
+                                    <span class="span">4</span>
+                                </div>
+                                <div class="px-2">
+                                    <i class="fa-solid fa-road m-2 fontSize"></i>
+                                    <span class="span">50</span>
+                                </div>
+                                <div class="px-2">
+                                    <i class="fa-sharp fa-solid fa-door-open m-2 fontSize"></i>
+                                    <span class="span">4</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
