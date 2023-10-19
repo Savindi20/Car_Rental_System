@@ -97,6 +97,7 @@ $.ajax({
 
     }
 });
+
 /* ============= User Count ================== */
 $("#customerCount").val("00");
 $.ajax({
@@ -113,6 +114,7 @@ $.ajax({
 
     }
 });
+
 /* ========== Booking Count ============== */
 $("#BookingCount").val("00");
 $.ajax({
@@ -146,6 +148,7 @@ $.ajax({
 
     }
 });
+
 /* ============= Booking Active Count ================ */
 $("#BookingActiveCount").val("00");
 $.ajax({
@@ -162,6 +165,7 @@ $.ajax({
 
     }
 });
+
 /* ========== Maintain Car Count ========== */
 $("#maintainCarCount").val("00");
 $.ajax({
@@ -172,6 +176,23 @@ $.ajax({
     success: function (resp) {
         let num = resp.count;
         $("#maintainCarCount").text(num);
+
+    },
+    error: function (ob, statusText, error) {
+
+    }
+});
+
+/* ============ Under Maintain Car Count =========== */
+$("#underMaintainCarCount").val("00");
+$.ajax({
+    url: dashboard + "car/underMaintainCar",
+    method: "GET",
+    contentType: "application/json",
+    dataType: "json",
+    success: function (resp) {
+        let num = resp.count;
+        $("#underMaintainCarCount").text(num);
 
     },
     error: function (ob, statusText, error) {
