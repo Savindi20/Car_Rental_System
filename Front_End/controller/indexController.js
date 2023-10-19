@@ -66,9 +66,19 @@ function loadAllCars() {
                     </div>
                 </div>
             </div>
- `);
-
-            }
+            `);}
         }
     });
+}
+
+$("#searchBtn").on("click", function () {
+    filterCarDetails();
+});
+
+function filterCarDetails() {
+    $("#carSection").empty();
+    name=$("#cName").val();
+    fuel_Type=$("#fuelType").val();
+    type=$("#carType").val();
+    transmission_Type=$("#cTransmission").val();
 }
