@@ -63,3 +63,37 @@ $.ajax({
 
     }
 });
+
+/* =========== Driver Available Count ============== */
+$("#availableDriverCount").val("00");
+$.ajax({
+    url: dashboard + "driver/driverAvailableCount",
+    method: "GET",
+    contentType: "application/json",
+    dataType: "json",
+    success: function (resp) {
+        let num = resp.count;
+        $("#availableDriverCount").text(num);
+
+    },
+    error: function (ob, statusText, error) {
+
+    }
+});
+
+/* ============= Driver Unavailable Count =========== */
+$("#unAvailableDriverCount").val("00");
+$.ajax({
+    url: dashboard + "driver/driverUnavailableCount",
+    method: "GET",
+    contentType: "application/json",
+    dataType: "json",
+    success: function (resp) {
+        let num = resp.count;
+        $("#unAvailableDriverCount").text(num);
+
+    },
+    error: function (ob, statusText, error) {
+
+    }
+});
