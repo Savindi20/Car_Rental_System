@@ -202,3 +202,23 @@ function blindClickEventsC() {
     });
     $("#btnSaveCar").attr('disabled', true);
 }
+
+$("#btnUpdateCar").click(function () {
+    let formData = new FormData($("#carForm")[0]);
+    console.log(formData);
+    $.ajax({
+        url: carBaseUrl + "car/update",
+        method: "post",
+        data: formData,
+        contentType: false,
+        processData: false,
+        success: function (res) {
+            console.log(res)
+            saveUpdateAlert("Car", res.message);
+            loadAllCars();
+        },
+        error: function (error) {
+            unSuccessUpdateAlert("Car", JSON.parse(error.responseText).message);
+        }
+    });
+});
