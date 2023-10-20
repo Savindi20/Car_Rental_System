@@ -96,3 +96,12 @@ $("#car_Id").click(function () {
     })
 });
 
+/* =========== Car Details ===========*/
+let tableRow = [];
+let car_Id;
+let pickUpDate;
+let pickUpTime;
+let returnDate;
+let returnTime;
+let requestType;
+let goLocation;
