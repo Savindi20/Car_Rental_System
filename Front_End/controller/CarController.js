@@ -292,3 +292,18 @@ carValidations.push({
 carValidations.push({
     reg: regExColor, field: $('#color'), error: 'Car Color Pattern is Wrong'
 });
+
+//disable tab key of all four text fields using grouping selector in CSS
+$("#name,#brand,#type,#number_Of_Passengers,#transmission_Type,#fuel_Type,#daily_Rate,#monthly_Rate,#price_Extra_KM,#registration_Number,#free_Mileage,#color").on('keydown', function (event) {
+    if (event.key === "Tab") {
+        event.preventDefault();
+    }
+});
+
+$("#name,#brand,#type,#number_Of_Passengers,#transmission_Type,#fuel_Type,#daily_Rate,#monthly_Rate,#price_Extra_KM,#registration_Number,#free_Mileage,#color").on('keyup', function (event) {
+    checkValidity(carValidations);
+});
+
+$("#name,#brand,#type,#number_Of_Passengers,#transmission_Type,#fuel_Type,#daily_Rate,#monthly_Rate,#price_Extra_KM,#registration_Number,#free_Mileage,#color").on('blur', function (event) {
+    checkValidity(carValidations);
+});
