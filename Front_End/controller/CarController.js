@@ -51,3 +51,28 @@ function generateCarID() {
         }
     });
 }
+
+/* ========== clear input fields Values Method =========== */
+function setTextFieldValuesC(name, brand, type, front_View, back_View, side_View, interior, number_Of_Passengers, transmission_Type, fuel_Type, daily_Rate, monthly_Rate, price_Extra_KM, registration_Number, free_Mileage, color, vehicleAvailabilityType) {
+    $("#name").val(name);
+    $("#brand").val(brand);
+    $("#type").val(type);
+    $("#front_View").val(front_View);
+    $("#back_View").val(back_View);
+    $("#side_View").val(side_View);
+    $("#interior").val(interior);
+    $("#number_Of_Passengers").val(number_Of_Passengers);
+    $("#transmission_Type").val(transmission_Type);
+    $("#fuel_Type").val(fuel_Type);
+    $("#daily_Rate").val(daily_Rate);
+    $("#monthly_Rate").val(monthly_Rate);
+    $("#price_Extra_KM").val(price_Extra_KM);
+    $("#registration_Number").val(registration_Number);
+    $("#free_Mileage").val(free_Mileage);
+    $("#color").val(color);
+    $("#vehicleAvailabilityType").val(vehicleAvailabilityType);
+
+    $("#name").focus();
+    checkValidity(carValidations);
+    $("#btnSaveCar").attr('disabled', true);
+}
