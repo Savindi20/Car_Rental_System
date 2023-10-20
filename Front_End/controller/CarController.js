@@ -25,3 +25,29 @@ $("#btnSaveCar").click(function () {
         }
     });
 });
+
+/* =========== Car Id Generator ============ */
+function generateCarID() {
+    $("#car_Id").val("CAR-001");
+    $.ajax({
+        url: carBaseUrl + "car/carIDGenerate",
+        method: "GET",
+        contentType: "application/json",
+        dataType: "json",
+        success: function (resp) {
+            let id = resp.value;
+            console.log("id" + id);
+            let tempId = parseInt(id.split("-")[1]);
+            tempId = tempId + 1;
+            if (tempId <= 9) {
+                $("#car_Id").val("CAR-00" + tempId);
+            } else if (tempId <= 99) {
+                $("#car_Id").val("CAR-0" + tempId);
+            } else {
+                $("#car_Id").val("CAR-" + tempId);
+            }
+        },
+        error: function (ob, statusText, error) {
+        }
+    });
+}
