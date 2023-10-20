@@ -227,7 +227,6 @@ $("#btnReservation").click(function () {
         console.log(rentDetails)
         console.log(rentOB)
 
-
         $.ajax({
             url: RentbaseUrl + "rent",
             method: "POST",
@@ -251,7 +250,6 @@ $("#btnReservation").click(function () {
 
 /* ========== current user ============ */
 let user;
-
 $.ajax({
     url: RentbaseUrl + "loginForm/current", method: "get", success: function (res) {
         user = res.data.user_Id;
@@ -340,7 +338,6 @@ function blindClickEvents() {
         $("#responseRentId").val(user_Id);
     });
 }
-
 
 $("#btnDeleteRental").click(function () {
     let id = $("#responseRentId").val();
