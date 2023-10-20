@@ -259,3 +259,36 @@ $.ajax({
         $("#user_Id").val(res.data.user_Id);
     }
 });
+
+/* ========== current user profile ========== */
+$.ajax({
+    url: RentbaseUrl + "reg_User/loadAllUsers",
+    method: "get",
+    contentType: "application/json",
+    dataType: "json",
+    success: function (res) {
+        for (var cus of res.data) {
+            if (user === cus.user_Id) {
+                $("#cusUserID").val(cus.user_Id);
+                $("#userFirstName").val(cus.name.firstName);
+                $("#userLastName").val(cus.name.lastName);
+                $("#customerContactNo").val(cus.contact_No);
+                $("#customerAddress").val(cus.address);
+                $("#customerDriverEmail").val(cus.email);
+                $("#customerNic").val(cus.nic);
+                $("#customerLicence").val(cus.license_No);
+                $("#customerUserName").val(cus.user.user_Name);
+                $("#customerPassword").val(cus.user.password);
+                let urlone = cus.nic_Img;
+                let urltwo = cus.license_Img;
+                $("#photoImg1").css({
+                    "background": `url(${RentbaseUrl + urlone})`, "background-size": "cover"
+                });
+                $("#photoImg2").css({
+                    "background": `url(${RentbaseUrl + urltwo})`, "background-size": "cover"
+                });
+            }
+        }
+    }
+});
+
