@@ -150,3 +150,20 @@ $("#btnAddCart").on("click", function () {
 
     });
 });
+
+/* ============ Place order, Table Load =========== */
+$("#cartTable").empty();
+
+function loadCartTableDetail() {
+    car_Id = $("#car_Id").val();
+    pickUpDate = $("#pickUpDate").val();
+    pickUpTime = $("#pickUpTime").val();
+    returnDate = $("#returnDate").val();
+    returnTime = $("#returnTime").val();
+    requestType = $("#requestType").val();
+    goLocation = $("#location").val();
+
+    let row = `<tr><td>${car_Id}</td><td>${pickUpDate}</td><td>${pickUpTime}</td><td>${returnDate}</td><td>${returnTime}</td><td>${requestType}</td><td>${goLocation}</td></tr>`;
+
+    $("#cartTable").append(row);
+}
