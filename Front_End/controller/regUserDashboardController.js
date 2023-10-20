@@ -410,3 +410,67 @@ $("#userFirstName,#userLastName,#customerContactNo,#customerAddress,#customerDri
 $("#userFirstName,#userLastName,#customerContactNo,#customerAddress,#customerDriverEmail,#customerNic,#customerLicence,#customerUserName,#customerPassword").on('blur', function (event) {
     checkValidity(customerValidations);
 });
+
+$("#userFirstName").on('keydown', function (event) {
+    if (event.key === "Enter" && check(regExFirstName, $("#userFirstName"))) {
+        $("#userLastName").focus();
+    } else {
+        focusText($("#userFirstName"));
+    }
+});
+
+$("#userLastName").on('keydown', function (event) {
+    if (event.key === "Enter" && check(regExLastName, $("#userLastName"))) {
+        focusText($("#customerContactNo"));
+    }
+});
+
+$("#customerContactNo").on('keydown', function (event) {
+    if (event.key === "Enter" && check(regExContactNum, $("#customerContactNo"))) {
+        focusText($("#customerAddress"));
+    }
+});
+
+$("#customerAddress").on('keydown', function (event) {
+    if (event.key === "Enter" && check(regExCusAddress, $("#customerAddress"))) {
+        if (event.which === 13) {
+            focusText($("#customerDriverEmail"));
+        }
+    }
+});
+
+$("#customerDriverEmail").on('keydown', function (event) {
+    if (event.key === "Enter" && check(regExEmailCusAddress, $("#customerDriverEmail"))) {
+        focusText($("#customerNic"));
+    }
+});
+
+$("#customerNic").on('keydown', function (event) {
+    if (event.key === "Enter" && check(regExNIC, $("#customerNic"))) {
+        focusText($("#customerLicence"));
+    }
+});
+
+$("#customerLicence").on('keydown', function (event) {
+    if (event.key === "Enter" && check(regExDrivingNIC, $("#customerLicence"))) {
+        if (event.which === 13) {
+            focusText($("#customerUserName"));
+        }
+    }
+});
+
+$("#customerUserName").on('keydown', function (event) {
+    if (event.key === "Enter" && check(regExUserName, $("#customerUserName"))) {
+        if (event.which === 13) {
+            focusText($("#customerPassword"));
+        }
+    }
+});
+
+$("#customerPassword").on('keydown', function (event) {
+    if (event.key === "Enter" && check(regExPassword, $("#customerPassword"))) {
+        if (event.which === 13) {
+            $('#updateCustomer').focus();
+        }
+    }
+});
