@@ -395,3 +395,18 @@ customerValidations.push({
 customerValidations.push({
     reg: regExPassword, field: $('#customerPassword'), error: 'Customer Password Pattern is Wrong'
 });
+
+//disable tab key of all four text fields using grouping selector in CSS
+$("#userFirstName,#userLastName,#customerContactNo,#customerAddress,#customerDriverEmail,#customerNic,#customerLicence,#customerUserName,#customerPassword").on('keydown', function (event) {
+    if (event.key === "Tab") {
+        event.preventDefault();
+    }
+});
+
+$("#userFirstName,#userLastName,#customerContactNo,#customerAddress,#customerDriverEmail,#customerNic,#customerLicence,#customerUserName,#customerPassword").on('keyup', function (event) {
+    checkValidity(customerValidations);
+});
+
+$("#userFirstName,#userLastName,#customerContactNo,#customerAddress,#customerDriverEmail,#customerNic,#customerLicence,#customerUserName,#customerPassword").on('blur', function (event) {
+    checkValidity(customerValidations);
+});
