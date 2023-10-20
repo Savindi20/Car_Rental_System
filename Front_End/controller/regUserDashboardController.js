@@ -30,3 +30,31 @@ function generateRentID() {
         }
     });
 }
+
+/* ========== Filter a data in Car Details =========== */
+$("#fuel_Type").click(function () {
+    let category_type = $("#category_type").val();
+    let fuel_Type = $("#fuel_Type").val();
+    console.log(category_type);
+    console.log(fuel_Type);
+    $("#car_Id").empty();
+    $.ajax({
+        url: RentbaseUrl + "car/filterCarDetails/?category_type=" + category_type + "&fuel_Type=" + fuel_Type,
+        method: "GET",
+        contentType: "application/json",
+        dataType: "json",
+        success: function (res) {
+            console.log(res);
+
+            for (let i of res) {
+                let car_Id = i.car_Id;
+
+                $("#car_Id").append(`<option>${car_Id}</option>`);
+            }
+        },
+        error: function (error) {
+            let message = JSON.parse(error.responseText).message;
+            emptyMassage(message);
+        }
+    })
+});
