@@ -368,4 +368,30 @@ const regExUserName = /^[A-z0-9/ ]{4,30}$/;
 const regExPassword = /^([A-Z a-z]{5,15}[0-9]{1,10})$/;
 
 let customerValidations = [];
-
+customerValidations.push({
+    reg: regExFirstName, field: $('#userFirstName'), error: 'Customer First Name Pattern is Wrong'
+});
+customerValidations.push({
+    reg: regExLastName, field: $('#userLastName'), error: 'Customer Last Name Pattern is Wrong'
+});
+customerValidations.push({
+    reg: regExContactNum, field: $('#customerContactNo'), error: 'Customer Contact Number Pattern is Wrong'
+});
+customerValidations.push({
+    reg: regExCusAddress, field: $('#customerAddress'), error: 'Customer Address Pattern is Wrong'
+});
+customerValidations.push({
+    reg: regExEmailCusAddress, field: $('#customerDriverEmail'), error: 'Customer Email Address Pattern is Wrong'
+});
+customerValidations.push({
+    reg: regExNIC, field: $('#customerNic'), error: 'Customer NIC Pattern is Wrong'
+});
+customerValidations.push({
+    reg: regExDrivingNIC, field: $('#customerLicence'), error: 'Customer Driving License Pattern is Wrong'
+});
+customerValidations.push({
+    reg: regExUserName, field: $('#customerUserName'), error: 'Customer User Name Pattern is Wrong'
+});
+customerValidations.push({
+    reg: regExPassword, field: $('#customerPassword'), error: 'Customer Password Pattern is Wrong'
+});
