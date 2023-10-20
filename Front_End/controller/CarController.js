@@ -254,4 +254,41 @@ const regExMileage = /^[0-9 ]{1,4}$/;
 const regExColor = /^[A-z ]{3,20}$/;
 
 let carValidations = [];
-
+carValidations.push({
+    reg: regExBrand, field: $('#name'), error: 'Car Brand Name Pattern is Wrong'
+});
+carValidations.push({
+    reg: regExModel, field: $('#brand'), error: 'Car Model Name Pattern is Wrong'
+});
+carValidations.push({
+    reg: regExType, field: $('#type'), error: 'Car Type Pattern is Wrong'
+});
+carValidations.push({
+    reg: regExNoPassengers, field: $('#number_Of_Passengers'), error: 'Car Passengers Pattern is Wrong'
+});
+carValidations.push({
+    reg: regExTransmissionType, field: $('#transmission_Type'), error: 'Car Transmission Type Pattern is Wrong'
+});
+carValidations.push({
+    reg: regExFuelType, field: $('#fuel_Type'), error: 'Car Fuel Type is Wrong'
+});
+carValidations.push({
+    reg: regExDailyRate, field: $('#daily_Rate'), error: 'Car Daily Rate Pattern is Wrong'
+});
+carValidations.push({
+    reg: regExMonthlyRate, field: $('#monthly_Rate'), error: 'Car Monthly Rate Pattern is Wrong'
+});
+carValidations.push({
+    reg: regExKM, field: $('#price_Extra_KM'), error: 'Car Price Extra KM Pattern is Wrong'
+});
+carValidations.push({
+    reg: regExRegNumber,
+    field: $('#registration_Number'),
+    error: 'Car Register Number Pattern is Wrong (CDF-001/123-DFG)'
+});
+carValidations.push({
+    reg: regExMileage, field: $('#free_Mileage'), error: 'Car Free Mileage Pattern is Wrong'
+});
+carValidations.push({
+    reg: regExColor, field: $('#color'), error: 'Car Color Pattern is Wrong'
+});
