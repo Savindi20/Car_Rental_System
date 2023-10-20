@@ -164,6 +164,7 @@ $("#search_Id").on("keypress", function (event) {
 
 });
 
+
 /* ============ Table Listener Click and Load textFields =============== */
 function blindClickEventsC() {
     $("#carTable>tr").on("click", function () {
@@ -236,3 +237,21 @@ $("#btnDeleteCar").click(function () {
         }
     });
 });
+
+/* ========== Auto Forces Input Fields Save =========== */
+$("#name").focus();
+const regExBrand = /^[A-z ]{3,20}$/;
+const regExModel = /^[A-z 0-9]{3,20}$/;
+const regExType = /^[A-z ]{3,20}$/;
+const regExNoPassengers = /^[0-9 ]{1,2}$/;
+const regExTransmissionType = /^[A-z ]{3,20}$/;
+const regExFuelType = /^[A-z ]{3,20}$/;
+const regExDailyRate = /^[0-9 ]{1,20}$/;
+const regExMonthlyRate = /^[0-9 ]{1,20}$/;
+const regExKM = /^[0-9 ]{1,4}$/;
+const regExRegNumber = /^[A-Z]{3}-?\d{3}|^\d{3}-?[A-Z]{3}$/;
+const regExMileage = /^[0-9 ]{1,4}$/;
+const regExColor = /^[A-z ]{3,20}$/;
+
+let carValidations = [];
+
