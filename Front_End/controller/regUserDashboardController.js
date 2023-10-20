@@ -188,3 +188,17 @@ $("#cartTable").dblclick(function () {
         }
     })
 });
+
+/* ======= Place order, Purchase Order button ========= */
+$("#btnReservation").click(function () {
+    let rentDetails = [];
+    for (let i = 0; i < $("#cartTable tr").length; i++) {
+        var rentDetail = {
+            carID: $("#cartTable").children(`:eq(${i})`).children(":eq(0)").text(),
+            rentID: $("#rent_Id").val(),
+            driverID: null
+        }
+        rentDetails.push(rentDetail);
+    }
+    $("#cartTable").empty();
+});
