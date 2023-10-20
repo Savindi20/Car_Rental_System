@@ -363,7 +363,39 @@
                         <div class="col-12 m-3 p-1">
                             <form class="row" action="car" id="carForm" method="post">
                                 <section id="sec1Car" class="col-md-4 mt-3">
-
+                                    <div class="mb-sm-0">
+                                        <label class="form-label" for="car_Id">Car Id</label>
+                                        <input class="form-control" id="car_Id" type="text" readonly name="car_Id" placeholder="CRI-001">
+                                    </div>
+                                    <div class="mb-sm-0 mt-3">
+                                        <label class="form-label" for="name">Brand</label>
+                                        <input class="form-control" id="name" type="text" name="name" placeholder="Brand">
+                                        <span class="control-error"></span>
+                                    </div>
+                                    <div class="mb-sm-0 mt-3">
+                                        <label class="form-label" for="brand">Model</label>
+                                        <input class="form-control" id="brand" type="text" name="brand" placeholder="Model">
+                                        <span class="control-error"></span>
+                                    </div>
+                                    <div class="mb-sm-0 mt-3">
+                                        <label class="form-label" for="type">Type</label>
+                                        <select class="form-control" id="type" name="type">
+                                            <option value="GENERAL">GENERAL</option>
+                                            <option value="LUXURY">LUXURY</option>
+                                            <option value="PREMIUM">PREMIUM</option>
+                                        </select>
+                                        <span class="control-error"></span>
+                                    </div>
+                                    <div class="mb-sm-0 mt-3">
+                                        <label class="form-label" for="front_View">Front View</label>
+                                        <input class="form-control" id="front_View" type="file" name="front_View">
+                                        <span class="control-error"></span>
+                                    </div>
+                                    <div class="mb-sm-0 mt-3">
+                                        <label class="form-label" for="back_View">Back View</label>
+                                        <input class="form-control" id="back_View" type="file" name="back_View">
+                                        <span class="control-error"></span>
+                                    </div>
                                 </section>
                             </form>
                         </div>
