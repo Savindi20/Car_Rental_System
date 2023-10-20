@@ -312,3 +312,24 @@ $("#updateCustomer").click(function () {
     });
 });
 
+/* ========= Get Rent, current user Rents ========= */
+function loadAllRent() {
+    $.ajax({
+        url: RentbaseUrl + "rent/loadAllRents",
+        method: "get",
+        contentType: "application/json",
+        dataType: "json",
+        async: true,
+        success: function (res) {
+            console.log(res.data)
+            for (var i of res.data) {
+                if (user === i.regUser.user_Id) {
+                    let row = "<tr><td>" + i.rentID + "</td><td>" + i.regUser.user_Id + "</td><td>" + i.rentDetails.at(car_Id).carID + "</td><td>" + i.pickUpDate + "</td><td>" + i.returnDate + "</td><td>" + i.returnTime + "</td><td>" + i.location + "</td><td>" + i.rentType + "</td></tr>";
+                    $("#tblResponse").append(row);
+                }
+            }
+            blindClickEvents();
+            generateRentID();
+        }
+    });
+}
