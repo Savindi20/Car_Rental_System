@@ -164,7 +164,6 @@ $("#search_Id").on("keypress", function (event) {
 
 });
 
-
 /* ============ Table Listener Click and Load textFields =============== */
 function blindClickEventsC() {
     $("#carTable>tr").on("click", function () {
@@ -204,6 +203,7 @@ function blindClickEventsC() {
     $("#btnSaveCar").attr('disabled', true);
 }
 
+/* ============= Update Action ============ */
 $("#btnUpdateCar").click(function () {
     let formData = new FormData($("#carForm")[0]);
     console.log(formData);
@@ -395,3 +395,16 @@ $("#color").on('keydown', function (event) {
         }
     }
 });
+
+
+function setButtonState(value) {
+    if (value > 0) {
+        $("#btnSaveCar").attr('disabled', true);
+        $("#btnUpdateCar").attr('disabled', true);
+        $("#btnDeleteCar").attr('disabled', true);
+    } else {
+        $("#btnSaveCar").attr('disabled', false);
+        $("#btnUpdateCar").attr('disabled', false);
+        $("#btnDeleteCar").attr('disabled', false);
+    }
+}
