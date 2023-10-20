@@ -334,6 +334,14 @@ function loadAllRent() {
     });
 }
 
+function blindClickEvents() {
+    $("#tblResponse>tr").on("click", function () {
+        let user_Id = $(this).children().eq(0).text();
+        $("#responseRentId").val(user_Id);
+    });
+}
+
+
 $("#btnDeleteRental").click(function () {
     let id = $("#responseRentId").val();
     $.ajax({
