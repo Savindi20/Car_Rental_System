@@ -292,3 +292,23 @@ $.ajax({
     }
 });
 
+/* ========== current user update =========== */
+$("#updateCustomer").click(function () {
+    let formData = new FormData($("#customerDetailsForm")[0]);
+    console.log(formData);
+    $.ajax({
+        url: RentbaseUrl + "reg_User/update",
+        method: "post",
+        data: formData,
+        contentType: false,
+        processData: false,
+        success: function (res) {
+            saveUpdateAlert("User", res.message);
+            loadAllRegUsers();
+        },
+        error: function (error) {
+            unSuccessUpdateAlert("User", JSON.parse(error.responseText).message);
+        }
+    });
+});
+
