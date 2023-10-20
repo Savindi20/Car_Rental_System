@@ -222,3 +222,17 @@ $("#btnUpdateCar").click(function () {
         }
     });
 });
+
+/* ============= Delete Action ============ */
+$("#btnDeleteCar").click(function () {
+    let id = $("#car_Id").val();
+    $.ajax({
+        url: carBaseUrl + "car?id=" + id + "", method: "delete", dataType: "json", success: function (resp) {
+            saveUpdateAlert("Car", resp.message);
+            loadAllCars();
+        }, error: function (error) {
+            let message = JSON.parse(error.responseText).message;
+            unSuccessUpdateAlert("Car", message);
+        }
+    });
+});
