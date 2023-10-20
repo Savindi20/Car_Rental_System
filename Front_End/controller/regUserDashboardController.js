@@ -200,5 +200,51 @@ $("#btnReservation").click(function () {
         }
         rentDetails.push(rentDetail);
     }
+
+    for (let i = 0; i < $("#cartTable tr").length; i++) {
+        let rentID = $("#rent_Id").val();
+        let pickUpDate = $("#cartTable").children(`:eq(${i})`).children(":eq(1)").text();
+        let pickUpTime = $("#cartTable").children(`:eq(${i})`).children(":eq(2)").text();
+        let returnDate = $("#cartTable").children(`:eq(${i})`).children(":eq(3)").text();
+        let returnTime = $("#cartTable").children(`:eq(${i})`).children(":eq(4)").text();
+        let requestType = $("#cartTable").children(`:eq(${i})`).children(":eq(5)").text();
+        let rentType = "PENDING";
+        let location = $("#cartTable").children(`:eq(${i})`).children(":eq(6)").text();
+        let userID = $("#user_Id").val();
+
+        let rentOB = {
+            rentID: rentID,
+            pickUpDate: pickUpDate,
+            pickUpTime: pickUpTime,
+            returnDate: returnDate,
+            returnTime: returnTime,
+            requestType: requestType,
+            rentType: rentType,
+            location: location,
+            regUser: {user_Id: userID},
+            rentDetails: rentDetails
+        }
+        console.log(rentDetails)
+        console.log(rentOB)
+
+
+        $.ajax({
+            url: RentbaseUrl + "rent",
+            method: "POST",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify(rentOB),
+            success: function (res) {
+                saveUpdateAlert("Rent", res.message);
+                generateRentID();
+                loadAllRent();
+            },
+            error: function (error) {
+                // let message = JSON.parse(error.responseText).message;
+                // unSuccessUpdateAlert("Rent", message);
+            }
+
+        });
+    }
     $("#cartTable").empty();
 });
