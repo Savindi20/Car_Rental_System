@@ -58,5 +58,15 @@ function blindClickEventsRent() {
         let userID = $(this).children().eq(2).text();
         let requestState = $(this).children().eq(5).text();
         carID = $(this).children().eq(1).text();
+
+
+        $("#requestRentId").val(requestRentId);
+        $("#driverId").val(driverId);
+        $("#userID").val(userID);
+        $("#requestState").val(requestState);
+
+        $("#rentID").val(requestRentId);
+        $("#driverId").append(`<option>${driverId}</option>`);
+        loadAllCars();
     });
 }
