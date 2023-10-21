@@ -130,3 +130,14 @@ $("#btnReject").on("click", function () {
     });
 
 });
+
+/* ====== Payment ID Generator ====== */
+function generatePaymentID() {
+    $("#paymentID").val("PAY-001");
+    $.ajax({
+        url: RentAllManageBaseUrl + "payment/paymentIdGenerate",
+        method: "GET",
+        contentType: "application/json",
+        dataType: "json",
+    });
+}
