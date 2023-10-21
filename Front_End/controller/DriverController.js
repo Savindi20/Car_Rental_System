@@ -256,3 +256,18 @@ driverValidations.push({
 driverValidations.push({
     reg: regExPassword, field: $('#password'), error: 'Driver Password Pattern is Wrong'
 });
+
+//disable tab key of all four text fields using grouping selector in CSS
+$("#firstName,#lastName,#contact_No,#address,#email,#nic_No,#license_No,#user_Name,#password").on('keydown', function (event) {
+    if (event.key === "Tab") {
+        event.preventDefault();
+    }
+});
+
+$("#firstName,#lastName,#contact_No,#address,#email,#nic_No,#license_No,#user_Name,#password").on('keyup', function (event) {
+    checkValidity(driverValidations);
+});
+
+$("#firstName,#lastName,#contact_No,#address,#email,#nic_No,#license_No,#user_Name,#password").on('blur', function (event) {
+    checkValidity(driverValidations);
+});
