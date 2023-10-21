@@ -201,3 +201,17 @@ $("#btnUpdateDriver").click(function () {
         }
     });
 });
+
+/* ========= Delete Action =========== */
+$("#btnDeleteDriver").click(function () {
+    let id = $("#user_Id").val();
+    $.ajax({
+        url: driverBaseUrl + "driver?id=" + id , method: "delete", dataType: "json", success: function (resp) {
+            saveUpdateAlert("Driver", resp.message);
+            loadAllDrivers();
+        }, error: function (error) {
+            let message = JSON.parse(error.responseText).message;
+            unSuccessUpdateAlert("Driver", message);
+        }
+    });
+});
