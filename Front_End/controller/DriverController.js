@@ -191,6 +191,13 @@ $("#btnUpdateDriver").click(function () {
         data: formData,
         contentType: false,
         processData: false,
-
+        success: function (res) {
+            console.log(res)
+            saveUpdateAlert("Driver", res.message);
+            loadAllDrivers();
+        },
+        error: function (error) {
+            unSuccessUpdateAlert("Driver", JSON.parse(error.responseText).message);
+        }
     });
 });
