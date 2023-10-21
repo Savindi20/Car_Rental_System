@@ -49,3 +49,14 @@ $("#search_Id").on("keypress", function (event) {
     }
 
 });
+let carID;
+
+function blindClickEventsRent() {
+    $("#retManage>tr").on("click", function () {
+        let requestRentId = $(this).children().eq(0).text();
+        let driverId = $(this).children().eq(3).text();
+        let userID = $(this).children().eq(2).text();
+        let requestState = $(this).children().eq(5).text();
+        carID = $(this).children().eq(1).text();
+    });
+}
