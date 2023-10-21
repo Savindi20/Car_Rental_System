@@ -108,3 +108,19 @@ function loadAllDrivers() {
 
     });
 }
+
+/* ========== Search id and Load Table ============  */
+$("#search_Id").on("keypress", function (event) {
+    if (event.which === 13) {
+        var search = $("#search_Id").val();
+        $("#driverTable").empty();
+        $.ajax({
+            url: driverBaseUrl + "driver/searchDriver/?driver_Id="+ search,
+            method: "GET",
+            contentType: "application/json",
+            dataType: "json",
+
+        })
+    }
+
+});
