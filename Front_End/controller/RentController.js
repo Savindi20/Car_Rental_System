@@ -219,3 +219,16 @@ function loadAllCars() {
         }
     });
 }
+
+$("#btnPay").on("click", function () {
+
+    let paymentId = $("#paymentID").val();
+    let rentID = $("#rentID").val();
+    let paymentType = $("#paymentType").val();
+    let paymentDate = $("#date").val();
+    let paymentTime = $("#time").val();
+    let lostDamage = $("#lostDamage").val();
+    let carFee = $("#rentFee").val();
+    let driverFee = $("#driverFee").val();
+    let total = $("#total").val();
+});
