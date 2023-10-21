@@ -174,3 +174,18 @@ $(document).ready(function () {
     $('#date').val(date); // set date text in element with ID "date"
     $('#time').val(time); // set time text in element with ID "time"
 });
+
+/* === Rent, Enter Cash and Balance display === */
+function loadAllCars() {
+    $.ajax({
+        url: RentAllManageBaseUrl + "car/searchCar/?car_Id=" + carID,
+        method: "GET",
+        dataType: "json",
+        success: function (res) {
+            console.log(res);
+            $('#rentFee').val(res.rent_Duration_Price.daily_Rate);
+            let mileagePrice = res.price_Extra_KM;
+            let freeMileage = res.free_Mileage;
+        }
+    });
+}
