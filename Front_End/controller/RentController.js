@@ -245,4 +245,20 @@ $("#btnPay").on("click", function () {
         driverFee: driverFee,
         total: total,
     }
+
+    $.ajax({
+        url: RentAllManageBaseUrl + "payment/?rentID=" + rentID,
+        method: "POST",
+        data: JSON.stringify(paymentOb),
+        dataType: "json",
+        contentType: "application/json",
+        success: function (res) {
+            console.log(res)
+            saveUpdateAlert("Payment", res.message);
+            generatePaymentID();
+        },
+        error: function (error) {
+            unSuccessUpdateAlert("Payment", JSON.parse(error.responseText).message);
+        }
+    });
 });
