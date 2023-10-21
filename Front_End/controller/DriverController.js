@@ -146,3 +146,23 @@ $("#search_Id").on("keypress", function (event) {
     }
 
 });
+
+/* ====== Table Listener Click and Load textFields ========= */
+function blindClickEventsD() {
+    $("#driverTable>tr").on("click", function () {
+        let user_Id = $(this).children().eq(0).text();
+        let firstName = $(this).children().eq(1).text();
+        let lastName = $(this).children().eq(2).text();
+        let contact_No = $(this).children().eq(3).text();
+        let address = $(this).children().eq(4).text();
+        let email = $(this).children().eq(5).text();
+        let nic_No = $(this).children().eq(6).text();
+        let license_No = $(this).children().eq(7).text();
+        let driverAvailability = $(this).children().eq(8).text();
+        let role_Type = $(this).children().eq(9).text();
+        let user_Name = $(this).children().eq(10).text();
+        let password = $(this).children().eq(11).text();
+
+    });
+    $("#btnSaveDriver").attr('disabled', true);
+}
