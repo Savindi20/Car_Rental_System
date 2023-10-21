@@ -71,3 +71,22 @@ function setTextFieldValuesD(firstName, lastName, contact_No, address, email, ni
     checkValidity(driverValidations);
     $("#btnSaveDriver").attr('disabled', true);
 }
+
+/* ====== load all customers Method ========== */
+function loadAllDrivers() {
+    $("#driverTable").empty();
+    $.ajax({
+        url: driverBaseUrl + "driver/loadAllDrivers", method: "GET", dataType: "json", success: function (res) {
+            console.log(res);
+
+            blindClickEventsD();
+            generateDriverID();
+            setTextFieldValuesD("", "", "", "", "", "", "", "", "", "", "");
+            console.log(res.message);
+        }, error: function (error) {
+            let message = JSON.parse(error.responseText).message;
+            console.log(message);
+        }
+
+    });
+}
