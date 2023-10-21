@@ -163,6 +163,20 @@ function blindClickEventsD() {
         let user_Name = $(this).children().eq(10).text();
         let password = $(this).children().eq(11).text();
 
+        console.log(user_Id, firstName, lastName, contact_No, address, email, nic_No, license_No, driverAvailability, role_Type, user_Name,password);
+
+        $("#user_Id").val(user_Id);
+        $("#firstName").val(firstName);
+        $("#lastName").val(lastName);
+        $("#contact_No").val(contact_No);
+        $("#address").val(address);
+        $("#email").val(email);
+        $("#nic_No").val(nic_No);
+        $("#license_No").val(license_No);
+        $("#driverAvailability").val(driverAvailability);
+        $("#role_Type").val(role_Type);
+        $("#user_Name").val(user_Name);
+        $("#password").val(password);
     });
     $("#btnSaveDriver").attr('disabled', true);
 }
