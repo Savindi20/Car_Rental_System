@@ -156,3 +156,21 @@ function generatePaymentID() {
         }
     });
 }
+
+generatePaymentID();
+/* === Local Date And Time set, Enter Cash and Balance display ===*/
+$(document).ready(function () {
+    var now = new Date();
+    var year = now.getFullYear();
+    var month = now.getMonth() + 1;
+    var day = now.getDate();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    var formattedDate = year + "-" + month.toString().padStart(2, "0") + "-" + day.toString().padStart(2, "0");
+    var formattedTime = hour.toString().padStart(2, "0") + ":" + minute.toString().padStart(2, "0") + ":" + second.toString().padStart(2, "0");
+    var date = formattedDate;
+    var time = formattedTime;
+    $('#date').val(date); // set date text in element with ID "date"
+    $('#time').val(time); // set time text in element with ID "time"
+});
