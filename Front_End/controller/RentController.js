@@ -22,3 +22,18 @@ function loadAllRentDetails() {
         }
     });
 }
+
+/* ========== Search Rents ========== */
+$("#search_Id").on("keypress", function (event) {
+    if (event.which === 13) {
+        var search = $("#search_Id").val();
+        $("#retManage").empty();
+        $.ajax({
+            url: RentAllManageBaseUrl + "rent/searchDtails?search_Id=" + search,
+            method: "GET",
+            contentType: "application/json",
+            dataType: "json",
+        })
+    }
+
+});
