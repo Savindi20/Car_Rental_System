@@ -231,4 +231,18 @@ $("#btnPay").on("click", function () {
     let carFee = $("#rentFee").val();
     let driverFee = $("#driverFee").val();
     let total = $("#total").val();
+
+    var paymentOb = {
+        paymentID: paymentId,
+        rentID: {
+            rentID: rentID
+        },
+        paymentType: paymentType,
+        date: paymentDate,
+        time: paymentTime,
+        lostDamage: lostDamage,
+        rentFee: carFee,
+        driverFee: driverFee,
+        total: total,
+    }
 });
