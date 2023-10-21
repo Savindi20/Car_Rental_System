@@ -262,3 +262,19 @@ $("#btnPay").on("click", function () {
         }
     });
 });
+
+$.ajax({
+    url: RentAllManageBaseUrl + "payment",
+    method: "GET",
+    dataType: "json",
+    contentType: "application/json",
+    success: function (res) {
+        console.log(res.data);
+        for (let i of res.data) {
+            let row = "<tr><td>" + i.paymentID + "</td><td>" + i.rentID.rentID + "</td><td>" + i.rentID.regUser.user_Id + "</td><td>" + i.paymentType + "</td><td>" + i.date + "</td><td>" + i.time + "</td><td>" + i.total + "</td></tr>";
+            $("#paymentTable").append(row);
+        }
+    },
+    error: function (error) {
+    }
+});
