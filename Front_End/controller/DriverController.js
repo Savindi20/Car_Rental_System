@@ -335,3 +335,15 @@ $("#password").on('keydown', function (event) {
         }
     }
 });
+
+function setButtonState(value) {
+    if (value > 0) {
+        $("#btnSaveDriver").attr('disabled', true);
+        $("#btnUpdateDriver").attr('disabled', true);
+        $("#btnDeleteDriver").attr('disabled', true);
+    } else {
+        $("#btnSaveDriver").attr('disabled', false);
+        $("#btnUpdateDriver").attr('disabled', false);
+        $("#btnDeleteDriver").attr('disabled', false);
+    }
+}
