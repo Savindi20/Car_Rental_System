@@ -227,3 +227,32 @@ const regExNIC = /^([0-9]{12}|[0-9V]{10})$/;
 const regExDrivingNIC = /^[A-Z0-9-]+$/;
 const regExUserName = /^[A-z0-9/ ]{4,30}$/;
 const regExPassword = /^([A-Z a-z]{5,15}[0-9]{1,10})$/;
+
+let driverValidations = [];
+driverValidations.push({
+    reg: regExFirstName, field: $('#firstName'), error: 'Driver First Name Pattern is Wrong'
+});
+driverValidations.push({
+    reg: regExLastName, field: $('#lastName'), error: 'Driver Last Name Pattern is Wrong'
+});
+driverValidations.push({
+    reg: regExContactNum, field: $('#contact_No'), error: 'Driver Contact Number Pattern is Wrong'
+});
+driverValidations.push({
+    reg: regExCusAddress, field: $('#address'), error: 'Driver Address Pattern is Wrong'
+});
+driverValidations.push({
+    reg: regExEmailCusAddress, field: $('#email'), error: 'Driver Email Address Pattern is Wrong'
+});
+driverValidations.push({
+    reg: regExNIC, field: $('#nic_No'), error: 'Driver NIC Pattern is Wrong'
+});
+driverValidations.push({
+    reg: regExDrivingNIC, field: $('#license_No'), error: 'Driver Driving License Pattern is Wrong'
+});
+driverValidations.push({
+    reg: regExUserName, field: $('#user_Name'), error: 'Driver User Name Pattern is Wrong'
+});
+driverValidations.push({
+    reg: regExPassword, field: $('#password'), error: 'Driver Password Pattern is Wrong'
+});
