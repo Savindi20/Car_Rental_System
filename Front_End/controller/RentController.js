@@ -33,6 +33,18 @@ $("#search_Id").on("keypress", function (event) {
             method: "GET",
             contentType: "application/json",
             dataType: "json",
+            success: function (i) {
+                console.log(i);
+                console.log(i.rentID)
+                let row = "<tr><td>" + i.rentID + "</td><td>" + i.rentDetails.at().carID + "</td><td>" + i.regUser.user_Id + "</td><td>" + i.rentDetails.at().driverID + "</td><td>" + i.requestType + "</td><td>" + i.rentType + "</td><td>" + i.pickUpDate + "</td><td>" + i.pickUpTime + "</td><td>" + i.returnTime + "</td><td>" + i.returnDate + "</td><td>" + i.location + "</td></tr>";
+                $("#retManage").append(row);
+                blindClickEventsRent();
+            },
+            error: function (error) {
+                loadAllRentDetails();
+                let message = JSON.parse(error.responseText).message;
+                emptyMassage(message);
+            }
         })
     }
 
