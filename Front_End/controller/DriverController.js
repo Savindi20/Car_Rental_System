@@ -180,3 +180,17 @@ function blindClickEventsD() {
     });
     $("#btnSaveDriver").attr('disabled', true);
 }
+
+/* ======== Update Action ========== */
+$("#btnUpdateDriver").click(function () {
+    let formData = new FormData($("#driverForm")[0]);
+    console.log(formData);
+    $.ajax({
+        url: driverBaseUrl + "driver/update",
+        method: "post",
+        data: formData,
+        contentType: false,
+        processData: false,
+
+    });
+});
