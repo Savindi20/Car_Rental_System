@@ -186,6 +186,19 @@ function loadAllCars() {
             $('#rentFee').val(res.rent_Duration_Price.daily_Rate);
             let mileagePrice = res.price_Extra_KM;
             let freeMileage = res.free_Mileage;
+
+            $(document).on("change keyup blur","#days,#lostDamage,#rentFee,#driverFee,#mileage", function () {
+                /* ====== Payment Details ======= */
+                let lostDamage = $('#lostDamage').val();
+                let carFee = $('#rentFee').val();
+                let driverFee = $('#driverFee').val();
+                let mileage = $('#mileage').val();
+                let days = $('#days').val();
+                let mileageCost;
+                let m = parseFloat(mileage) / parseFloat(days);
+                console.log(m);
+            });
+
         }
     });
 }
