@@ -90,3 +90,23 @@ $.ajax({
         emptyMassage(message);
     }
 });
+
+$("#btnAccept").on("click", function () {
+    let rentID = $("#requestRentId").val();
+    let driverID = $("#driverId").val();
+    $.ajax({
+        url: RentAllManageBaseUrl + "rent/rentConfrom/?rentID=" + rentID + "&driverId=" + driverID,
+        method: "post",
+        dataType: "json",
+        success: function (res) {
+            saveUpdateAlert("Booking Conform", res.message);
+            $("#retManage").empty();
+            loadAllRentDetails();
+        },
+        error: function (error) {
+            let message = JSON.parse(error.responseText).message;
+            emptyMassage(message);
+        }
+    });
+
+});
