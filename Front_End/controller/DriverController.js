@@ -26,3 +26,15 @@ $("#btnSaveDriver").click(function () {
         }
     });
 });
+
+/* =========== User Driver Generator ============== */
+function generateDriverID() {
+    $("#user_Id").val("DRI-001");
+    $.ajax({
+        url: driverBaseUrl + "driver/driverIdGenerate",
+        method: "GET",
+        contentType: "application/json",
+        dataType: "json",
+
+    });
+}
