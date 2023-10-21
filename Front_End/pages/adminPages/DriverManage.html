@@ -425,6 +425,34 @@
                                             <span class="control-error"></span>
                                         </div>
                                     </section>
+                                    <section id="sec3Driver" class="col-md-4 mt-3">
+                                        <div class="mb-sm-0 col-md-11">
+                                            <label for="role_Type" class="form-label">Role type</label>
+                                            <select class="form-control" id="role_Type" name="role_Type">
+                                                <option value="DRIVER">DRIVER</option>
+                                            </select>
+                                            <span class="control-error"></span>
+                                        </div>
+                                        <div class="mb-sm-0 mt-3 col-md-11">
+                                            <label for="user_Name" class="form-label">User Name</label>
+                                            <div class="input-group has-validation">
+                                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                <input class="form-control" id="user_Name" type="text" name="user_Name" placeholder="User Name">
+                                                <span class="control-error"></span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-sm-0 mt-3 col-md-11">
+                                            <label class="form-label" for="password">Password</label>
+                                            <input class="form-control" id="password" type="password" name="password" placeholder="Enter Password">
+                                            <span class="control-error"></span>
+                                        </div>
+
+                                        <div class="mt-4 mb-3 gap-2 justify-content-md-center">
+                                            <button class="btn btn-success me-md-1" id="btnSaveDriver" type="button" formaction="driverForm">Save</button>
+                                            <button type="button" class="btn btn-warning m-1" id="btnUpdateDriver">Update</button>
+                                            <button type="button" class="btn btn-danger" id="btnDeleteDriver">Delete</button>
+                                        </div>
+                                    </section>
                                 </form>
                             </div>
                         </div>
