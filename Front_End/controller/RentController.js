@@ -70,3 +70,23 @@ function blindClickEventsRent() {
         loadAllCars();
     });
 }
+
+$.ajax({
+    url: RentAllManageBaseUrl + "driver/loadAvalabilityDrivers",
+    method: "GET",
+    contentType: "application/json",
+    dataType: "json",
+    success: function (res) {
+        console.log(res.data);
+
+        for (let i of res.data) {
+            let driverId = i.user_Id;
+
+            $("#driverId").append(`<option>${driverId}</option>`);
+        }
+    },
+    error: function (error) {
+        let message = JSON.parse(error.responseText).message;
+        emptyMassage(message);
+    }
+});
