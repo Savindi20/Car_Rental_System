@@ -119,7 +119,29 @@ $("#search_Id").on("keypress", function (event) {
             method: "GET",
             contentType: "application/json",
             dataType: "json",
-
+            success: function (res) {
+                console.log(res);
+                $("#user_Id").val(res.user_Id);
+                $("#firstName").val(res.name.firstName);
+                $("#lastName").val(res.name.lastName);
+                $("#contact_No").val(res.contact_No);
+                $("#address").val(res.address);
+                $("#email").val(res.email);
+                $("#nic_No").val(res.nic_No);
+                $("#license_No").val(res.license_No);
+                $("#license_Img").prop(res.license_Img);
+                $("#driverAvailability").val(res.driverAvailability);
+                $("#role_Type").val(res.user.role_Type);
+                $("#user_Name").val(res.user.user_Name);
+                $("#password").val(res.user.password);
+                let row = "<tr><td>" + res.user_Id + "</td><td>" + res.name.firstName + "</td><td>" + res.name.lastName + "</td><td>" + res.contact_No + "</td><td>" + res.address + "</td><td>" + res.email + "</td><td>" + res.nic_No + "</td><td>" + res.license_No + "</td><td>" + res.driverAvailability + "</td><td>" + res.user.role_Type + "</td><td>" + res.user.user_Name + "</td><td>" + res.user.password + "</td></tr>";
+                $("#driverTable").append(row);
+            },
+            error: function (error) {
+                loadAllDrivers();
+                let message = JSON.parse(error.responseText).message;
+                emptyMassage(message);
+            }
         })
     }
 
