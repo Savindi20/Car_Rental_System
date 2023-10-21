@@ -197,6 +197,23 @@ function loadAllCars() {
                 let mileageCost;
                 let m = parseFloat(mileage) / parseFloat(days);
                 console.log(m);
+                if (m => freeMileage) {
+                    let mileageSize = parseFloat(mileage) - (parseFloat(days)*parseFloat(freeMileage));
+                    mileageCost = parseFloat(mileageSize) * parseFloat(mileagePrice);
+
+                    let carTotal = parseFloat(carFee) * parseFloat(days);
+                    let driverTotal = parseFloat(driverFee) * parseFloat(days);
+
+                    $("#total").val(parseFloat(lostDamage) + parseFloat(carTotal) + parseFloat(driverTotal) + mileageCost);
+
+                }
+                if (m < freeMileage) {
+
+                    let carTotal = parseFloat(carFee) * parseFloat(days);
+                    let driverTotal = parseFloat(driverFee) * parseFloat(days);
+
+                    $("#total").val(parseFloat(lostDamage) + parseFloat(carTotal) + parseFloat(driverTotal));
+                }
             });
 
         }
