@@ -8,9 +8,9 @@
 
 :root {
     --color-default: #212529;
-    --color-primary: #128cce;
+    --color-primary: rgba(106, 106, 106, 0.95);
     --color-secondary: #37373f;
-    --color-primary-red: #5c71fc;
+    --color-primary-red: #666666;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
@@ -50,7 +50,7 @@ a {
 }
 
 a:hover {
-    color: #272aec;
+    color: #c7c7c7;
     text-decoration: none;
 }
 
@@ -72,7 +72,7 @@ section {
 }
 
 .section-bg {
-    background-color: #eee;
+    background-color: #000000;
 }
 
 .section-header {
@@ -86,7 +86,7 @@ section {
     font-weight: 400;
     margin: 0;
     padding: 0;
-    color: #7f7f90;
+    color: #ffffff;
     text-transform: uppercase;
     font-family: var(--font-default);
 }
@@ -138,7 +138,7 @@ section {
 .breadcrumbs ol li + li::before {
     display: inline-block;
     padding-right: 10px;
-    color: #676775;
+    color: #5f5f6c;
     content: "/";
 }
 
@@ -184,7 +184,7 @@ section {
 }
 
 .scroll-top:hover {
-    background: #2769ec;
+    background: #3d3d3d;
     color: #fff;
 }
 
@@ -302,24 +302,6 @@ section {
     color: var(--color-primary);
 }
 
-.header .btn-Register-customer-new,
-.header .btn-Register-customer-new:focus {
-    font-size: 14px;
-    font-weight: bolder;
-    color: #fff;
-    background: var(--color-primary);
-    padding: 8px 20px;
-    margin-left: 30px;
-    border-radius: 50px;
-    transition: 0.3s;
-}
-
-.header .btn-Register-customer-new:hover,
-.header .btn-Register-customer-new:focus:hover {
-    color: #fff;
-    background: rgba(18, 131, 206, 0.8);
-}
-
 .header .btn-login-user,
 .header .btn-login-user:focus {
     font-size: 14px;
@@ -335,7 +317,7 @@ section {
 .header .btn-login-user:hover,
 .header .btn-login-user:focus:hover {
     color: #fff;
-    background: var(--color-primary);
+    background: #424242;
 }
 
 section {
@@ -617,16 +599,16 @@ section {
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: var(--color-secondary);
+    color: #ffffff;
     font-family: var(--font-primary);
 }
 
 .hero h2 span {
-    color: var(--color-primary);
+    color: #ffffff;
 }
 
 .hero p {
-    color: #4f4f5a;
+    color: #aaaaaa;
     font-weight: 400;
     margin-bottom: 30px;
 }
@@ -641,12 +623,12 @@ section {
     transition: 0.5s;
     color: #fff;
     background: var(--color-primary);
-    box-shadow: 0 8px 28px rgba(18, 131, 206, 0.2);
+    box-shadow: 0 8px 28px rgba(85, 85, 85, 0.2);
 }
 
 .hero .btn-Register-customer-new:hover {
-    background: rgba(18, 103, 206, 0.8);
-    box-shadow: 0 8px 28px rgba(18, 103, 206, 0.45);
+    background: rgba(177, 177, 177, 0.8);
+    box-shadow: 0 8px 28px rgba(69, 69, 69, 0.45);
 }
 
 .img-size {
@@ -706,102 +688,11 @@ section {
     font-size: 20px;
     left: 0;
     top: -3px;
-    color: var(--color-primary);
+    color: #000000;
 }
 
 .about .content p:last-child {
     margin-bottom: 0;
-}
-
-.about .play-btn {
-    width: 86px;
-    height: 86px;
-    background: radial-gradient(var(--color-primary) 50%, rgba(18, 49, 206, 0.4) 52%);
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    left: calc(50% - 47px);
-    top: calc(50% - 47px);
-    overflow: hidden;
-}
-
-.about .play-btn:before {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-    -webkit-animation: pulsate-btn 2s;
-    animation: pulsate-btn 2s;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    opacity: 1;
-    border-radius: 50%;
-    border: 5px solid rgba(18, 81, 206, 0.7);
-    top: -15%;
-    left: -15%;
-    background: rgba(198, 16, 0, 0);
-}
-
-.about .play-btn:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-40%) translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 15px solid #fff;
-    z-index: 100;
-    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.about .play-btn:hover:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-40%) translateY(-50%);
-    width: 0;
-    height: 0;
-    border: none;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 15px solid #fff;
-    z-index: 200;
-    -webkit-animation: none;
-    animation: none;
-    border-radius: 0;
-}
-
-.about .play-btn:hover:after {
-    border-left: 15px solid var(--color-primary);
-    transform: scale(20);
-}
-
-@-webkit-keyframes pulsate-btn {
-    0% {
-        transform: scale(0.6, 0.6);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1, 1);
-        opacity: 0;
-    }
-}
-
-@keyframes pulsate-btn {
-    0% {
-        transform: scale(0.6, 0.6);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1, 1);
-        opacity: 0;
-    }
 }
 
 /* # =================== Car Section =====================*/
@@ -812,7 +703,7 @@ section {
     gap: 1rem;
     position: relative;
     top: 1rem;
-    background: white;
+    background: #000000;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     border-radius: 0.5rem;
     box-shadow: var(--box-shadow);
@@ -833,7 +724,7 @@ section {
     padding: 7px;
     outline: none;
     border: none;
-    background: #eeeff1;
+    background: #ffffff;
     border-radius: 0.5rem;
     font-size: 1rem;
 }
@@ -850,12 +741,12 @@ section {
     transition: 0.5s;
     color: #fff;
     background: var(--color-primary);
-    box-shadow: 0 8px 28px rgba(18, 103, 206, 0.2);
+    box-shadow: 0 8px 28px rgba(173, 173, 173, 0.2);
 }
 
 .form-container .btn:hover {
-    background: rgba(18, 59, 206, 0.8);
-    box-shadow: 0 8px 28px rgba(18, 87, 206, 0.45);
+    background: rgba(170, 170, 170, 0.8);
+    box-shadow: 0 8px 28px rgba(83, 83, 83, 0.45);
 }
 
 .cars .nav-tabs {
@@ -1039,7 +930,7 @@ section {
 }
 
 .span {
-    color: #3c89e7;
+    color: #ffffff;
     font-size: 1.1em;
     font-weight: bolder;
     opacity: 0.8;
@@ -1155,7 +1046,7 @@ section {
 }
 
 .Register-customer-new .reg-customer-form button[type=button] {
-    background: #216a8c;
+    background: #000000;
     border: 0;
     padding: 14px 60px;
     color: #fff;
@@ -1164,7 +1055,7 @@ section {
 }
 
 .Register-customer-new .reg-customer-form button[type=button]:hover {
-    background: #2068bf;
+    background: #6a6a6a;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1187,7 +1078,7 @@ section {
 
 /* #================ Contact Section =====================*/
 .contact .info-item {
-    background: #f4f4f4;
+    background: #eeeeee;
     padding: 30px;
     height: 100%;
     border-radius: 20px;
@@ -1317,7 +1208,7 @@ section {
 }
 
 .contact .email-form button[type=submit]:hover {
-    background: #2752ec;
+    background: #525252;
 }
 
 @keyframes animate-loading {
@@ -1332,11 +1223,11 @@ section {
 /* ======================= # Footer ======================*/
 .footer {
     font-size: 14px;
-    background: #0F2027;
+    background: #232323;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: -webkit-linear-gradient(to right, #343434, #2a2a2a, #000000);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #343434, #2a2a2a, #000000);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 50px 0;
     color: rgba(255, 255, 255, 0.7);
@@ -1422,12 +1313,12 @@ section {
 form .form-label,.input-group-text{
     font-size: 0.9em;
     font-weight: bolder;
-    color: #2c3e50;
+    color: #000000;
 }
 
 form .form-control {
     font-size: 0.9em;
     font-weight: bolder;
-    color: #2f3640;
+    color: #000000;
     border-radius: 10px!important;
 }
