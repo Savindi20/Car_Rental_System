@@ -118,11 +118,14 @@ public class DriverServiceImpl implements DriverService {
 
     @Override
     public Driver searchDriverId(String id) {
-        return null;
+        if (!repo.existsById(id)) {
+            throw new RuntimeException("Wrong ID. Please enter Valid id..!");
+        }
+        return mapper.map(repo.findById(id).get(), Driver.class);
     }
 
     @Override
     public CustomDTO getSumDriver() {
-        return null;
+        return new CustomDTO(repo.getSumDriver());
     }
 }
