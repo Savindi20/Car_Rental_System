@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @RequestMapping("/reg_User")
 public class Reg_UserController {
+
     @Autowired
     private Reg_UserService service;
 
@@ -27,18 +28,23 @@ public class Reg_UserController {
         return new ResponseUtil("OK", "Successfully Registered.!", null);
     }
 
-    @PutMapping
-    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil updateUser(@RequestBody Reg_UserDTO dto) {
-        service.updateUser(dto);
-        return new ResponseUtil("OK", "Successfully Updated. :" + dto.getUser_Id(), null);
+    @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping(path = "/update")
+    public ResponseUtil updateUser(@ModelAttribute Reg_UserDTO regUserDTO, @ModelAttribute UserDTO user, @ModelAttribute Name name) {
+        regUserDTO.setName(name);
+        regUserDTO.setUser(user);
+        System.out.println(user);
+        System.out.println(name);
+        System.out.println(regUserDTO);
+        service.updateUser(regUserDTO);
+        return new ResponseUtil("OK", "Successfully Updated. :" + regUserDTO.getUser_Id(), null);
     }
 
     @ResponseStatus(HttpStatus.CREATED)
-    @DeleteMapping(params = {"user_Id"})
-    public ResponseUtil deleteUser(@RequestParam String user_Id) {
-        service.deleteUser(user_Id);
-        return new ResponseUtil("OK", "Successfully Deleted. :" + user_Id, null);
+    @DeleteMapping(params = {"id"})
+    public ResponseUtil deleteUser(@RequestParam String id) {
+        service.deleteUser(id);
+        return new ResponseUtil("OK", "Successfully Deleted. :" + id, null);
     }
 
     @ResponseStatus(HttpStatus.CREATED)
@@ -49,8 +55,7 @@ public class Reg_UserController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @GetMapping(path = "/reg_UserIdGenerate")
-    public @ResponseBody
-    CustomDTO customerIdGenerate() {
+    public @ResponseBody CustomDTO customerIdGenerate() {
         return service.userIdGenerate();
     }
 
