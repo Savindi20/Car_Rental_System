@@ -1,13 +1,14 @@
 package com.easy.car_rental.controller;
+
 import com.easy.car_rental.dto.CustomDTO;
 import com.easy.car_rental.dto.Reg_UserDTO;
 import com.easy.car_rental.dto.UserDTO;
 import com.easy.car_rental.embeded.Name;
+import com.easy.car_rental.entity.Reg_User;
 import com.easy.car_rental.service.Reg_UserService;
 import com.easy.car_rental.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -57,6 +58,18 @@ public class Reg_UserController {
     @GetMapping(path = "/reg_UserIdGenerate")
     public @ResponseBody CustomDTO customerIdGenerate() {
         return service.userIdGenerate();
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/searchCustomer", params = {"cus_Id"})
+    public Reg_User searchDriverId(String cus_Id) {
+        return service.searchUserId(cus_Id);
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/customerCount")
+    public @ResponseBody CustomDTO getSumCustomer() {
+        return service.getSumUser();
     }
 
 }
