@@ -1,46 +1,49 @@
 package com.easy.car_rental.controller;
 
 import com.easy.car_rental.dto.DriverDTO;
+import com.easy.car_rental.dto.UserDTO;
+import com.easy.car_rental.embeded.Name;
 import com.easy.car_rental.service.DriverService;
 import com.easy.car_rental.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/Driver")
+@RequestMapping("/driver")
 public class DriverController {
     @Autowired
     private DriverService service;
 
     @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil saveDriver(@RequestBody DriverDTO dto) {
-        service.saveDriver(dto);
-        System.out.println(dto);
+    @PostMapping
+    public ResponseUtil saveDriver(@ModelAttribute DriverDTO driverDTO, @ModelAttribute UserDTO userDTO, @ModelAttribute Name name) {
+        driverDTO.setUser(userDTO);
+        driverDTO.setName(name);
+        service.saveDriver(driverDTO);
         return new ResponseUtil("OK", "Successfully Registered.!", null);
     }
 
-    @PutMapping
-    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil updateDriver(@RequestBody DriverDTO dto) {
-        service.updateDriver(dto);
-        return new ResponseUtil("OK", "Successfully Updated. :" + dto.getUser_Id(), null);
+    @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping(path = "/update")
+    public ResponseUtil updateDriver(@ModelAttribute DriverDTO driverDTO, @ModelAttribute UserDTO userDTO, @ModelAttribute Name name) {
+        driverDTO.setUser(userDTO);
+        driverDTO.setName(name);
+        service.updateDriver(driverDTO);
+        return new ResponseUtil("OK", "Successfully Updated. :" + driverDTO.getUser_Id(), null);
     }
 
     @ResponseStatus(HttpStatus.CREATED)
-    @DeleteMapping(params = {"driver_Id"})
-    public ResponseUtil deleteDriver(@RequestParam String driver_Id) {
-        service.deleteDriver(driver_Id);
-        return new ResponseUtil("OK", "Successfully Deleted. :" + driver_Id, null);
+    @DeleteMapping(params = {"id"})
+    public ResponseUtil deleteDriver(@RequestParam String id) {
+        service.deleteDriver(id);
+        return new ResponseUtil("OK", "Successfully Deleted. :" + id, null);
     }
 
     @ResponseStatus(HttpStatus.CREATED)
-    @GetMapping
+    @GetMapping(path = "/loadAllDrivers")
     public ResponseUtil getAllDriver() {
         return new ResponseUtil("OK", "Successfully Loaded. :", service.getAllDriver());
     }
-
 }
