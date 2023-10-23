@@ -1,6 +1,7 @@
 package com.easy.car_rental.dto;
 
 import com.easy.car_rental.embeded.Image;
+import com.easy.car_rental.embeded.ImageDTO;
 import com.easy.car_rental.embeded.Rate;
 import com.easy.car_rental.enums.AvailabilityType;
 import com.easy.car_rental.enums.CarType;
@@ -16,12 +17,11 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 public class CarDTO {
-
     private String car_Id;
     private String name;
     private String brand;
     private CarType type;
-    private Image image;
+    private ImageDTO image;
     private int number_Of_Passengers;
     private TransmissionType transmission_Type;
     private FuelType fuel_Type;
