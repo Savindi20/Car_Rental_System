@@ -1,5 +1,6 @@
 package com.easy.car_rental.service.impl;
 
+import com.easy.car_rental.dto.CustomDTO;
 import com.easy.car_rental.dto.DriverDTO;
 import com.easy.car_rental.entity.Driver;
 import com.easy.car_rental.entity.User;
@@ -92,5 +93,35 @@ public class DriverServiceImpl implements DriverService {
     public ArrayList<DriverDTO> getAllDriver() {
         return mapper.map(repo.findAll(), new TypeToken<ArrayList<Driver>>() {
         }.getType());
+    }
+
+    @Override
+    public ArrayList<DriverDTO> getAllAvalabileDriver() {
+        return null;
+    }
+
+    @Override
+    public CustomDTO userIdGenerate() {
+        return null;
+    }
+
+    @Override
+    public CustomDTO getSumAvailableDriver() {
+        return null;
+    }
+
+    @Override
+    public CustomDTO getSumUnavailableDriver() {
+        return null;
+    }
+
+    @Override
+    public Driver searchDriverId(String id) {
+        return null;
+    }
+
+    @Override
+    public CustomDTO getSumDriver() {
+        return null;
     }
 }
