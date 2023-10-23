@@ -80,4 +80,19 @@ public class Reg_UserServiceImpl implements Reg_UserService {
         return new CustomDTO(repo.getLastIndex());
     }
 
+    @Override
+    public Reg_User searchUserId(String id) {
+        return null;
+    }
+
+    @Override
+    public CustomDTO getSumUser() {
+        return null;
+    }
+
+    @Override
+    public Reg_UserDTO availableUser(String userName) {
+        return null;
+    }
+
 }
