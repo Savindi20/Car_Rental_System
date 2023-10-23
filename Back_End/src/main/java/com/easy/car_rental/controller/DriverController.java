@@ -68,4 +68,21 @@ public class DriverController {
         return service.searchDriverId(driver_Id);
     }
 
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/driverCount")
+    public @ResponseBody CustomDTO getSumCustomer() {
+        return service.getSumDriver();
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/driverAvailableCount")
+    public @ResponseBody CustomDTO getSumAvailableDriver() {
+        return service.getSumAvailableDriver();
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/driverUnavailableCount")
+    public @ResponseBody CustomDTO getSumUnavailableDriver() {
+        return service.getSumUnavailableDriver();
+    }
 }
