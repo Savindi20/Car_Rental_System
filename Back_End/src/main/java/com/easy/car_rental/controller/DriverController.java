@@ -1,8 +1,11 @@
 package com.easy.car_rental.controller;
 
+import com.easy.car_rental.dto.CustomDTO;
 import com.easy.car_rental.dto.DriverDTO;
 import com.easy.car_rental.dto.UserDTO;
 import com.easy.car_rental.embeded.Name;
+import com.easy.car_rental.entity.Car;
+import com.easy.car_rental.entity.Driver;
 import com.easy.car_rental.service.DriverService;
 import com.easy.car_rental.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,4 +49,23 @@ public class DriverController {
     public ResponseUtil getAllDriver() {
         return new ResponseUtil("OK", "Successfully Loaded. :", service.getAllDriver());
     }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/loadAvalabilityDrivers")
+    public ResponseUtil getAllAvalabileDriver() {
+        return new ResponseUtil("OK", "Successfully Loaded. :", service.getAllAvalabileDriver());
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/driverIdGenerate")
+    public @ResponseBody CustomDTO customerIdGenerate() {
+        return service.userIdGenerate();
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/searchDriver", params = {"driver_Id"})
+    public Driver searchDriverId(String driver_Id) {
+        return service.searchDriverId(driver_Id);
+    }
+
 }
