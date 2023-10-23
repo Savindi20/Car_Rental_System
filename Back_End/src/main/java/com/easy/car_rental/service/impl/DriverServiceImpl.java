@@ -97,22 +97,23 @@ public class DriverServiceImpl implements DriverService {
 
     @Override
     public ArrayList<DriverDTO> getAllAvalabileDriver() {
-        return null;
+        return mapper.map(repo.availableDrivers(), new TypeToken<ArrayList<Driver>>() {
+        }.getType());
     }
 
     @Override
     public CustomDTO userIdGenerate() {
-        return null;
+        return new CustomDTO(repo.getLastIndex());
     }
 
     @Override
     public CustomDTO getSumAvailableDriver() {
-        return null;
+        return new CustomDTO(repo.getSumAvailableDriver());
     }
 
     @Override
     public CustomDTO getSumUnavailableDriver() {
-        return null;
+        return new CustomDTO(repo.getSumUnavailableDriver());
     }
 
     @Override
