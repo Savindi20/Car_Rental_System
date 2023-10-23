@@ -107,17 +107,21 @@ public class Reg_UserServiceImpl implements Reg_UserService {
 
     @Override
     public Reg_User searchUserId(String id) {
-        return null;
+        if (!repo.existsById(id)) {
+            throw new RuntimeException("Wrong ID. Please enter Valid id..!");
+        }
+        System.out.println(id);
+        return mapper.map(repo.findById(id).get(), Reg_User.class);
     }
 
     @Override
     public CustomDTO getSumUser() {
-        return null;
+        return new CustomDTO(repo.getSumUsers());
     }
 
     @Override
     public Reg_UserDTO availableUser(String userName) {
-        return null;
+        return repo.availableUser(userName);
     }
 
 }
