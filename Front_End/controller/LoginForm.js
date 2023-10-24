@@ -30,7 +30,7 @@ function login() {
                             success:function (res1) {
                             }
                         })
-                        window.location.href = 'driverDashboard.html';
+                        window.location.href = '../pages/driverDashboard.html';
                     } else if (loginRole_Type === "REGISTERED_USER" && loginUserName === login.user_Name && loginPassword === login.password) {
                         $.ajax({
                             url: baseUrlLogin + "loginForm/?username=" + loginUserName + "&password=" + loginPassword,
@@ -39,9 +39,9 @@ function login() {
                             success:function (res1) {
                             }
                         });
-                        window.location.href = 'reg_UserDashboard.html';
+                        window.location.href = '../pages/reg_UserDashboard.html';
                     } else if (loginRole_Type === "ADMIN" && loginUserName === login.user_Name && loginPassword === login.password) {
-                        window.location.href = 'adminDashboard.html';
+                        window.location.href = '../pages/adminDashboard.html';
                     }
                     return;
                 }
