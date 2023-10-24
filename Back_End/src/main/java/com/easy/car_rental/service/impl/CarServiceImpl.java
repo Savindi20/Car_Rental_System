@@ -3,7 +3,11 @@ package com.easy.car_rental.service.impl;
 import com.easy.car_rental.dto.CarDTO;
 import com.easy.car_rental.dto.CustomDTO;
 import com.easy.car_rental.embeded.Image;
+import com.easy.car_rental.embeded.ImageDTO;
 import com.easy.car_rental.entity.Car;
+import com.easy.car_rental.enums.CarType;
+import com.easy.car_rental.enums.FuelType;
+import com.easy.car_rental.enums.TransmissionType;
 import com.easy.car_rental.repo.CarRepo;
 import com.easy.car_rental.service.CarService;
 import org.modelmapper.ModelMapper;
@@ -15,6 +19,9 @@ import org.springframework.transaction.annotation.Transactional;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 
 @Service
@@ -150,6 +157,7 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public ArrayList<CarDTO> filterCarDetails(String name, String fuel_Type, String type, String transmission_Type) {
-        return null;
+        return mapper.map(repo.filterCarDetails(name,fuel_Type,type,transmission_Type), new TypeToken<ArrayList<Car>>() {
+        }.getType());
     }
 }
