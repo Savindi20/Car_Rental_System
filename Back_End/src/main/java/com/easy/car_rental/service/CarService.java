@@ -14,4 +14,9 @@ public interface CarService {
     ArrayList<CarDTO> getAllCar();
     CustomDTO carIdGenerate();
     Car searchCarId(String id);
+    CustomDTO getSumCar();
+    CustomDTO getSumAvailableCar();
+    CustomDTO getSumReservedCar();
+    CustomDTO getSumMaintainCar();
+    CustomDTO getSumUnderMaintainCar();
 }

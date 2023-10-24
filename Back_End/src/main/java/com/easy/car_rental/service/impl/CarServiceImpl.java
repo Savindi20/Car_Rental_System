@@ -116,4 +116,29 @@ public class CarServiceImpl implements CarService {
         }
         return mapper.map(repo.findById(id).get(), Car.class);
     }
+
+    @Override
+    public CustomDTO getSumCar() {
+        return null;
+    }
+
+    @Override
+    public CustomDTO getSumAvailableCar() {
+        return null;
+    }
+
+    @Override
+    public CustomDTO getSumReservedCar() {
+        return null;
+    }
+
+    @Override
+    public CustomDTO getSumMaintainCar() {
+        return null;
+    }
+
+    @Override
+    public CustomDTO getSumUnderMaintainCar() {
+        return null;
+    }
 }
