@@ -1,6 +1,7 @@
 package com.easy.car_rental.service.impl;
 
 import com.easy.car_rental.dto.CarDTO;
+import com.easy.car_rental.dto.CustomDTO;
 import com.easy.car_rental.embeded.Image;
 import com.easy.car_rental.entity.Car;
 import com.easy.car_rental.repo.CarRepo;
@@ -101,5 +102,15 @@ public class CarServiceImpl implements CarService {
     public ArrayList<CarDTO> getAllCar() {
         return mapper.map(repo.findAll(), new TypeToken<ArrayList<Car>>() {
         }.getType());
+    }
+
+    @Override
+    public CustomDTO carIdGenerate() {
+        return new CustomDTO(repo.getLastIndex());
+    }
+
+    @Override
+    public Car searchCarId(String id) {
+        return null;
     }
 }
