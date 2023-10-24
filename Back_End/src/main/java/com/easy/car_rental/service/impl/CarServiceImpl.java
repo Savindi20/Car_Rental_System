@@ -60,10 +60,33 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public void updateCar(CarDTO dto) {
+        Car car = new Car(dto.getCar_Id(), dto.getName(), dto.getBrand(), dto.getType(), new Image(), dto.getNumber_Of_Passengers(), dto.getTransmission_Type(), dto.getFuel_Type(), dto.getRent_Duration_Price(), dto.getPrice_Extra_KM(), dto.getRegistration_Number(), dto.getFree_Mileage(), dto.getColor(), dto.getVehicleAvailabilityType());
         if (!repo.existsById(dto.getCar_Id())) {
             throw new RuntimeException("Car Not Exist. Please enter Valid id..!");
         }
-        repo.save(mapper.map(dto, Car.class));
+        try {
+
+            String projectPath = new File(this.getClass().getProtectionDomain().getCodeSource().getLocation().toURI()).getParentFile().getParentFile().getAbsolutePath();
+            File uploadsDir = new File(projectPath + "/uploads");
+            System.out.println(projectPath);
+            uploadsDir.mkdir();
+
+            dto.getImage().getFront_View().transferTo(new File(uploadsDir.getAbsolutePath() + "/" + dto.getImage().getFront_View().getOriginalFilename()));
+            dto.getImage().getBack_View().transferTo(new File(uploadsDir.getAbsolutePath() + "/" + dto.getImage().getBack_View().getOriginalFilename()));
+            dto.getImage().getSide_View().transferTo(new File(uploadsDir.getAbsolutePath() + "/" + dto.getImage().getSide_View().getOriginalFilename()));
+            dto.getImage().getInterior().transferTo(new File(uploadsDir.getAbsolutePath() + "/" + dto.getImage().getInterior().getOriginalFilename()));
+
+            car.getImage().setFront_View("uploads/"+dto.getImage().getFront_View().getOriginalFilename());
+            car.getImage().setBack_View("uploads/"+dto.getImage().getBack_View().getOriginalFilename());
+            car.getImage().setSide_View("uploads/"+dto.getImage().getSide_View().getOriginalFilename());
+            car.getImage().setInterior("uploads/"+dto.getImage().getInterior().getOriginalFilename());
+
+        } catch (IOException | URISyntaxException e) {
+            throw new RuntimeException(e);
+        }
+
+        System.out.println(car);
+        repo.save(car);
     }
 
     @Override

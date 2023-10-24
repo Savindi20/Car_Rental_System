@@ -29,9 +29,15 @@ public class CarController {
         return new ResponseUtil("OK", "Successfully Registered.!", null);
     }
 
-    @PutMapping
-    @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseUtil updateCar(@RequestBody CarDTO dto) {
+    @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping(path = "/update")
+    public ResponseUtil updateCar(@ModelAttribute CarDTO dto, @ModelAttribute Rate rate, @ModelAttribute ImageDTO image) {
+        dto.setImage(image);
+        dto.setRent_Duration_Price(rate);
+        System.out.println(dto.getName());
+        System.out.println(dto.getCar_Id());
+
+        System.out.println(dto);
         service.updateCar(dto);
         return new ResponseUtil("OK", "Successfully Updated. :" + dto.getCar_Id(), null);
     }
