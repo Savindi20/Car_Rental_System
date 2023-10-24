@@ -12,6 +12,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+
 @RestController
 @CrossOrigin
 @RequestMapping("/car")
@@ -98,5 +100,11 @@ public class CarController {
     @GetMapping(path = "/underMaintainCar")
     public @ResponseBody CustomDTO getSumUnderMaintainCar() {
         return service.getSumUnderMaintainCar();
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/filterCarDetails", params = {"category_type", "fuel_Type"})
+    public ArrayList<CarDTO> getFilerData(@RequestParam String category_type, @RequestParam String fuel_Type) {
+        return service.getFilerData(category_type, fuel_Type);
     }
 }
