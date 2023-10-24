@@ -22,4 +22,15 @@ public class LoginController {
         return new ResponseUtil("OK","Successfully Loaded..!",service.getAllRegUsers());
     }
 
+    @GetMapping(params = {"username"})
+    public ResponseUtil setUser(String username,String password){
+        CurrentUser.currentUser=service.getRegUsers(username,password);
+        return new ResponseUtil("OK","Successfully Loaded..!","");
+    }
+
+    @GetMapping(path = "current")
+    public ResponseUtil getCurrentUser(){
+        return new ResponseUtil("OK","Successfully Loaded..!",CurrentUser.currentUser);
+    }
+
 }
