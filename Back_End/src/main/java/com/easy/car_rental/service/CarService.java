@@ -1,9 +1,9 @@
 package com.easy.car_rental.service;
 
-
 import com.easy.car_rental.dto.CarDTO;
 import com.easy.car_rental.dto.CustomDTO;
 import com.easy.car_rental.entity.Car;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 
@@ -20,4 +20,5 @@ public interface CarService {
     CustomDTO getSumMaintainCar();
     CustomDTO getSumUnderMaintainCar();
     ArrayList<CarDTO> getFilerData(String type,String fuelType);
+    ArrayList<CarDTO> filterCarDetails(String name, String fuel_Type,String type, String transmission_Type);
 }

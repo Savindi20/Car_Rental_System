@@ -143,7 +143,13 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public ArrayList<CarDTO> getFilerData(String type, String fuelType) {
+    public ArrayList<CarDTO> getFilerData(String type,String fuelType) {
+        return mapper.map(repo.filterCar(type,fuelType), new TypeToken<ArrayList<Car>>() {
+        }.getType());
+    }
+
+    @Override
+    public ArrayList<CarDTO> filterCarDetails(String name, String fuel_Type, String type, String transmission_Type) {
         return null;
     }
 }
