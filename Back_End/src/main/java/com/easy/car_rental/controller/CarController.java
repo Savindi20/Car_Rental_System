@@ -1,8 +1,10 @@
 package com.easy.car_rental.controller;
 
 import com.easy.car_rental.dto.CarDTO;
+import com.easy.car_rental.dto.CustomDTO;
 import com.easy.car_rental.embeded.ImageDTO;
 import com.easy.car_rental.embeded.Rate;
+import com.easy.car_rental.entity.Car;
 import com.easy.car_rental.service.CarService;
 import com.easy.car_rental.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,4 +57,16 @@ public class CarController {
         return new ResponseUtil("OK", "Successfully Loaded. :", service.getAllCar());
     }
 
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/carIDGenerate")
+    public @ResponseBody
+    CustomDTO customerIdGenerate() {
+        return service.carIdGenerate();
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/searchCar", params = {"car_Id"})
+    public Car searchCusId(String car_Id) {
+        return service.searchCarId(car_Id);
+    }
 }
