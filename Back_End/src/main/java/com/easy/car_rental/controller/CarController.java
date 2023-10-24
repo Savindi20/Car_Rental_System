@@ -88,4 +88,15 @@ public class CarController {
         return service.getSumReservedCar();
     }
 
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/maintainCar")
+    public @ResponseBody CustomDTO getSumMaintainCar() {
+        return service.getSumMaintainCar();
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/underMaintainCar")
+    public @ResponseBody CustomDTO getSumUnderMaintainCar() {
+        return service.getSumUnderMaintainCar();
+    }
 }
