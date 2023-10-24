@@ -1,7 +1,9 @@
-let baseUrlLogin = "http://localhost:8083/Back_End_war/";
+let baseUrlLogin = "http://localhost:8080/Back_End_war/";
 
 
-/* ============ load all customers Method ========= */
+/**
+ * load all customers Method
+ * */
 
 $("#btnLogin").on('click', function () {
     login();

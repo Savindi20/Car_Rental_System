@@ -1,7 +1,10 @@
-let RentAllManageBaseUrl = "http://localhost:8083/Back_End_war/";
+let RentAllManageBaseUrl = "http://localhost:8080/Back_End_war/";
 loadAllRentDetails();
 
-/* ===== All Rent Details load ========= */
+/**
+ * All Rent Details load
+ **/
+
 function loadAllRentDetails() {
     $("#rentAllDetails").empty();
     $("#retManage").empty();
@@ -23,7 +26,9 @@ function loadAllRentDetails() {
     });
 }
 
-/* ========== Search Rents ========== */
+/**
+ * Search Rents
+ * */
 $("#search_Id").on("keypress", function (event) {
     if (event.which === 13) {
         var search = $("#search_Id").val();
@@ -131,7 +136,9 @@ $("#btnReject").on("click", function () {
 
 });
 
-/* ====== Payment ID Generator ====== */
+/**
+ * Payment ID Generator
+ * */
 function generatePaymentID() {
     $("#paymentID").val("PAY-001");
     $.ajax({
@@ -158,7 +165,11 @@ function generatePaymentID() {
 }
 
 generatePaymentID();
-/* === Local Date And Time set, Enter Cash and Balance display ===*/
+/**
+ * Logics
+ * Local Date And Time set
+ * Enter Cash and Balance display
+ * */
 $(document).ready(function () {
     var now = new Date();
     var year = now.getFullYear();
@@ -175,7 +186,12 @@ $(document).ready(function () {
     $('#time').val(time); // set time text in element with ID "time"
 });
 
-/* === Rent, Enter Cash and Balance display === */
+
+/**
+ * Logics
+ * Rent
+ * Enter Cash and Balance display
+ * */
 function loadAllCars() {
     $.ajax({
         url: RentAllManageBaseUrl + "car/searchCar/?car_Id=" + carID,
@@ -188,7 +204,9 @@ function loadAllCars() {
             let freeMileage = res.free_Mileage;
 
             $(document).on("change keyup blur","#days,#lostDamage,#rentFee,#driverFee,#mileage", function () {
-                /* ====== Payment Details ======= */
+                /**
+                 * Payment Details
+                 * */
                 let lostDamage = $('#lostDamage').val();
                 let carFee = $('#rentFee').val();
                 let driverFee = $('#driverFee').val();
@@ -221,6 +239,10 @@ function loadAllCars() {
 }
 
 $("#btnPay").on("click", function () {
+    /*let rentID = $("#rentID").val();
+    // let formData = new FormData($("#PayementToRent")[0]);
+    let formData = $("#PayementToRent").serialize();
+    console.log(formData);*/
 
     let paymentId = $("#paymentID").val();
     let rentID = $("#rentID").val();
@@ -245,6 +267,7 @@ $("#btnPay").on("click", function () {
         driverFee: driverFee,
         total: total,
     }
+
 
     $.ajax({
         url: RentAllManageBaseUrl + "payment/?rentID=" + rentID,

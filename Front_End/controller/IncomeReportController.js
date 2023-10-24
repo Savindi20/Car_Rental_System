@@ -1,8 +1,9 @@
-let baseUrlIncome = "http://localhost:8083/Back_End_war/";
+let baseUrlIncome = "http://localhost:8080/Back_End_war/";
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    /* ======== Daily Income ========== */
+    /**
+     * Daily Income
+     **/
     let dataPoints1 = [];
     let options1 = {
         animationEnabled: true, theme: "light2", title: {
@@ -32,14 +33,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 $("#dailyIncomeTable").append(row);
 
                 dataPoints1.push({
-                    x: new Date(res[i][0]), y: total
+                        x: new Date(res[i][0]), y: total
                 });
             }
             $("#dailyIncomeChart").CanvasJSChart(options1);
         }
     });
 
-    /* ======= Monthly Income ========== */
+    /**
+     * Monthly Income
+     **/
     $.ajax({
         url: baseUrlIncome + "income/monthlyIncome", method: "GET", dataType: "json", success: function (res) {
             console.log(res);
@@ -71,7 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    /* ======== Annually Income ======== */
+    /**
+     * Annually Income
+     **/
     $.ajax({
         url: baseUrlIncome + "income/AnnuallyIncome", method: "GET", dataType: "json", success: function (res) {
             console.log(res);

@@ -1,4 +1,4 @@
-let carBaseUrl = "http://localhost:8083/Back_End_war/";
+let carBaseUrl = "http://localhost:8080/Back_End_war/";
 
 loadAllCars();
 
@@ -18,9 +18,7 @@ function loadAllCars() {
                     <div class="position-relative col-xl-8 col-md-10 flex-wrap">
 
                         <h4 class="m-2 p-2 text-center txt-head">${i.name + " " + i.brand} <br>
-                            <p><span>${i.type}</span><span>&nbsp;- &nbsp;</span><span>${i.transmission_Type}</span></p>
-                        </h4>
-                            
+                            <p><span>${i.type}</span><span>&nbsp;- &nbsp;</span><span>${i.transmission_Type}</span></p></h4>
                         <div class="row listStyle m-1">
                             <div class="col">
                                 <ul class="list-group">
@@ -66,7 +64,9 @@ function loadAllCars() {
                     </div>
                 </div>
             </div>
-            `);}
+ `);
+
+            }
         }
     });
 }
@@ -81,7 +81,6 @@ function filterCarDetails() {
     fuel_Type=$("#fuelType").val();
     type=$("#carType").val();
     transmission_Type=$("#cTransmission").val();
-
     $.ajax({
         url: carBaseUrl + "car/filterDetails?name=" + name + "&fuel_Type=" + fuel_Type+ "&type=" + type+ "&transmission_Type=" + transmission_Type,
         method: "GET", dataType: "json",
@@ -145,6 +144,7 @@ function filterCarDetails() {
                 </div>
             </div>
  `);
+
             }
         },
         error: function (error) {

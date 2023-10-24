@@ -1,11 +1,13 @@
-let carBaseUrl = "http://localhost:8083/Back_End_war/";
+let carBaseUrl = "http://localhost:8080/Back_End_war/";
 loadAllCars();
 
 $("#btnSaveCar").attr('disabled', true);
 $("#btnUpdateCar").attr('disabled', true);
 $("#btnDeleteCar").attr('disabled', true);
 
-/* ========= Car Save ============== */
+/**
+ * Car Save
+ * */
 $("#btnSaveCar").click(function () {
     let formData = new FormData($("#carForm")[0]);
     console.log(formData);
@@ -26,7 +28,9 @@ $("#btnSaveCar").click(function () {
     });
 });
 
-/* =========== Car Id Generator ============ */
+/**
+ * Car Id Generator
+ * */
 function generateCarID() {
     $("#car_Id").val("CAR-001");
     $.ajax({
@@ -52,7 +56,9 @@ function generateCarID() {
     });
 }
 
-/* ========== clear input fields Values Method =========== */
+/**
+ * clear input fields Values Method
+ * */
 function setTextFieldValuesC(name, brand, type, front_View, back_View, side_View, interior, number_Of_Passengers, transmission_Type, fuel_Type, daily_Rate, monthly_Rate, price_Extra_KM, registration_Number, free_Mileage, color, vehicleAvailabilityType) {
     $("#name").val(name);
     $("#brand").val(brand);
@@ -77,7 +83,9 @@ function setTextFieldValuesC(name, brand, type, front_View, back_View, side_View
     $("#btnSaveCar").attr('disabled', true);
 }
 
-/* ============= load all customers Method ============= */
+/**
+ * load all customers Method
+ * */
 function loadAllCars() {
     $("#carTable").empty();
     $.ajax({
@@ -120,7 +128,9 @@ function loadAllCars() {
     });
 }
 
-/* ============ Search id and Load Table ============ */
+/**
+ * Search id and Load Table
+ * */
 $("#search_Id").on("keypress", function (event) {
     if (event.which === 13) {
         var search = $("#search_Id").val();
@@ -164,7 +174,10 @@ $("#search_Id").on("keypress", function (event) {
 
 });
 
-/* ============ Table Listener Click and Load textFields =============== */
+
+/**
+ * Table Listener Click and Load textFields
+ * */
 function blindClickEventsC() {
     $("#carTable>tr").on("click", function () {
         let car_Id = $(this).children().eq(0).text();
@@ -203,7 +216,6 @@ function blindClickEventsC() {
     $("#btnSaveCar").attr('disabled', true);
 }
 
-/* ============= Update Action ============ */
 $("#btnUpdateCar").click(function () {
     let formData = new FormData($("#carForm")[0]);
     console.log(formData);
@@ -224,7 +236,9 @@ $("#btnUpdateCar").click(function () {
     });
 });
 
-/* ============= Delete Action ============ */
+/**
+ * Delete Action
+ * */
 $("#btnDeleteCar").click(function () {
     let id = $("#car_Id").val();
     $.ajax({
@@ -238,7 +252,9 @@ $("#btnDeleteCar").click(function () {
     });
 });
 
-/* ========== Auto Forces Input Fields Save =========== */
+/**
+ * Auto Forces Input Fields Save
+ * */
 $("#name").focus();
 const regExBrand = /^[A-z ]{3,20}$/;
 const regExModel = /^[A-z 0-9]{3,20}$/;

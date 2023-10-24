@@ -1,9 +1,9 @@
-let RentbaseUrl = "http://localhost:8083/Back_End_war/";
-
+let RentbaseUrl = "http://localhost:8080/Back_End_war/";
 loadAllRent();
 $("#updateCustomer").attr('disabled', true);
-
-/* ========= User Id Generator ============ */
+/**
+ * User Id Generator
+ * */
 generateRentID();
 
 function generateRentID() {
@@ -31,7 +31,9 @@ function generateRentID() {
     });
 }
 
-/* ========== Filter a data in Car Details =========== */
+/**
+ * Filter a data in Car Details
+ * */
 $("#fuel_Type").click(function () {
     let category_type = $("#category_type").val();
     let fuel_Type = $("#fuel_Type").val();
@@ -59,7 +61,10 @@ $("#fuel_Type").click(function () {
     })
 });
 
-/* ========= Search ============ */
+/**
+ * Logics
+ * Search
+ * */
 $("#car_Id").click(function () {
     var search = $("#car_Id").val();
     $.ajax({
@@ -96,7 +101,10 @@ $("#car_Id").click(function () {
     })
 });
 
-/* =========== Car Details ===========*/
+
+/**
+ * Car Details
+ * */
 let tableRow = [];
 let car_Id;
 let pickUpDate;
@@ -106,7 +114,10 @@ let returnTime;
 let requestType;
 let goLocation;
 
-/* ========== Add cart ============ */
+/**
+ * Logics
+ * Add cart
+ * */
 $("#btnAddCart").on("click", function () {
     let duplicate = false;
     for (let i = 0; i < $("#cartTable tr").length; i++) {
@@ -128,8 +139,11 @@ $("#btnAddCart").on("click", function () {
         $(tableRow).children(':nth-child(7)').text($("#location").val());
 
     }
-
-    /* ====== Place order, Table Add logic ========== */
+    /**
+     * Logics
+     * Place order
+     * Table Add logic
+     * */
     $("#cartTable>tr").click('click', function () {
         tableRow = $(this);
         let car_Id = $(this).children(":eq(0)").text();
@@ -151,7 +165,11 @@ $("#btnAddCart").on("click", function () {
     });
 });
 
-/* ============ Place order, Table Load =========== */
+/**
+ * Logics
+ * Place order
+ * Table Load
+ * */
 $("#cartTable").empty();
 
 function loadCartTableDetail() {
@@ -168,7 +186,12 @@ function loadCartTableDetail() {
     $("#cartTable").append(row);
 }
 
-/* =========== Place order, Remove Row ========= */
+/**
+ * Logics
+ * Place order
+ * Remove Row
+ * */
+
 $("#cartTable").dblclick(function () {
     Swal.fire({
         title: 'Do you want to Delete the Select row?',
@@ -189,7 +212,12 @@ $("#cartTable").dblclick(function () {
     })
 });
 
-/* ======= Place order, Purchase Order button ========= */
+/**
+ * Logics
+ * Place order
+ * Purchase Order button
+ * */
+
 $("#btnReservation").click(function () {
     let rentDetails = [];
     for (let i = 0; i < $("#cartTable tr").length; i++) {
@@ -227,6 +255,7 @@ $("#btnReservation").click(function () {
         console.log(rentDetails)
         console.log(rentOB)
 
+
         $.ajax({
             url: RentbaseUrl + "rent",
             method: "POST",
@@ -248,8 +277,12 @@ $("#btnReservation").click(function () {
     $("#cartTable").empty();
 });
 
-/* ========== current user ============ */
+/**
+ * Logics
+ * current user
+ * */
 let user;
+
 $.ajax({
     url: RentbaseUrl + "loginForm/current", method: "get", success: function (res) {
         user = res.data.user_Id;
@@ -258,7 +291,10 @@ $.ajax({
     }
 });
 
-/* ========== current user profile ========== */
+/**
+ * Logics
+ * current user profile
+ * */
 $.ajax({
     url: RentbaseUrl + "reg_User/loadAllUsers",
     method: "get",
@@ -290,7 +326,10 @@ $.ajax({
     }
 });
 
-/* ========== current user update =========== */
+/**
+ * Logics
+ * current user update
+ * */
 $("#updateCustomer").click(function () {
     let formData = new FormData($("#customerDetailsForm")[0]);
     console.log(formData);
@@ -310,7 +349,10 @@ $("#updateCustomer").click(function () {
     });
 });
 
-/* ========= Get Rent, current user Rents ========= */
+/**
+ * Get Rent
+ * current user Rents
+ * */
 function loadAllRent() {
     $.ajax({
         url: RentbaseUrl + "rent/loadAllRents",
@@ -339,12 +381,13 @@ function blindClickEvents() {
     });
 }
 
+
 $("#btnDeleteRental").click(function () {
     let id = $("#responseRentId").val();
     $.ajax({
         url: RentbaseUrl + "rent?id=" + id , method: "delete", dataType: "json", success: function (resp) {
             saveUpdateAlert("Rent", resp.message);
-            loadAllRent();
+           loadAllRent();
         }, error: function (error) {
             let message = JSON.parse(error.responseText).message;
             unSuccessUpdateAlert("Rent", message);
@@ -352,7 +395,9 @@ $("#btnDeleteRental").click(function () {
     });
 });
 
-/* ========== Auto Forces Input Fields Save ==========*/
+/**
+ * Auto Forces Input Fields Save
+ * */
 $("#userFirstName").focus();
 const regExFirstName = /^[A-z ]{3,20}$/;
 const regExLastName = /^[A-z ]{3,20}$/;
@@ -392,7 +437,6 @@ customerValidations.push({
 customerValidations.push({
     reg: regExPassword, field: $('#customerPassword'), error: 'Customer Password Pattern is Wrong'
 });
-
 //disable tab key of all four text fields using grouping selector in CSS
 $("#userFirstName,#userLastName,#customerContactNo,#customerAddress,#customerDriverEmail,#customerNic,#customerLicence,#customerUserName,#customerPassword").on('keydown', function (event) {
     if (event.key === "Tab") {
@@ -471,6 +515,7 @@ $("#customerPassword").on('keydown', function (event) {
         }
     }
 });
+
 
 function setButtonState(value) {
     if (value > 0) {

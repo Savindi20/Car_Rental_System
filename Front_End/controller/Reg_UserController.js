@@ -1,10 +1,12 @@
-let userBaseUrl = "http://localhost:8083/Back_End_war/";
+let userBaseUrl = "http://localhost:8080/Back_End_war/";
 loadAllRegUsers();
 $("#btnSaveCustomer").attr('disabled', true);
 $("#btnUpdateCustomer").attr('disabled', true);
 $("#btnDeleteCustomer").attr('disabled', true);
 
-/* ================ Customer Save ==============*/
+/**
+ * Customer Save
+ * */
 $("#btnSaveCustomer").click(function () {
     let formData = new FormData($("#customerForm")[0]);
     console.log(formData);
@@ -25,7 +27,9 @@ $("#btnSaveCustomer").click(function () {
 });
 
 
-/* =========== User Id Generator ================*/
+/**
+ * User Id Generator
+ * */
 function generateCustomerID() {
     $("#user_Id").val("C00-001");
     $.ajax({
@@ -51,7 +55,9 @@ function generateCustomerID() {
     });
 }
 
-/* ===================== clear input fields Values Method ================*/
+/**
+ * clear input fields Values Method
+ * */
 function setTextFieldValues(firstName, lastName, contact_No, address, email, nic, license_No, nic_Img, license_Img, user_Name, password) {
     $("#firstName").val(firstName);
     $("#lastName").val(lastName);
@@ -70,7 +76,9 @@ function setTextFieldValues(firstName, lastName, contact_No, address, email, nic
     $("#btnSaveCustomer").attr('disabled', true);
 }
 
-/* =================== load all customers Method ===============*/
+/**
+ * load all customers Method
+ * */
 function loadAllRegUsers() {
     $("#customerTable").empty();
     $.ajax({
@@ -106,7 +114,9 @@ function loadAllRegUsers() {
     });
 }
 
-/* ============= Search id and Load Table ================*/
+/**
+ * Search id and Load Table
+ * */
 $("#search_Id").on("keypress", function (event) {
     if (event.which === 13) {
         var search = $("#search_Id").val();
@@ -145,7 +155,9 @@ $("#search_Id").on("keypress", function (event) {
 
 });
 
-/* =========== Table Listener Click and Load textFields ============*/
+/**
+ * Table Listener Click and Load textFields
+ * */
 function blindClickEvents() {
     $("#customerTable>tr").on("click", function () {
         let user_Id = $(this).children().eq(0).text();
@@ -178,7 +190,9 @@ function blindClickEvents() {
     $("#btnSaveCustomer").attr('disabled', true);
 }
 
-/* =========== Update Action ====================*/
+/**
+ * Update Action
+ * */
 $("#btnUpdateCustomer").click(function () {
     let formData = new FormData($("#customerForm")[0]);
     console.log(formData);
@@ -198,7 +212,9 @@ $("#btnUpdateCustomer").click(function () {
     });
 });
 
-/* ================ Delete Action ===================*/
+/**
+ * Delete Action
+ * */
 $("#btnDeleteCustomer").click(function () {
     let id = $("#user_Id").val();
     $.ajax({
@@ -212,7 +228,10 @@ $("#btnDeleteCustomer").click(function () {
     });
 });
 
-/* ================= Auto Forces Input Fields Save ================= */
+
+/**
+ * Auto Forces Input Fields Save
+ * */
 $("#firstName").focus();
 const regExFirstName = /^[A-z ]{3,20}$/;
 const regExLastName = /^[A-z ]{3,20}$/;
@@ -330,6 +349,7 @@ $("#password").on('keydown', function (event) {
         }
     }
 });
+
 
 function setButtonState(value) {
     if (value > 0) {

@@ -1,4 +1,4 @@
-let userbasurl = "http://localhost:8083/Back_End_war/";
+let userbasurl = "http://localhost:8080/Back_End_war/";
 
 let user;
 
@@ -12,7 +12,10 @@ $.ajax({
     }
 });
 
-/* =============== current user profile =========== */
+/**
+ * Logics
+ * current user profile
+ * */
 $.ajax({
     url: userbasurl + "driver/loadAllDrivers",
     method: "get",
@@ -43,7 +46,11 @@ $.ajax({
     }
 });
 
-/* ============ Rent Details ================ */
+
+/**
+ * Logics
+ * Rent Details
+ * */
 loadAllRent();
 function loadAllRent() {
     $.ajax({

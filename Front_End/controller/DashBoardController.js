@@ -1,6 +1,8 @@
-let dashboard = "http://localhost:8083/Back_End_war/";
+let dashboard = "http://localhost:8080/Back_End_war/";
 
-/* ============ Car Count ================*/
+/**
+ * Car Count
+ * */
 $("#carCount").val("00");
 $.ajax({
     url: dashboard + "car/carCount",
@@ -17,7 +19,9 @@ $.ajax({
     }
 });
 
-/* ======== Available Car Count =========== */
+/**
+ * Available Car Count
+ * */
 $("#availableCarCount").val("00");
 $.ajax({
     url: dashboard + "car/availablCarCount",
@@ -32,7 +36,9 @@ $.ajax({
     }
 });
 
-/* ============== Reserved Car Count =============== */
+/**
+ * Reserved Car Count
+ * */
 $("#reservedCarCount").val("00");
 $.ajax({
     url: dashboard + "car/reservedCarCount",
@@ -47,7 +53,9 @@ $.ajax({
     }
 });
 
-/* ============ Driver Count =================== */
+/**
+ * Driver Count
+ * */
 $("#driverCount").val("00");
 $.ajax({
     url: dashboard + "driver/driverCount",
@@ -64,7 +72,10 @@ $.ajax({
     }
 });
 
-/* =========== Driver Available Count ============== */
+
+/**
+ * Driver Available Count
+ * */
 $("#availableDriverCount").val("00");
 $.ajax({
     url: dashboard + "driver/driverAvailableCount",
@@ -81,7 +92,9 @@ $.ajax({
     }
 });
 
-/* ============= Driver Unavailable Count =========== */
+/**
+ * Driver Unavailable Count
+ * */
 $("#unAvailableDriverCount").val("00");
 $.ajax({
     url: dashboard + "driver/driverUnavailableCount",
@@ -98,7 +111,9 @@ $.ajax({
     }
 });
 
-/* ============= User Count ================== */
+/**
+ * User Count
+ * */
 $("#customerCount").val("00");
 $.ajax({
     url: dashboard + "reg_User/customerCount",
@@ -115,7 +130,9 @@ $.ajax({
     }
 });
 
-/* ========== Booking Count ============== */
+/**
+ * Booking Count
+ * */
 $("#BookingCount").val("00");
 $.ajax({
     url: dashboard + "rent/booking",
@@ -132,7 +149,9 @@ $.ajax({
     }
 });
 
-/* ============= Booking Pending Count ===========  */
+/**
+ * Booking Pending Count
+ * */
 $("#BookingPendingCount").val("00");
 $.ajax({
     url: dashboard + "rent/bookingPending",
@@ -149,7 +168,9 @@ $.ajax({
     }
 });
 
-/* ============= Booking Active Count ================ */
+/**
+ * Booking Active Count
+ * */
 $("#BookingActiveCount").val("00");
 $.ajax({
     url: dashboard + "rent/bookingActive",
@@ -166,7 +187,9 @@ $.ajax({
     }
 });
 
-/* ========== Maintain Car Count ========== */
+/**
+ * Maintain Car Count
+ * */
 $("#maintainCarCount").val("00");
 $.ajax({
     url: dashboard + "car/maintainCar",
@@ -183,7 +206,9 @@ $.ajax({
     }
 });
 
-/* ============ Under Maintain Car Count =========== */
+/**
+ * Under Maintain Car Count
+ * */
 $("#underMaintainCarCount").val("00");
 $.ajax({
     url: dashboard + "car/underMaintainCar",
