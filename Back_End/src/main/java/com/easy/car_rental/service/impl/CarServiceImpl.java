@@ -141,4 +141,9 @@ public class CarServiceImpl implements CarService {
     public CustomDTO getSumUnderMaintainCar() {
         return new CustomDTO(repo.getSumUnderMaintainCar());
     }
+
+    @Override
+    public ArrayList<CarDTO> getFilerData(String type, String fuelType) {
+        return null;
+    }
 }
