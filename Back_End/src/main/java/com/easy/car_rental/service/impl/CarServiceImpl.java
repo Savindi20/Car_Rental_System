@@ -134,11 +134,11 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public CustomDTO getSumMaintainCar() {
-        return null;
+        return new CustomDTO(repo.getSumMaintainCar());
     }
 
     @Override
     public CustomDTO getSumUnderMaintainCar() {
-        return null;
+        return new CustomDTO(repo.getSumUnderMaintainCar());
     }
 }
