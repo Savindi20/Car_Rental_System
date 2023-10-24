@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/Admin")
+@RequestMapping("/admin")
 public class AdminController {
 
     @Autowired
@@ -23,12 +23,14 @@ public class AdminController {
         System.out.println(dto);
         return new ResponseUtil("OK", "Successfully Registered.!", null);
     }
+
     @PutMapping
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseUtil updateAdmin(@RequestBody AdminDTO dto) {
         service.updateAdmin(dto);
         return new ResponseUtil("OK", "Successfully Updated. :" + dto.getUser_Id(), null);
     }
+
     @ResponseStatus(HttpStatus.CREATED)
     @DeleteMapping(params = {"admin_Id"})
     public ResponseUtil deleteAdmin(@RequestParam String admin_Id) {
