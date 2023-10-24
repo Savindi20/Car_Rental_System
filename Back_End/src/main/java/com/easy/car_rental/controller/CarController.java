@@ -9,7 +9,6 @@ import com.easy.car_rental.service.CarService;
 import com.easy.car_rental.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -61,8 +60,7 @@ public class CarController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @GetMapping(path = "/carIDGenerate")
-    public @ResponseBody
-    CustomDTO customerIdGenerate() {
+    public @ResponseBody CustomDTO customerIdGenerate() {
         return service.carIdGenerate();
     }
 
@@ -106,5 +104,11 @@ public class CarController {
     @GetMapping(path = "/filterCarDetails", params = {"category_type", "fuel_Type"})
     public ArrayList<CarDTO> getFilerData(@RequestParam String category_type, @RequestParam String fuel_Type) {
         return service.getFilerData(category_type, fuel_Type);
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/filterDetails", params = {"name", "fuel_Type","type", "transmission_Type"})
+    public ArrayList<CarDTO> filterCarDetails(@RequestParam String name, @RequestParam String fuel_Type,@RequestParam String type, @RequestParam String transmission_Type) {
+        return service.filterCarDetails(name, fuel_Type,type,transmission_Type);
     }
 }
