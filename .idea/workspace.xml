@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="bookingCars method updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="RentController file added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,11 +50,11 @@
       <recent name="E:\Car_Rental_System\Back_End\src\main\java\com\easy\car_rental\enums" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.easy.car_rental.controller" />
       <recent name="com.easy.car_rental.service.impl" />
       <recent name="com.easy.car_rental.service" />
       <recent name="com.easy.car_rental.repo" />
       <recent name="com.easy.car_rental.dto" />
-      <recent name="com.easy.car_rental.entity" />
     </key>
   </component>
   <component name="RunManager">
@@ -158,7 +156,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698171240079</updated>
       <workItem from="1698171241922" duration="1543000" />
-      <workItem from="1698208660761" duration="9416000" />
+      <workItem from="1698208660761" duration="9926000" />
     </task>
     <task id="LOCAL-00001" summary="Project upload file added and refactored">
       <created>1698172696113</created>
@@ -251,7 +249,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698223469127</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="deleteRent method updated">
+      <created>1698224711004</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698224711004</updated>
+    </task>
+    <task id="LOCAL-00015" summary="RentController file added">
+      <created>1698224975908</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1698224975908</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +295,8 @@
     <MESSAGE value="RentServiceImpl methods added" />
     <MESSAGE value="getAllRent searchId methods updated" />
     <MESSAGE value="bookingCars method updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="bookingCars method updated" />
+    <MESSAGE value="deleteRent method updated" />
+    <MESSAGE value="RentController file added" />
+    <option name="LAST_COMMIT_MESSAGE" value="RentController file added" />
   </component>
 </project>
