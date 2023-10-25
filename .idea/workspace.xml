@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="rent dto rent entity classes updated">
-      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Rent.java" afterDir="false" />
-    </list>
+    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="RentDetail_PK RentDetails classes added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,13 +39,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/enums" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13456464" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Car_Rental_System\Back_End\src\main\java\com\easy\car_rental\entity" />
       <recent name="E:\Car_Rental_System\Back_End\src\main\java\com\easy\car_rental\enums" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -154,7 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698171240079</updated>
       <workItem from="1698171241922" duration="1543000" />
-      <workItem from="1698208660761" duration="2155000" />
+      <workItem from="1698208660761" duration="2892000" />
     </task>
     <task id="LOCAL-00001" summary="Project upload file added and refactored">
       <created>1698172696113</created>
@@ -191,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698211426346</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="RentDetail_PK RentDetails classes added">
+      <created>1698212264311</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698212264311</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +221,7 @@
     <MESSAGE value="Rent dto Rent entity class added" />
     <MESSAGE value="RequestType Rent RentRequest enums added" />
     <MESSAGE value="rent dto rent entity classes updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="rent dto rent entity classes updated" />
+    <MESSAGE value="RentDetail_PK RentDetails classes added" />
+    <option name="LAST_COMMIT_MESSAGE" value="RentDetail_PK RentDetails classes added" />
   </component>
 </project>
