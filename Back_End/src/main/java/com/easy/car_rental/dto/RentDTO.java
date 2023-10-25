@@ -9,6 +9,7 @@ import lombok.ToString;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -25,4 +26,6 @@ public class RentDTO {
     private RentRequest rentType;
     private String location;
     private Reg_UserDTO regUser;
+
+    private List<RentDetailsDTO> rentDetails;
 }
