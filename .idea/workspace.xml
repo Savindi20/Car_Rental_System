@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="RentDetail_PK RentDetails classes added" />
+    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="Rent DTO class updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,8 +50,8 @@
       <recent name="E:\Car_Rental_System\Back_End\src\main\java\com\easy\car_rental\enums" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.easy.car_rental.entity" />
       <recent name="com.easy.car_rental.dto" />
+      <recent name="com.easy.car_rental.entity" />
     </key>
   </component>
   <component name="RunManager">
@@ -153,7 +153,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698171240079</updated>
       <workItem from="1698171241922" duration="1543000" />
-      <workItem from="1698208660761" duration="2892000" />
+      <workItem from="1698208660761" duration="4032000" />
     </task>
     <task id="LOCAL-00001" summary="Project upload file added and refactored">
       <created>1698172696113</created>
@@ -197,7 +197,28 @@
       <option name="project" value="LOCAL" />
       <updated>1698212264311</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="RentDetailsDTO class added">
+      <created>1698212477001</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698212477001</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Rent entity class updated">
+      <created>1698213365211</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698213365211</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Rent DTO class updated">
+      <created>1698213504275</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698213504275</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +243,9 @@
     <MESSAGE value="RequestType Rent RentRequest enums added" />
     <MESSAGE value="rent dto rent entity classes updated" />
     <MESSAGE value="RentDetail_PK RentDetails classes added" />
-    <option name="LAST_COMMIT_MESSAGE" value="RentDetail_PK RentDetails classes added" />
+    <MESSAGE value="RentDetailsDTO class added" />
+    <MESSAGE value="Rent entity class updated" />
+    <MESSAGE value="Rent DTO class updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rent DTO class updated" />
   </component>
 </project>
