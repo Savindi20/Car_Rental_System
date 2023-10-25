@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import static com.easy.car_rental.enums.AvailabilityType.AVAILABLE;
 import static com.easy.car_rental.enums.AvailabilityType.UNAVAILABLE;
 
 @Service
@@ -82,6 +83,26 @@ public class RentServiceImpl implements RentService {
     @Override
     public void deleteRent(String rentID) {
 
+        Rent rent = rentRepo.findById(rentID).get();
+
+        if (rent.getRentDetails().get(0).getDriverID() != null) {
+            Car car = carRepo.findById(rent.getRentDetails().get(0).getCarID()).get();
+            car.setVehicleAvailabilityType(AVAILABLE);
+            carRepo.save(car);
+
+            Driver drivers = driverRepo.findById(rent.getRentDetails().get(0).getDriverID()).get();
+            drivers.setDriverAvailability(AVAILABLE);
+            driverRepo.save(drivers);
+
+            rentRepo.deleteById(rentID);
+        }
+        if (rent.getRentDetails().get(0).getDriverID() == null) {
+            Car car = carRepo.findById(rent.getRentDetails().get(0).getCarID()).get();
+            car.setVehicleAvailabilityType(AVAILABLE);
+            carRepo.save(car);
+
+            rentRepo.deleteById(rentID);
+        }
     }
 
     @Override
