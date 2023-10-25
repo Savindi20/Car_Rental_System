@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 public interface RentService {
 
+    CustomDTO rentIdGenerate();
+
     void bookingCars(@RequestBody RentDTO dto);
 
     ArrayList <RentDTO> getAllRent();
