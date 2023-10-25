@@ -1,5 +1,7 @@
 package com.easy.car_rental.entity;
 
+import com.easy.car_rental.enums.RentRequest;
+import com.easy.car_rental.enums.RequestType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,5 +23,9 @@ public class Rent {
     private LocalTime pickUpTime;
     private LocalDate returnDate;
     private LocalTime returnTime;
+    @Enumerated(EnumType.STRING)
+    private RequestType requestType;
+    @Enumerated(EnumType.STRING)
+    private RentRequest rentType;
     private String location;
 }
