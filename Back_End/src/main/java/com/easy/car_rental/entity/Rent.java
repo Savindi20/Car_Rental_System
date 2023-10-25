@@ -10,6 +10,7 @@ import lombok.ToString;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -28,4 +29,12 @@ public class Rent {
     @Enumerated(EnumType.STRING)
     private RentRequest rentType;
     private String location;
+
+    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH})
+    @JoinColumn(name = "userID", referencedColumnName = "user_Id", nullable = false)
+    private Reg_User regUser;
+
+    @OneToMany(mappedBy = "rent", cascade = CascadeType.ALL)
+    private List<RentDetails> rentDetails;
+
 }
