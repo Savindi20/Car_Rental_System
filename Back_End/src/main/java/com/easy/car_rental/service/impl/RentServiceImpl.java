@@ -75,6 +75,21 @@ public class RentServiceImpl implements RentService {
     }
 
     @Override
+    public CustomDTO getSumOfBooking() {
+        return null;
+    }
+
+    @Override
+    public CustomDTO getSumOfBookingPending() {
+        return null;
+    }
+
+    @Override
+    public CustomDTO getSumOfBookingActive() {
+        return null;
+    }
+
+    @Override
     public ArrayList<RentDTO> getAllRent() {
         return mapper.map(rentRepo.findAll(), new TypeToken<ArrayList<RentDTO>>() {
         }.getType());
@@ -103,6 +118,16 @@ public class RentServiceImpl implements RentService {
 
             rentRepo.deleteById(rentID);
         }
+    }
+
+    @Override
+    public void bookingConform(String rentID, String driverId) {
+
+    }
+
+    @Override
+    public void bookingReject(String rentID, String driverId) {
+
     }
 
     @Override
