@@ -16,10 +16,24 @@ public class RentController {
     private RentService service;
 
     @ResponseStatus(HttpStatus.CREATED)
+    @PostMapping
+    public ResponseUtil placeOrder(@RequestBody RentDTO dto) {
+        service.bookingCars(dto);
+        return new ResponseUtil("Ok", "Successfully Purchased.!", null);
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
     @GetMapping(path = "/loadAllRents")
     public ResponseUtil getAllRents() {
         System.out.println(service.getAllRent());
         return new ResponseUtil("OK", "Successfully Loaded. :", service.getAllRent());
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @DeleteMapping(params = {"id"})
+    public ResponseUtil deleteRent(@RequestParam String id) {
+        service.deleteRent(id);
+        return new ResponseUtil("OK", "Successfully Deleted. :" + id, null);
     }
 
     @ResponseStatus(HttpStatus.CREATED)
