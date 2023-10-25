@@ -16,6 +16,12 @@ public class RentController {
     private RentService service;
 
     @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/rentIdGenerate")
+    public @ResponseBody CustomDTO customerIdGenerate() {
+        return service.rentIdGenerate();
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public ResponseUtil placeOrder(@RequestBody RentDTO dto) {
         service.bookingCars(dto);
