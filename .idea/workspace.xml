@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="Booking BookingPending BookingActive controller methods added">
+    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="bookingConform controller method added">
       <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/service/impl/RentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/service/impl/RentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -160,7 +160,7 @@
       <workItem from="1698171241922" duration="1543000" />
       <workItem from="1698208660761" duration="12862000" />
       <workItem from="1698242172677" duration="3333000" />
-      <workItem from="1698291197356" duration="2908000" />
+      <workItem from="1698291197356" duration="4362000" />
     </task>
     <task id="LOCAL-00001" summary="Project upload file added and refactored">
       <created>1698172696113</created>
@@ -323,7 +323,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698293424228</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="bookingConform service methods added">
+      <created>1698294505503</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1698294505503</updated>
+    </task>
+    <task id="LOCAL-00025" summary="bookingConform controller method added">
+      <created>1698296041926</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1698296041926</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,6 +378,8 @@
     <MESSAGE value="Booking service methods added" />
     <MESSAGE value="getSumOfBooking getSumOfBookingPending getSumOfBookingActive methods added" />
     <MESSAGE value="Booking BookingPending BookingActive controller methods added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Booking BookingPending BookingActive controller methods added" />
+    <MESSAGE value="bookingConform service methods added" />
+    <MESSAGE value="bookingConform controller method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="bookingConform controller method added" />
   </component>
 </project>
