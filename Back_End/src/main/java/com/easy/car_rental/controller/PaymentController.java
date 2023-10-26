@@ -16,6 +16,12 @@ public class PaymentController {
     private PaymentService service;
 
     @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/paymentIdGenerate")
+    public @ResponseBody CustomDTO customerIdGenerate() {
+        return service.paymentIdGenerate();
+    }
+
+    @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public ResponseUtil savePayment(@RequestBody PaymentDTO dto, @RequestParam String rentID) {
         System.out.println(dto);
