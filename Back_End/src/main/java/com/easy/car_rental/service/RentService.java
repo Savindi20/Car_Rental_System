@@ -1,16 +1,13 @@
 package com.easy.car_rental.service;
 
-import antlr.collections.List;
-import com.easy.car_rental.dto.CarDTO;
 import com.easy.car_rental.dto.CustomDTO;
 import com.easy.car_rental.dto.RentDTO;
-import com.easy.car_rental.entity.Car;
-import com.easy.car_rental.entity.Rent;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.ArrayList;
 
 public interface RentService {
+
     CustomDTO rentIdGenerate();
 
     void bookingCars(@RequestBody RentDTO dto);
