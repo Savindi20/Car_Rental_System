@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="bookingReject controller method added">
-      <change afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/dto/DriverScheduleDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front_End/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="DriverScheduleDTO IncomeDTO added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,22 +39,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/dto" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13456464" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Car_Rental_System\Back_End\src\main\java\com\easy\car_rental\dto" />
       <recent name="E:\Car_Rental_System\Back_End\src\main\java\com\easy\car_rental\entity" />
       <recent name="E:\Car_Rental_System\Back_End\src\main\java\com\easy\car_rental\enums" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.easy.car_rental.entity" />
+      <recent name="com.easy.car_rental.enums" />
+      <recent name="com.easy.car_rental.dto" />
       <recent name="com.easy.car_rental.controller" />
       <recent name="com.easy.car_rental.service.impl" />
-      <recent name="com.easy.car_rental.service" />
-      <recent name="com.easy.car_rental.repo" />
-      <recent name="com.easy.car_rental.dto" />
     </key>
   </component>
   <component name="RunManager">
@@ -162,7 +159,7 @@
       <workItem from="1698171241922" duration="1543000" />
       <workItem from="1698208660761" duration="12862000" />
       <workItem from="1698242172677" duration="3333000" />
-      <workItem from="1698291197356" duration="8694000" />
+      <workItem from="1698291197356" duration="9497000" />
     </task>
     <task id="LOCAL-00001" summary="Project upload file added and refactored">
       <created>1698172696113</created>
@@ -353,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698301359751</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="DriverScheduleDTO IncomeDTO added">
+      <created>1698304532426</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1698304532426</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +377,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Project upload file added and refactored" />
     <MESSAGE value="Rent dto Rent entity class added" />
     <MESSAGE value="RequestType Rent RentRequest enums added" />
     <MESSAGE value="rent dto rent entity classes updated" />
@@ -398,6 +401,7 @@
     <MESSAGE value="bookingConform controller method added" />
     <MESSAGE value="bookingReject service method added" />
     <MESSAGE value="bookingReject controller method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="bookingReject controller method added" />
+    <MESSAGE value="DriverScheduleDTO IncomeDTO added" />
+    <option name="LAST_COMMIT_MESSAGE" value="DriverScheduleDTO IncomeDTO added" />
   </component>
 </project>
