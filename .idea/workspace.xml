@@ -11,8 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="Booking service methods added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/service/RentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/service/RentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/service/impl/RentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/service/impl/RentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13456464" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -161,6 +159,8 @@
       <updated>1698171240079</updated>
       <workItem from="1698171241922" duration="1543000" />
       <workItem from="1698208660761" duration="12862000" />
+      <workItem from="1698242172677" duration="3333000" />
+      <workItem from="1698291197356" duration="351000" />
     </task>
     <task id="LOCAL-00001" summary="Project upload file added and refactored">
       <created>1698172696113</created>
@@ -295,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698233147491</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Booking service methods added">
+      <created>1698242528110</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1698242528110</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +340,7 @@
     <MESSAGE value="deleteRent placeOrder controller methods added" />
     <MESSAGE value="rentIdGenerate service controller methods added" />
     <MESSAGE value="Booking queries added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Booking queries added" />
+    <MESSAGE value="Booking service methods added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Booking service methods added" />
   </component>
 </project>
