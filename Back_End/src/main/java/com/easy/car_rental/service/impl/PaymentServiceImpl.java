@@ -39,6 +39,11 @@ public class PaymentServiceImpl implements PaymentService {
     private ModelMapper mapper;
 
     @Override
+    public CustomDTO paymentIdGenerate() {
+        return new CustomDTO(paymentRepo.getLastIndex());
+    }
+
+    @Override
     public void savePayment(PaymentDTO dto,String rentID) {
         Payment payment = mapper.map(dto, Payment.class);
         Rent rent = rentRepo.findById(rentID).get();
