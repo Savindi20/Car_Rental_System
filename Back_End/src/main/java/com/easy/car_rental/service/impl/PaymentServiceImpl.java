@@ -27,6 +27,17 @@ import static com.easy.car_rental.enums.RentRequest.PAY;
 @Transactional
 public class PaymentServiceImpl implements PaymentService {
 
+    @Autowired
+    private PaymentRepo paymentRepo;
+    @Autowired
+    private RentRepo rentRepo;
+    @Autowired
+    private CarRepo carRepo;
+    @Autowired
+    private DriverRepo driverRepo;
+    @Autowired
+    private ModelMapper mapper;
+
     @Override
     public void savePayment(PaymentDTO dto, String rentID) {
 
@@ -34,6 +45,7 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public ArrayList<PaymentDTO> getAllPayment() {
-        return null;
+        return mapper.map(paymentRepo.findAll(), new TypeToken<ArrayList<PaymentDTO>>() {
+        }.getType());
     }
 }
