@@ -23,6 +23,8 @@ import java.util.Random;
 
 import static com.easy.car_rental.enums.AvailabilityType.AVAILABLE;
 import static com.easy.car_rental.enums.AvailabilityType.UNAVAILABLE;
+import static com.easy.car_rental.enums.RentRequest.CONFORM;
+import static com.easy.car_rental.enums.RentRequest.REJECT;
 
 @Service
 @Transactional
@@ -43,7 +45,6 @@ public class RentServiceImpl implements RentService {
 
     @Override
     public void bookingCars(RentDTO dto) {
-
         Rent rent = mapper.map(dto, Rent.class);
 
         if (rentRepo.existsById(dto.getRentID())) {
@@ -76,17 +77,17 @@ public class RentServiceImpl implements RentService {
 
     @Override
     public CustomDTO getSumOfBooking() {
-        return null;
+        return new CustomDTO(rentRepo.getSumOfBooking());
     }
 
     @Override
     public CustomDTO getSumOfBookingPending() {
-        return null;
+        return new CustomDTO(rentRepo.getSumOfBookingPending());
     }
 
     @Override
     public CustomDTO getSumOfBookingActive() {
-        return null;
+        return new CustomDTO(rentRepo.getSumOfBookingActive());
     }
 
     @Override
