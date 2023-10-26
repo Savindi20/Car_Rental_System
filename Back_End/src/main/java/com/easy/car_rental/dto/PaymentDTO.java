@@ -1,5 +1,6 @@
 package com.easy.car_rental.dto;
 
+import com.easy.car_rental.enums.PaymentType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,7 +17,7 @@ public class PaymentDTO {
 
     private String paymentID;
     private RentDTO rentID;
-    private Double paymentType;
+    private PaymentType paymentType;
     private LocalDate date;
     private LocalTime time;
     private Double lostDamage;
