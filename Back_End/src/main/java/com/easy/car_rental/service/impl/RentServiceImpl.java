@@ -123,7 +123,23 @@ public class RentServiceImpl implements RentService {
 
     @Override
     public void bookingConform(String rentID, String driverId) {
+        Rent rent = rentRepo.findById(rentID).get();
+        if (rent.getRentDetails().get(0).getDriverID() != null) {
 
+            Driver drivers = driverRepo.findById(rent.getRentDetails().get(0).getDriverID()).get();
+            drivers.setDriverAvailability(AVAILABLE);
+            driverRepo.save(drivers);
+
+            rent.getRentDetails().get(0).setDriverID(driverId);
+            Driver driver = driverRepo.findById(rent.getRentDetails().get(0).getDriverID()).get();
+            driver.setDriverAvailability(UNAVAILABLE);
+            rent.setRentType(CONFORM);
+            rentRepo.save(rent);
+        }
+        if (rent.getRentDetails().get(0).getDriverID() == null) {
+            rent.setRentType(CONFORM);
+            rentRepo.save(rent);
+        }
     }
 
     @Override
