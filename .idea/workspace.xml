@@ -9,7 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="IncomeService methoods added" />
+    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="dailyIncome methods added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/IncomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/IncomeController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,7 +163,7 @@
       <workItem from="1698208660761" duration="12862000" />
       <workItem from="1698242172677" duration="3333000" />
       <workItem from="1698291197356" duration="17717000" />
-      <workItem from="1698377908354" duration="2139000" />
+      <workItem from="1698377908354" duration="3599000" />
     </task>
     <task id="LOCAL-00001" summary="Project upload file added and refactored">
       <created>1698172696113</created>
@@ -463,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698379915514</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="dailyIncome methods added">
+      <created>1698381315778</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1698381315778</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="rentIdGenerate service controller methods added" />
     <MESSAGE value="Booking queries added" />
     <MESSAGE value="Booking service methods added" />
     <MESSAGE value="getSumOfBooking getSumOfBookingPending getSumOfBookingActive methods added" />
@@ -508,6 +517,7 @@
     <MESSAGE value="IncomeService classes added" />
     <MESSAGE value="IncomeController class added" />
     <MESSAGE value="IncomeService methoods added" />
-    <option name="LAST_COMMIT_MESSAGE" value="IncomeService methoods added" />
+    <MESSAGE value="dailyIncome methods added" />
+    <option name="LAST_COMMIT_MESSAGE" value="dailyIncome methods added" />
   </component>
 </project>
