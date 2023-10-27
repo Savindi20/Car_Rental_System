@@ -26,4 +26,10 @@ public class IncomeController {
     public @ResponseBody ArrayList<IncomeDTO> monthlyIncome() {
         return service.monthlyIncome();
     }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/AnnuallyIncome")
+    public @ResponseBody ArrayList<IncomeDTO> AnnuallyIncome() {
+        return service.AnnuallyIncome();
+    }
 }
