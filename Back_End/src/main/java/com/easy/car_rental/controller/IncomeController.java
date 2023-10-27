@@ -20,4 +20,10 @@ public class IncomeController {
     public @ResponseBody ArrayList<IncomeDTO> dailyIncome() {
         return service.dailyIncome();
     }
+
+    @ResponseStatus(HttpStatus.CREATED)
+    @GetMapping(path = "/monthlyIncome")
+    public @ResponseBody ArrayList<IncomeDTO> monthlyIncome() {
+        return service.monthlyIncome();
+    }
 }
