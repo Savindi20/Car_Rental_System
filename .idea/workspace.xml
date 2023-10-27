@@ -9,8 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="AnnuallyIncome service method added">
-      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/IncomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/IncomeController.java" afterDir="false" />
+    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="AnnuallyIncome controller method added">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front_End/assets/img/car.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front_End/assets/img/car1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front_End/assets/img/cars/bmwi8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Front_End/assets/img/home3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,15 +46,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/dto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Front_End/assets/img" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13456464" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Car_Rental_System\Front_End\assets\img" />
+      <recent name="E:\Car_Rental_System\Front_End\assets\img\cars" />
       <recent name="E:\Car_Rental_System\Back_End\src\main\java\com\easy\car_rental\dto" />
       <recent name="E:\Car_Rental_System\Back_End\src\main\java\com\easy\car_rental\entity" />
       <recent name="E:\Car_Rental_System\Back_End\src\main\java\com\easy\car_rental\enums" />
@@ -162,14 +172,8 @@
       <workItem from="1698208660761" duration="12862000" />
       <workItem from="1698242172677" duration="3333000" />
       <workItem from="1698291197356" duration="17717000" />
-      <workItem from="1698377908354" duration="7994000" />
-    </task>
-    <task id="LOCAL-00002" summary="Rent dto Rent entity class added">
-      <created>1698210571493</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1698210571493</updated>
+      <workItem from="1698377908354" duration="8905000" />
+      <workItem from="1698418309079" duration="10557000" />
     </task>
     <task id="LOCAL-00003" summary="Rent dto Rent entity class added">
       <created>1698211045887</created>
@@ -507,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698398587044</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="AnnuallyIncome controller method added">
+      <created>1698404111440</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1698404111440</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,7 +538,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="bookingReject service method added" />
     <MESSAGE value="bookingReject controller method added" />
     <MESSAGE value="DriverScheduleDTO IncomeDTO added" />
     <MESSAGE value="PaymentDTO added" />
@@ -552,6 +562,7 @@
     <MESSAGE value="MonthlyIncome controller method added" />
     <MESSAGE value="AnnuallyIncome query method added" />
     <MESSAGE value="AnnuallyIncome service method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="AnnuallyIncome service method added" />
+    <MESSAGE value="AnnuallyIncome controller method added" />
+    <option name="LAST_COMMIT_MESSAGE" value="AnnuallyIncome controller method added" />
   </component>
 </project>

@@ -44,7 +44,7 @@
       </ul>
     </nav>
     <!-- .navbar -->
-    <a class="btn-login-user" href="pages/login.html">Login</a>
+
     <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
     <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
   </div>
@@ -56,17 +56,17 @@
   <div class="container">
     <div class="row justify-content-between gy-5">
       <div class="col-lg-5 order-3 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-        <h2 data-aos="fade-up">Drive Your Dreams, Rent with Easy</h2>
+        <h2 data-aos="fade-up" >Drive Your Dreams, Rent with Easy</h2>
         <p data-aos="fade-up" data-aos-delay="100">
           "Welcome to <span style=" font-weight: 600;">Easy Car Rental</span>, your gateway to hassle-free car rentals. From business trips to weekend escapes, we've got the perfect car for you. Experience the open road with ease as we simplify your rental journey.
         </p>
         <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-          <a class="btn-Register-customer-new" href="#Register-customer-new">Register</a>
+          <a class="btn-login-user" href="pages/login.html">Login</a>
         </div>
       </div>
-      <div class="col-lg-5 order-1 order-lg-5 text-center text-lg-start">
-        <img src="assets/img/cars/index9.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300" style="width: 100%">
-      </div>
+<!--      <div class="col-lg-5 order-1 order-lg-5 text-center text-lg-start">-->
+<!--        <img src="assets/img/cars/index9.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300" style="width: 100%">-->
+<!--      </div>-->
     </div>
   </div>
 </section>
@@ -125,14 +125,16 @@
 
         <div class="section-header">
           <h2>Our Cars</h2>
-          <p>Explore Our <span>Car Inventory</span></p>
+          <p>Check Our <span>Car Stock</span></p>
         </div>
 
-        <div class="form-container sectionBorder">
-          <form action="" id="form-control">
+        <div class="form-container sectionBorder row g-0">
+          <img src="assets/img/car1.jpg" alt="" class="col-lg-4" style="border-radius: 15px; height: 367px">
+
+          <form action="" id="form-control" class="col-lg-8">
             <div class="input-box">
               <span class="span m-1"> Car Name</span>
-              <input id="cName" name="" placeholder="Car Name" type="search">
+              <input id="cName" name="" placeholder="Car Name" type="search" style="border: 1px solid #d9d9d9">
             </div>
             <div class="input-box">
               <span class="span m-1">Fuel Type</span>
@@ -201,11 +203,11 @@
 
       <div class="row g-0">
 
-        <div class="col-lg-4 register-img sectionBorder"
-             data-aos="zoom-out" data-aos-delay="200"
-             style="background-image: url(assets/img/Customer_form.jpeg);"></div>
+<!--        <div class="col-lg-4 register-img sectionBorder"-->
+<!--             data-aos="zoom-out" data-aos-delay="200"-->
+<!--             style="background-image: url(assets/img/Customer_form.jpeg);"></div>-->
 
-        <div class="col-lg-8 d-flex align-items-center register-form-bg sectionBorder">
+        <div class="d-flex align-items-center register-form-bg sectionBorder">
           <form action="customer" class="reg-customer-form" data-aos="fade-up" data-aos-delay="100"
                 id="customerForm"
                 method="post" role="form">
@@ -313,7 +315,7 @@
       </div>
       <div class="row gy-4 mt-3">
 
-        <div class="col-md-6 ">
+        <div class="col-md-3 ">
           <div class="info-item d-flex align-items-center sectionBorder ">
             <i class="icon bi bi-map flex-shrink-0 "></i>
             <div>
@@ -324,7 +326,7 @@
         </div>
         <!-- End Info Item -->
 
-        <div class="col-md-6 ">
+        <div class="col-md-3 ">
           <div class="info-item d-flex align-items-center sectionBorder ">
             <i class="icon bi bi-envelope flex-shrink-0 "></i>
             <div>
@@ -335,7 +337,7 @@
         </div>
         <!-- End Info Item -->
 
-        <div class="col-md-6 ">
+        <div class="col-md-3 ">
           <div class="info-item d-flex align-items-center sectionBorder ">
             <i class="icon bi bi-telephone flex-shrink-0 "></i>
             <div>
@@ -346,13 +348,12 @@
         </div>
         <!-- End Info Item -->
 
-        <div class="col-md-6 ">
+        <div class="col-md-3 ">
           <div class="info-item d-flex align-items-center sectionBorder ">
             <i class="icon bi bi-share flex-shrink-0 "></i>
             <div>
               <h3>Opening Hours</h3>
-              <div><strong>Mon - Sat:</strong> 24 Hours<br>
-                <strong>Sunday:</strong> Closed
+              <div><strong>Mon - Sun:</strong> 24/7 <br>
               </div>
 
             </div>
