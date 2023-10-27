@@ -32,6 +32,6 @@ public class IncomeServiceImpl implements IncomeService {
 
     @Override
     public ArrayList<IncomeDTO> AnnuallyIncome() {
-        return null;
+        return new ArrayList<IncomeDTO>(incomeService.AnnuallyIncome());
     }
 }
