@@ -3,10 +3,6 @@ package com.easy.car_rental.service;
 import com.easy.car_rental.dto.CustomDTO;
 import com.easy.car_rental.dto.Reg_UserDTO;
 import com.easy.car_rental.entity.Reg_User;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import com.easy.car_rental.dto.Reg_UserDTO;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.ArrayList;
 

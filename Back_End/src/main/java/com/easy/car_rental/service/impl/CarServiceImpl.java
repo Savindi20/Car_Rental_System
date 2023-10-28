@@ -3,11 +3,7 @@ package com.easy.car_rental.service.impl;
 import com.easy.car_rental.dto.CarDTO;
 import com.easy.car_rental.dto.CustomDTO;
 import com.easy.car_rental.embeded.Image;
-import com.easy.car_rental.embeded.ImageDTO;
 import com.easy.car_rental.entity.Car;
-import com.easy.car_rental.enums.CarType;
-import com.easy.car_rental.enums.FuelType;
-import com.easy.car_rental.enums.TransmissionType;
 import com.easy.car_rental.repo.CarRepo;
 import com.easy.car_rental.service.CarService;
 import org.modelmapper.ModelMapper;
@@ -19,9 +15,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 
 @Service
