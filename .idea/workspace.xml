@@ -9,12 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="AnnuallyIncome controller method added">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front_End/assets/img/car.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front_End/assets/img/car1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front_End/assets/img/cars/bmwi8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Front_End/assets/img/home3.jpg" afterDir="false" />
+    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="project refactored">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Front_End/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Front_End/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/index.html" afterDir="false" />
@@ -44,6 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -173,14 +170,8 @@
       <workItem from="1698242172677" duration="3333000" />
       <workItem from="1698291197356" duration="17717000" />
       <workItem from="1698377908354" duration="8905000" />
-      <workItem from="1698418309079" duration="10557000" />
-    </task>
-    <task id="LOCAL-00003" summary="Rent dto Rent entity class added">
-      <created>1698211045887</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1698211045887</updated>
+      <workItem from="1698418309079" duration="11136000" />
+      <workItem from="1698462088174" duration="4095000" />
     </task>
     <task id="LOCAL-00004" summary="RequestType Rent RentRequest enums added">
       <created>1698211223852</created>
@@ -518,7 +509,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698404111440</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="project refactored">
+      <created>1698438466055</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1698438466055</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +536,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="bookingReject controller method added" />
     <MESSAGE value="DriverScheduleDTO IncomeDTO added" />
     <MESSAGE value="PaymentDTO added" />
     <MESSAGE value="PaymentType enum added" />
@@ -563,6 +560,7 @@
     <MESSAGE value="AnnuallyIncome query method added" />
     <MESSAGE value="AnnuallyIncome service method added" />
     <MESSAGE value="AnnuallyIncome controller method added" />
-    <option name="LAST_COMMIT_MESSAGE" value="AnnuallyIncome controller method added" />
+    <MESSAGE value="project refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="project refactored" />
   </component>
 </project>

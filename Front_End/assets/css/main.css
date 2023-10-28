@@ -856,14 +856,14 @@ section {
     border-radius: 15px;
 }
 
-.list-group-item {
-    background: #eee;
-    padding: 6px;
-    margin-bottom: -1px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 20px;
-}
+/*.list-group-item {*/
+/*    background: #eee;*/
+/*    padding: 6px;*/
+/*    margin-bottom: -1px;*/
+/*    border-radius: 15px;*/
+/*    text-align: center;*/
+/*    font-size: 20px;*/
+/*}*/
 
 @media (max-device-width: 990px) {
     .list-group-item {
@@ -913,7 +913,7 @@ section {
 }
 
 .span {
-    color: #ffffff;
+    color: #000000;
     font-size: 1.1em;
     font-weight: bolder;
     opacity: 0.8;
