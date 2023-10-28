@@ -10,10 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="project refactored">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front_End/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front_End/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/pages/adminDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/pages/adminDashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/pages/adminPages/CarManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/pages/adminPages/CarManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/pages/adminPages/CusomerRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/pages/adminPages/CusomerRequest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/pages/adminPages/DriverManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/pages/adminPages/DriverManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/pages/adminPages/IncomeDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/pages/adminPages/IncomeDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/pages/adminPages/PaymentDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/pages/adminPages/PaymentDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/pages/adminPages/Reg_UserManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/pages/adminPages/Reg_UserManage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/pages/adminPages/RentDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/pages/adminPages/RentDetails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/pages/driverDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/pages/driverDashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/pages/reg_UserDashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/pages/reg_UserDashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,14 +178,7 @@
       <workItem from="1698291197356" duration="17717000" />
       <workItem from="1698377908354" duration="8905000" />
       <workItem from="1698418309079" duration="11136000" />
-      <workItem from="1698462088174" duration="4095000" />
-    </task>
-    <task id="LOCAL-00004" summary="RequestType Rent RentRequest enums added">
-      <created>1698211223852</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1698211223852</updated>
+      <workItem from="1698462088174" duration="6504000" />
     </task>
     <task id="LOCAL-00005" summary="rent dto rent entity classes updated">
       <created>1698211426346</created>
@@ -516,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698438466055</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="project refactored">
+      <created>1698467095067</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1698467095067</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
