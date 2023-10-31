@@ -11,12 +11,15 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
 @Data
+//getters ,setters ,equals,hashcode to string wani methods ganarate karanna use karanawa
+@NoArgsConstructor
+//automatically generate a no-argument contractor
+@AllArgsConstructor
+//automatically generate a parametes contractor
+@ToString
+//automatically generate a to string() method for clz
 public class RentDTO {
-
     private String rentID;
     private LocalDate pickUpDate;
     private LocalTime pickUpTime;
@@ -26,6 +29,5 @@ public class RentDTO {
     private RentRequest rentType;
     private String location;
     private Reg_UserDTO regUser;
-
     private List<RentDetailsDTO> rentDetails;
 }

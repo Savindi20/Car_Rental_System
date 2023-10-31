@@ -9,12 +9,15 @@ import lombok.ToString;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
 @Data
+//getters ,setters ,equals,hashcode to string wani methods ganarate karanna use karanawa
+@NoArgsConstructor
+//automatically generate a no-argument contractor
+@AllArgsConstructor
+//automatically generate a parametes contractor
+@ToString
+//automatically generate a to string() method for clz
 public class PaymentDTO {
-
     private String paymentID;
     private RentDTO rentID;
     private PaymentType paymentType;

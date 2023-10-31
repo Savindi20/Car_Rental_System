@@ -9,10 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="project back end meta data added">
+    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="config classes annotation meaning added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/JPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/JPAConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/WebAppConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,14 +172,7 @@
       <workItem from="1698481284865" duration="15840000" />
       <workItem from="1698552450018" duration="1502000" />
       <workItem from="1698638489948" duration="5972000" />
-      <workItem from="1698772794231" duration="1968000" />
-    </task>
-    <task id="LOCAL-00008" summary="Rent entity class updated">
-      <created>1698213365211</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1698213365211</updated>
+      <workItem from="1698772794231" duration="2907000" />
     </task>
     <task id="LOCAL-00009" summary="Rent DTO class updated">
       <created>1698213504275</created>
@@ -519,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698776268983</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="config classes annotation meaning added">
+      <created>1698777235026</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1698777235026</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +537,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Payment entity class added" />
     <MESSAGE value="PaymentRepo PaymentService added" />
     <MESSAGE value="PaymentServiceImpl added" />
     <MESSAGE value="getAllPayment method added" />
@@ -564,6 +561,7 @@
     <MESSAGE value="project icons refactored" />
     <MESSAGE value="project back end refactored" />
     <MESSAGE value="project back end meta data added" />
-    <option name="LAST_COMMIT_MESSAGE" value="project back end meta data added" />
+    <MESSAGE value="config classes annotation meaning added" />
+    <option name="LAST_COMMIT_MESSAGE" value="config classes annotation meaning added" />
   </component>
 </project>

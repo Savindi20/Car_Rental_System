@@ -9,9 +9,13 @@ import lombok.ToString;
 import org.springframework.web.multipart.MultipartFile;
 
 @Data
+//getters ,setters ,equals,hashcode to string wani methods ganarate karanna use karanawa
 @NoArgsConstructor
+//automatically generate a no-argument contractor
 @AllArgsConstructor
+//automatically generate a parametes contractor
 @ToString
+//automatically generate a to string() method for clz
 public class DriverDTO {
     private String user_Id;
     private Name name;
