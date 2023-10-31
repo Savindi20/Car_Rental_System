@@ -10,10 +10,16 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
+// Spring container එකට spring beans(POJOs) වැටෙන්න ඕන විදිය කියන class එකක්.
+//(Bean definition වලට source එකක්)
 @EnableWebMvc
+//Web mvc application ekk enable rnn bawitha krnw
 @ComponentScan(basePackageClasses = {AppWideExceptionHandler.class}, basePackages = "com.easy.car_rental.controller")
+//Beans scan කරන්න ඕන path එක (basePackages, basePackageClasses)
 public class WebAppConfig implements WebMvcConfigurer {
+
     @Bean
+    //අපේ නොවන class එකකින් spring bean හදන්න
     public CommonsMultipartResolver multipartResolver() {
         CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
         multipartResolver.setMaxUploadSize(500000000);
@@ -21,6 +27,7 @@ public class WebAppConfig implements WebMvcConfigurer {
     }
 
     @Override
+    //Supper class ekaka method ekk gnn
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/uploads/**").addResourceLocations("/uploads/");
     }

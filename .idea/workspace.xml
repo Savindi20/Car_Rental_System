@@ -9,28 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="project back end refactored">
+    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="project back end meta data added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/service/impl/CarServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/service/impl/CarServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/IncomeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/IncomeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/PaymentServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/PaymentServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/PaymentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/PaymentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/IncomeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/IncomeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/PaymentServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/PaymentServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/PaymentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/PaymentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/JPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/JPAConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/WebAppConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,14 +174,7 @@
       <workItem from="1698481284865" duration="15840000" />
       <workItem from="1698552450018" duration="1502000" />
       <workItem from="1698638489948" duration="5972000" />
-      <workItem from="1698772794231" duration="1301000" />
-    </task>
-    <task id="LOCAL-00007" summary="RentDetailsDTO class added">
-      <created>1698212477001</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1698212477001</updated>
+      <workItem from="1698772794231" duration="1968000" />
     </task>
     <task id="LOCAL-00008" summary="Rent entity class updated">
       <created>1698213365211</created>
@@ -537,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698484532932</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="project back end meta data added">
+      <created>1698776268983</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1698776268983</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,7 +539,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="PaymentType enum added" />
     <MESSAGE value="Payment entity class added" />
     <MESSAGE value="PaymentRepo PaymentService added" />
     <MESSAGE value="PaymentServiceImpl added" />
@@ -582,6 +563,7 @@
     <MESSAGE value="project refactored" />
     <MESSAGE value="project icons refactored" />
     <MESSAGE value="project back end refactored" />
-    <option name="LAST_COMMIT_MESSAGE" value="project back end refactored" />
+    <MESSAGE value="project back end meta data added" />
+    <option name="LAST_COMMIT_MESSAGE" value="project back end meta data added" />
   </component>
 </project>

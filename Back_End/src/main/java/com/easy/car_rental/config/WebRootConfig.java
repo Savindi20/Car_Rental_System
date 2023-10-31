@@ -7,10 +7,15 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
+// Spring container එකට spring beans(POJOs) වැටෙන්න ඕන විදිය කියන class එකක්.
+//(Bean definition වලට source එකක්)
 @Import(JPAConfig.class)
 @ComponentScan(basePackages = "com.easy.car_rental.service")
+//Beans scan කරන්න ඕන path එක (basePackages, basePackageClasses)
 public class WebRootConfig {
+
     @Bean
+    //අපේ නොවන class එකකින් spring bean හදන්න
     public ModelMapper modelMapper(){
         return new ModelMapper();
     }

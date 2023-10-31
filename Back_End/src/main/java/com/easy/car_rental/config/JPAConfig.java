@@ -19,13 +19,22 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 @Configuration
-@EnableTransactionManagement //AOP Usage
+// Spring container එකට spring beans(POJOs) වැටෙන්න ඕන විදිය කියන class එකක්.
+//(Bean definition වලට source එකක්)
+@EnableTransactionManagement
+//AOP Usage (methods and classes වල transactions manage කරයි)
 @EnableJpaRepositories(basePackages = "com.easy.car_rental.repo")
+//JPA repositories enable කරයි.
 @PropertySource("classpath:application.properties")
+// property file wala location eka penn bawitha krnw.
 public class JPAConfig {
+
     @Autowired
+    //dependencies inject කරන්න (constructor overloading constructor choose කරයි.)
     private Environment env;
+
     @Bean
+    //අපේ නොවන class එකකින් spring bean හදන්න
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource ds, JpaVendorAdapter va) {
         LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
         factoryBean.setPackagesToScan(env.getRequiredProperty("pro.entity"));
