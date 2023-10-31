@@ -8,7 +8,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
+//Handling logic maintain karnn
+//Global exception handle krnn
 @CrossOrigin
+// E kiyanne domains  athi Web Pages walata security feature eka denna kiyala
 public class AppWideExceptionHandler {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler({RuntimeException.class})
@@ -17,3 +20,6 @@ public class AppWideExceptionHandler {
         return new ResponseUtil("Error", e.getMessage(), null);
     }
 }
+//  @ResponseStatus -HTTP status code eka response ekk widiyt denwa.
+
+//@ExceptionHandler-Controllers walin throw krn exception handle kiranwa.
