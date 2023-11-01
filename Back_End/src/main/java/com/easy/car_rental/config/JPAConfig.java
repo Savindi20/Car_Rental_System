@@ -19,8 +19,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 @Configuration
-// Spring container එකට spring beans(POJOs) වැටෙන්න ඕන විදිය කියන class එකක්.
-//(Bean definition වලට source එකක්)
+// Spring container එකට spring beans(POJOs) dana class ekk.(Bean definition වලට source එකක්)
 @EnableTransactionManagement
 //AOP Usage (methods and classes වල transactions manage කරයි)
 @EnableJpaRepositories(basePackages = "com.easy.car_rental.repo")

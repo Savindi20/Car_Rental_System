@@ -9,7 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="repo classes annotation meaning added" />
+    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="service classes annotation meaning added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/advisor/AppWideExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/advisor/AppWideExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/JPAConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/JPAConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/WebAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/WebRootConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/config/WebRootConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/CarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/DriverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/DriverController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/IncomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/IncomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/Reg_UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/Reg_UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/RentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/controller/RentController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,21 +185,7 @@
       <workItem from="1698552450018" duration="1502000" />
       <workItem from="1698638489948" duration="5972000" />
       <workItem from="1698772794231" duration="5821000" />
-      <workItem from="1698810319198" duration="5867000" />
-    </task>
-    <task id="LOCAL-00014" summary="deleteRent method updated">
-      <created>1698224711004</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1698224711004</updated>
-    </task>
-    <task id="LOCAL-00015" summary="RentController file added">
-      <created>1698224975908</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1698224975908</updated>
+      <workItem from="1698810319198" duration="10466000" />
     </task>
     <task id="LOCAL-00016" summary="getAllRents searchId method added">
       <created>1698231537922</created>
@@ -516,7 +516,21 @@
       <option name="project" value="LOCAL" />
       <updated>1698818141495</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="util classes annotation meaning added">
+      <created>1698818271218</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1698818271218</updated>
+    </task>
+    <task id="LOCAL-00064" summary="service classes annotation meaning added">
+      <created>1698818951287</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1698818951287</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,8 +550,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="savePayment getAllPayment controller methods added" />
-    <MESSAGE value="paymentIdGenerate query methods added" />
     <MESSAGE value="customerIdGenerate methods added" />
     <MESSAGE value="IncomeRepo class added" />
     <MESSAGE value="IncomeService classes added" />
@@ -561,6 +573,8 @@
     <MESSAGE value="embedded classes annotation meaning added" />
     <MESSAGE value="entity classes annotation meaning added" />
     <MESSAGE value="repo classes annotation meaning added" />
-    <option name="LAST_COMMIT_MESSAGE" value="repo classes annotation meaning added" />
+    <MESSAGE value="util classes annotation meaning added" />
+    <MESSAGE value="service classes annotation meaning added" />
+    <option name="LAST_COMMIT_MESSAGE" value="service classes annotation meaning added" />
   </component>
 </project>

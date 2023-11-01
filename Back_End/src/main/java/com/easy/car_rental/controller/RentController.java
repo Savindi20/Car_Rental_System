@@ -9,11 +9,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-//Backend එකේ ඉදන් යවන ඕනම data format එකක්(String,HTML,JSON),
-//HTTP response එකක් විදියට wrap කරල front end එකට යවන්න පුලුවන්.
-//(වැවිපුරම use වෙන format එක JSON)
+//ඕනම data format එකක data ekk HTTP response එකක් විදියට wrap කරල front end එකට යවන්න පුලුවන්
 @CrossOrigin
-// E kiyanne domains  athi Web Pages walata security feature eka denn
+// domains Web Pages walata security feature eka denna kiyala
 @RequestMapping("/rent")
 //handler mapping (URL path එකට map කරයි)
 public class RentController {
@@ -35,7 +33,7 @@ public class RentController {
     @PostMapping
     //http method එක කියන්න Use කරයි. (Handler method උඩින් දාන annotations)
     public ResponseUtil placeOrder(@RequestBody RentDTO dto) {
-        //Request Body එක විදියට JSON format එකක් (@RequestBody Required annotation)
+        //bind the HTTP request body to a domain object (Required annotation)
         service.bookingCars(dto);
         return new ResponseUtil("Ok", "Successfully Purchased.!", null);
     }

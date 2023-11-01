@@ -10,8 +10,7 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-// Spring container එකට spring beans(POJOs) වැටෙන්න ඕන විදිය කියන class එකක්.
-//(Bean definition වලට source එකක්)
+// Spring container එකට spring beans(POJOs) dana class ekk.(Bean definition වලට source එකක්)
 @EnableWebMvc
 //Web mvc application ekk enable rnn bawitha krnw
 @ComponentScan(basePackageClasses = {AppWideExceptionHandler.class}, basePackages = "com.easy.car_rental.controller")

@@ -14,11 +14,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
 @RestController
-//Backend එකේ ඉදන් යවන ඕනම data format එකක්(String,HTML,JSON),
-//HTTP response එකක් විදියට wrap කරල front end එකට යවන්න පුලුවන්.
-//(වැවිපුරම use වෙන format එක JSON)
+//ඕනම data format එකක data ekk HTTP response එකක් විදියට wrap කරල front end එකට යවන්න පුලුවන්
 @CrossOrigin
-// E kiyanne domains  athi Web Pages walata security feature eka denn
+// domains Web Pages walata security feature eka denna kiyala
 @RequestMapping("/car")
 //handler mapping (URL path එකට map කරයි)
 public class CarController {

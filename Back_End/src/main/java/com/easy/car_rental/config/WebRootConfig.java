@@ -7,8 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
-// Spring container එකට spring beans(POJOs) වැටෙන්න ඕන විදිය කියන class එකක්.
-//(Bean definition වලට source එකක්)
+// Spring container එකට spring beans(POJOs) dana class ekk.(Bean definition වලට source එකක්)
 @Import(JPAConfig.class)
 //import one or more configuration classes into the current configuration class
 @ComponentScan(basePackages = "com.easy.car_rental.service")
