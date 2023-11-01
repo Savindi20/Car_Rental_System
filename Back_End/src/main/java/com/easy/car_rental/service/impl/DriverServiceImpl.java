@@ -18,16 +18,20 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 @Service
+//service clz ekak (business logic ,external API thiyenawa)
 @Transactional
+//transaction thiyena method, clz adura gannna
 public class DriverServiceImpl implements DriverService {
 
     @Autowired
+    //dependencies inject කරන්න (constructor overloading constructor choose කරයි.)
     private DriverRepo repo;
 
     @Autowired
     private ModelMapper mapper;
 
     @Override
+    //Supper class ekaka method ekk gnn
     public void saveDriver(DriverDTO dto) {
 
         Driver driver = new Driver(dto.getUser_Id(), dto.getName(), dto.getContact_No(), dto.getAddress(), dto.getEmail(), dto.getNic_No(), dto.getLicense_No(), "", dto.getDriverAvailability(), new User(dto.getUser().getUser_Id(), dto.getUser().getRole_Type(), dto.getUser().getUser_Name(), dto.getUser().getPassword()));

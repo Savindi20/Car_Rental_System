@@ -27,9 +27,13 @@ import static com.easy.car_rental.enums.RentRequest.CONFORM;
 import static com.easy.car_rental.enums.RentRequest.REJECT;
 
 @Service
+//service clz ekak (business logic ,external API thiyenawa)
 @Transactional
+//transaction thiyena method, clz adura gannna
 public class RentServiceImpl implements RentService {
+
     @Autowired
+    //dependencies inject කරන්න (constructor overloading constructor choose කරයි.)
     private RentRepo rentRepo;
     @Autowired
     private CarRepo carRepo;
@@ -39,6 +43,7 @@ public class RentServiceImpl implements RentService {
     private ModelMapper mapper;
 
     @Override
+    //Supper class ekaka method ekk gnn
     public CustomDTO rentIdGenerate() {
         return new CustomDTO(rentRepo.getLastIndex());
     }

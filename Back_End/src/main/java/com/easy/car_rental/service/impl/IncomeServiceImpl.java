@@ -11,16 +11,20 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 
 @Service
+//service clz ekak (business logic ,external API thiyenawa)
 @Transactional
+//transaction thiyena method, clz adura gannna
 public class IncomeServiceImpl implements IncomeService {
 
     @Autowired
+    //dependencies inject කරන්න (constructor overloading constructor choose කරයි.)
     private IncomeRepo incomeService;
 
     @Autowired
     private ModelMapper mapper;
 
     @Override
+    //Supper class ekaka method ekk gnn
     public ArrayList<IncomeDTO> dailyIncome() {
         return new ArrayList<IncomeDTO>(incomeService.dailyIncome());
     }

@@ -12,10 +12,13 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 
 @Service
+//service clz ekak (business logic ,external API thiyenawa)
 @Transactional
+//transaction thiyena method, clz adura gannna
 public class UserServiceImpl implements UserService {
 
     @Autowired
+    //dependencies inject කරන්න (constructor overloading constructor choose කරයි.)
     private UserRepo repo;
 
     @Autowired
@@ -23,6 +26,7 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
+    //Supper class ekaka method ekk gnn
     public ArrayList<UserDTO> getAllRegUsers() {
         return mapper.map(repo.findAll(), new TypeToken<ArrayList<UserDTO>>() {
         }.getType());

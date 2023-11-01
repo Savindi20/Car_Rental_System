@@ -18,16 +18,20 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 @Service
+//service clz ekak (business logic ,external API thiyenawa)
 @Transactional
+//transaction thiyena method, clz adura gannna
 public class CarServiceImpl implements CarService {
 
     @Autowired
+    //dependencies inject කරන්න (constructor overloading constructor choose කරයි.)
     private CarRepo repo;
 
     @Autowired
     private ModelMapper mapper;
 
     @Override
+    //Supper class ekaka method ekk gnn
     public void saveCar(CarDTO dto) {
         Car car = new Car(dto.getCar_Id(), dto.getName(), dto.getBrand(), dto.getType(), new Image(), dto.getNumber_Of_Passengers(), dto.getTransmission_Type(), dto.getFuel_Type(), dto.getRent_Duration_Price(), dto.getPrice_Extra_KM(), dto.getRegistration_Number(), dto.getFree_Mileage(), dto.getColor(), dto.getVehicleAvailabilityType());
         if (repo.existsById(dto.getCar_Id())) {

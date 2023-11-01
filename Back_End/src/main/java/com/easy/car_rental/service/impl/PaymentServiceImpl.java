@@ -24,10 +24,13 @@ import static com.easy.car_rental.enums.AvailabilityType.UNDER_MAINTAIN;
 import static com.easy.car_rental.enums.RentRequest.PAY;
 
 @Service
+//service clz ekak (business logic ,external API thiyenawa)
 @Transactional
+//transaction thiyena method, clz adura gannna
 public class PaymentServiceImpl implements PaymentService {
 
     @Autowired
+    //dependencies inject කරන්න (constructor overloading constructor choose කරයි.)
     private PaymentRepo paymentRepo;
     @Autowired
     private RentRepo rentRepo;
@@ -39,6 +42,7 @@ public class PaymentServiceImpl implements PaymentService {
     private ModelMapper mapper;
 
     @Override
+    //Supper class ekaka method ekk gnn
     public CustomDTO paymentIdGenerate() {
         return new CustomDTO(paymentRepo.getLastIndex());
     }

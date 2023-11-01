@@ -13,15 +13,20 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 
 @Service
+//service clz ekak (business logic ,external API thiyenawa)
 @Transactional
+//transaction thiyena method, clz adura gannna
 public class AdminServiceImpl implements AdminService {
+
     @Autowired
+    //dependencies inject කරන්න (constructor overloading constructor choose කරයි.)
     private AdminRepo repo;
 
     @Autowired
     private ModelMapper mapper;
 
     @Override
+    //Supper class ekaka method ekk gnn
     public void saveAdmin(AdminDTO dto) {
         if (repo.existsById(dto.getUser_Id())) {
             throw new RuntimeException("Admin Already Exist. Please enter another id..!");

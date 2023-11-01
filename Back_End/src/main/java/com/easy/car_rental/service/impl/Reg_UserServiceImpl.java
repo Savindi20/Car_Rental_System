@@ -18,15 +18,19 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 @Service
+//service clz ekak (business logic ,external API thiyenawa)
 @Transactional
+//transaction thiyena method, clz adura gannna
 public class Reg_UserServiceImpl implements Reg_UserService {
 
     @Autowired
+    //dependencies inject කරන්න (constructor overloading constructor choose කරයි.)
     private Reg_UserRepo repo;
     @Autowired
     private ModelMapper mapper;
 
     @Override
+    //Supper class ekaka method ekk gnn
     public void saveUser(Reg_UserDTO dto) {
 
         Reg_User regUser = new Reg_User(dto.getUser_Id(), dto.getName(), dto.getContact_No(), dto.getAddress(), dto.getEmail(), dto.getNic(), dto.getLicense_No(), "", "", new User(dto.getUser().getUser_Id(), dto.getUser().getRole_Type(), dto.getUser().getUser_Name(), dto.getUser().getPassword()));
