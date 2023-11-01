@@ -9,27 +9,40 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+//Backend එකේ ඉදන් යවන ඕනම data format එකක්(String,HTML,JSON),
+//HTTP response එකක් විදියට wrap කරල front end එකට යවන්න පුලුවන්.
+//(වැවිපුරම use වෙන format එක JSON)
 @CrossOrigin
+// E kiyanne domains  athi Web Pages walata security feature eka denn
 @RequestMapping("/rent")
+//handler mapping (URL path එකට map කරයි)
 public class RentController {
+
     @Autowired
+    //dependencies inject කරන්න (constructor overloading constructor choose කරයි.)
     private RentService service;
 
     @ResponseStatus(HttpStatus.CREATED)
-    @GetMapping(path = "/rentIdGenerate")
+    //HTTP status code eka response ekk widiyt denwa.
+    @GetMapping(path = "/rentIdGenerate")//path variable
+    //http method එක කියන්න Use කරයි. (Handler method උඩින් දාන annotations)
     public @ResponseBody CustomDTO customerIdGenerate() {
+        //(@ResponseBody)return value eka serialized karala kelinma response body ekt dei
         return service.rentIdGenerate();
     }
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
+    //http method එක කියන්න Use කරයි. (Handler method උඩින් දාන annotations)
     public ResponseUtil placeOrder(@RequestBody RentDTO dto) {
+        //Request Body එක විදියට JSON format එකක් (@RequestBody Required annotation)
         service.bookingCars(dto);
         return new ResponseUtil("Ok", "Successfully Purchased.!", null);
     }
 
     @ResponseStatus(HttpStatus.CREATED)
     @GetMapping(path = "/booking")
+    //http method එක කියන්න Use කරයි. (Handler method උඩින් දාන annotations)
     public @ResponseBody CustomDTO getSumOfBooking() {
         return service.getSumOfBooking();
     }
@@ -54,8 +67,9 @@ public class RentController {
     }
 
     @ResponseStatus(HttpStatus.CREATED)
-    @DeleteMapping(params = {"id"})
+    @DeleteMapping(params = {"id"}) //Query String Parameter
     public ResponseUtil deleteRent(@RequestParam String id) {
+        //parameter ඇතුලෙ තියෙන values ගන්න use කරයි (@RequestParam not required)
         service.deleteRent(id);
         return new ResponseUtil("OK", "Successfully Deleted. :" + id, null);
     }

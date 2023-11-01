@@ -12,15 +12,24 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+//Backend එකේ ඉදන් යවන ඕනම data format එකක්(String,HTML,JSON),
+//HTTP response එකක් විදියට wrap කරල front end එකට යවන්න පුලුවන්.
+//(වැවිපුරම use වෙන format එක JSON)
 @CrossOrigin
+// E kiyanne domains  athi Web Pages walata security feature eka denn
 @RequestMapping("/driver")
+//handler mapping (URL path එකට map කරයි)
 public class DriverController {
     @Autowired
+    //dependencies inject කරන්න (constructor overloading constructor choose කරයි.)
     private DriverService service;
 
     @ResponseStatus(HttpStatus.CREATED)
+    //HTTP status code eka response ekk widiyt denwa.
     @PostMapping
+    //http method එක කියන්න Use කරයි. (Handler method උඩින් දාන annotations)
     public ResponseUtil saveDriver(@ModelAttribute DriverDTO driverDTO, @ModelAttribute UserDTO userDTO, @ModelAttribute Name name) {
+        //X-WWW-Form-Url-Encoded type එකේ data, dto එකකට fill කරගන්න use කරයි.(@ModelAttribute-not required)
         driverDTO.setUser(userDTO);
         driverDTO.setName(name);
         service.saveDriver(driverDTO);
@@ -28,7 +37,8 @@ public class DriverController {
     }
 
     @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping(path = "/update")
+    @PostMapping(path = "/update") //Path variable
+    //http method එක කියන්න Use කරයි. (Handler method උඩින් දාන annotations)
     public ResponseUtil updateDriver(@ModelAttribute DriverDTO driverDTO, @ModelAttribute UserDTO userDTO, @ModelAttribute Name name) {
         driverDTO.setUser(userDTO);
         driverDTO.setName(name);
@@ -37,14 +47,17 @@ public class DriverController {
     }
 
     @ResponseStatus(HttpStatus.CREATED)
-    @DeleteMapping(params = {"id"})
+    @DeleteMapping(params = {"id"}) //Query String Parameter
+    //http method එක කියන්න Use කරයි. (Handler method උඩින් දාන annotations)
     public ResponseUtil deleteDriver(@RequestParam String id) {
+        //parameter ඇතුලෙ තියෙන values ගන්න use කරයි (@RequestParam not required)
         service.deleteDriver(id);
         return new ResponseUtil("OK", "Successfully Deleted. :" + id, null);
     }
 
     @ResponseStatus(HttpStatus.CREATED)
     @GetMapping(path = "/loadAllDrivers")
+    //http method එක කියන්න Use කරයි. (Handler method උඩින් දාන annotations)
     public ResponseUtil getAllDriver() {
         return new ResponseUtil("OK", "Successfully Loaded. :", service.getAllDriver());
     }
@@ -58,6 +71,7 @@ public class DriverController {
     @ResponseStatus(HttpStatus.CREATED)
     @GetMapping(path = "/driverIdGenerate")
     public @ResponseBody CustomDTO customerIdGenerate() {
+        //@ResponseBody --> return value eka serialized karala kelinma response body ekt dei
         return service.userIdGenerate();
     }
 

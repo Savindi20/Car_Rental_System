@@ -14,16 +14,25 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
 @RestController
+//Backend එකේ ඉදන් යවන ඕනම data format එකක්(String,HTML,JSON),
+//HTTP response එකක් විදියට wrap කරල front end එකට යවන්න පුලුවන්.
+//(වැවිපුරම use වෙන format එක JSON)
 @CrossOrigin
+// E kiyanne domains  athi Web Pages walata security feature eka denn
 @RequestMapping("/car")
+//handler mapping (URL path එකට map කරයි)
 public class CarController {
 
     @Autowired
+    //dependencies inject කරන්න (constructor overloading constructor choose කරයි.)
     private CarService service;
 
     @ResponseStatus(HttpStatus.CREATED)
+    //HTTP status code eka response ekk widiyt denwa.
     @PostMapping
+    //http method එක කියන්න Use කරයි. (Handler method උඩින් දාන annotations)
     public ResponseUtil saveCar(@ModelAttribute CarDTO dto, @ModelAttribute Rate rate, @ModelAttribute ImageDTO image) {
+        //X-WWW-Form-Url-Encoded type එකේ data, dto එකකට fill කරගන්න use කරයි.(@ModelAttribute-not required)
         dto.setImage(image);
         dto.setRent_Duration_Price(rate);
 
@@ -33,7 +42,8 @@ public class CarController {
     }
 
     @ResponseStatus(HttpStatus.CREATED)
-    @PostMapping(path = "/update")
+    @PostMapping(path = "/update") //Path variable
+    //http method එක කියන්න Use කරයි. (Handler method උඩින් දාන annotations)
     public ResponseUtil updateCar(@ModelAttribute CarDTO dto, @ModelAttribute Rate rate, @ModelAttribute ImageDTO image) {
         dto.setImage(image);
         dto.setRent_Duration_Price(rate);
@@ -46,14 +56,17 @@ public class CarController {
     }
 
     @ResponseStatus(HttpStatus.CREATED)
-    @DeleteMapping(params = {"id"})
+    @DeleteMapping(params = {"id"}) //Query String Parameter
+    //http method එක කියන්න Use කරයි. (Handler method උඩින් දාන annotations)
     public ResponseUtil deleteCar(@RequestParam String id) {
+        //parameter ඇතුලෙ තියෙන values ගන්න use කරයි (@RequestParam not required)
         service.deleteCar(id);
         return new ResponseUtil("OK", "Successfully Deleted. :" + id, null);
     }
 
     @ResponseStatus(HttpStatus.CREATED)
     @GetMapping(path = "/loadAllCars")
+    //http method එක කියන්න Use කරයි. (Handler method උඩින් දාන annotations)
     public ResponseUtil getAllCar() {
         return new ResponseUtil("OK", "Successfully Loaded. :", service.getAllCar());
     }
@@ -61,6 +74,7 @@ public class CarController {
     @ResponseStatus(HttpStatus.CREATED)
     @GetMapping(path = "/carIDGenerate")
     public @ResponseBody CustomDTO customerIdGenerate() {
+        //@ResponseBody --> return value eka serialized karala kelinma response body ekt dei
         return service.carIdGenerate();
     }
 

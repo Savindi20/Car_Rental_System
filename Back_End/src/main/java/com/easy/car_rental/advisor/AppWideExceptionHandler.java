@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @CrossOrigin
 // E kiyanne domains  athi Web Pages walata security feature eka denna kiyala
 public class AppWideExceptionHandler {
+
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    //HTTP status code eka response ekk widiyt denwa.
     @ExceptionHandler({RuntimeException.class})
+    //Controllers walin throw krn exception handle kiranwa.
     public ResponseUtil handleMyExceptions(RuntimeException e) {
         System.out.println(e);
         return new ResponseUtil("Error", e.getMessage(), null);
     }
 }
-//  @ResponseStatus -HTTP status code eka response ekk widiyt denwa.
-
-//@ExceptionHandler-Controllers walin throw krn exception handle kiranwa.
