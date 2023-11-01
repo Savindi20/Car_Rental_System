@@ -6,6 +6,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
+    //Supper class ekaka method ekk gnn
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{WebRootConfig.class};
     }
