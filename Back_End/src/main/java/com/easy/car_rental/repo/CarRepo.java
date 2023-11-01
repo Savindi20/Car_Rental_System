@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 public interface CarRepo extends JpaRepository<Car, String> {
 
+    //define custom JPQL (Java Persistence Query Language) and native SQL queries directly on repository methods.
     @Query(value = "SELECT car_Id FROM Car ORDER BY car_Id DESC LIMIT 1", nativeQuery = true)
     String getLastIndex();
 

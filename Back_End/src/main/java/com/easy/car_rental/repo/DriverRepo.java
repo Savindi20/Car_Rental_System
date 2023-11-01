@@ -7,6 +7,8 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface DriverRepo extends JpaRepository<Driver, String> {
+
+    //define custom JPQL (Java Persistence Query Language) and native SQL queries directly on repository methods.
     @Query(value = "SELECT user_Id FROM Driver ORDER BY user_Id DESC LIMIT 1", nativeQuery = true)
     String getLastIndex();
 

@@ -5,6 +5,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
 public interface RentRepo extends JpaRepository<Rent, String> {
+
+    //define custom JPQL (Java Persistence Query Language) and native SQL queries directly on repository methods.
     @Query(value = "SELECT rentID FROM Rent ORDER BY rentID DESC LIMIT 1", nativeQuery = true)
     String getLastIndex();
 
