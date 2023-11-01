@@ -10,16 +10,24 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-@Data
 @Entity
+//class will be mapped to a database table
+@Data
+//getters ,setters ,equals,hashcode to string wani methods generate karanna use karanawa
+@NoArgsConstructor
+//automatically generate a no-argument contractor
+@AllArgsConstructor
+//automatically generate a parameters contractor
+@ToString
+//automatically generate a to string() method for clz
 public class Payment {
     @Id
+    //Mark a field as the primary key( unique identifier)
     private String paymentID;
     @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH})
+    //specify a many-to-one relationship between two entity classes
     @JoinColumn(name = "rentID", referencedColumnName = "rentID", nullable = false)
+    //specify the foreign key in database table that represents a relationship between two entity classes.
     private Rent rentID;
     private PaymentType paymentType;
     private LocalDate date;

@@ -9,8 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="controller classes annotation meaning added">
-      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/embeded/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/embeded/Image.java" afterDir="false" />
+    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="embedded classes annotation meaning added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Reg_User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Reg_User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/Rent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/RentDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/RentDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/src/main/java/com/easy/car_rental/entity/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,14 +181,7 @@
       <workItem from="1698552450018" duration="1502000" />
       <workItem from="1698638489948" duration="5972000" />
       <workItem from="1698772794231" duration="5821000" />
-      <workItem from="1698810319198" duration="3984000" />
-    </task>
-    <task id="LOCAL-00011" summary="RentServiceImpl methods added">
-      <created>1698215771589</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1698215771589</updated>
+      <workItem from="1698810319198" duration="5555000" />
     </task>
     <task id="LOCAL-00012" summary="getAllRent searchId methods updated">
       <created>1698217097928</created>
@@ -518,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698816085131</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="embedded classes annotation meaning added">
+      <created>1698816353881</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1698816353881</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,7 +546,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="getAllPayment method added" />
     <MESSAGE value="savePayment method added" />
     <MESSAGE value="PaymentController class added" />
     <MESSAGE value="savePayment getAllPayment controller methods added" />
@@ -563,6 +570,7 @@
     <MESSAGE value="config classes annotation meaning added" />
     <MESSAGE value="DTO classes annotation meaning added" />
     <MESSAGE value="controller classes annotation meaning added" />
-    <option name="LAST_COMMIT_MESSAGE" value="controller classes annotation meaning added" />
+    <MESSAGE value="embedded classes annotation meaning added" />
+    <option name="LAST_COMMIT_MESSAGE" value="embedded classes annotation meaning added" />
   </component>
 </project>
