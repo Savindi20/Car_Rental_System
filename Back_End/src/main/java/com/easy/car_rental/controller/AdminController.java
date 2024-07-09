@@ -3,6 +3,7 @@ package com.easy.car_rental.controller;
 import com.easy.car_rental.dto.AdminDTO;
 import com.easy.car_rental.service.AdminService;
 import com.easy.car_rental.util.ResponseUtil;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -14,11 +15,11 @@ import org.springframework.web.bind.annotation.*;
 // domains Web Pages walata security features denn
 @RequestMapping("/admin")
 //handler mapping (URL path එකට map කරයි)
+@RequiredArgsConstructor
 public class AdminController {
 
-    @Autowired
     //dependencies inject කරන්න (constructor overloading constructor choose කරයි.)
-    private AdminService service;
+    private final AdminService service;
 
     @ResponseStatus(HttpStatus.CREATED)
     //HTTP status code eka response ekk widiyt denwa.

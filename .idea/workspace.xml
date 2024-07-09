@@ -9,156 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="project refactored">
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/PERODUA-Bezza-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/PERODUA-Bezza-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/PERODUA-Bezza-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/PERODUA-Bezza-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Perodua-Bezza-Prime-Sedan-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Perodua-Bezza-Prime-Sedan-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Perodua-Bezza-Prime-Sedan-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Perodua-Bezza-Prime-Sedan-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Suzuki-Alto-800-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Suzuki-Alto-800-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Suzuki-Alto-800-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Suzuki-Alto-800-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Suzuki-Alto-K10 -1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Suzuki-Alto-K10 -2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Suzuki-Alto-K10 -3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Suzuki-Alto-K10 -4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Suzuki-Celerio-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Suzuki-Celerio-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Suzuki-Celerio-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Suzuki-Celerio-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Toyota-Allion-NZT-260-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Toyota-Allion-NZT-260-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Toyota-Allion-NZT-260-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Toyota-Allion-NZT-260-4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Toyota-Axio-NKR-165-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Toyota-Axio-NKR-165-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Toyota-Axio-NKR-165-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Toyota-Axio-NKR-165-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Toyota-Prius-C-Aqua-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Toyota-Prius-C-Aqua-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Toyota-Prius-C-Aqua-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/Toyota-Prius-C-Aqua-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/id-card-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/id-card-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back_End/uploads/id-card-5.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/WebAppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/WebAppInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/advisor/AppWideExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/advisor/AppWideExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/config/JPAConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/config/JPAConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/config/WebAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/config/WebAppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/config/WebRootConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/config/WebRootConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/CarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/DriverController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/DriverController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/IncomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/IncomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/PaymentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/Reg_UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/Reg_UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/RentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/controller/RentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/AdminDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/AdminDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/CarDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/CarDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/CustomDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/CustomDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/DriverDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/DriverDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/DriverScheduleDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/DriverScheduleDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/IncomeDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/IncomeDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/PaymentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/PaymentDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/Reg_UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/Reg_UserDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/RentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/RentDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/RentDetailsDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/RentDetailsDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/dto/UserDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/embeded/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/embeded/Image.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/embeded/ImageDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/embeded/ImageDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/embeded/Name.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/embeded/Name.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/embeded/Rate.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/embeded/Rate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/Payment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/Reg_User.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/Reg_User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/Rent.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/Rent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/RentDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/RentDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/AdminServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/AdminServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/CarServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/DriverServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/DriverServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/DriverServiceImpl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/DriverServiceImpl$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/DriverServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/DriverServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/IncomeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/IncomeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/PaymentServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/PaymentServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/PaymentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/PaymentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/RentServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/RentServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/RentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/RentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/UserServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/UserServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/util/ResponseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/Back_End-1.0-SNAPSHOT/WEB-INF/classes/com/easy/car_rental/util/ResponseUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/WebAppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/WebAppInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/advisor/AppWideExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/advisor/AppWideExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/config/JPAConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/config/JPAConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/config/WebAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/config/WebAppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/config/WebRootConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/config/WebRootConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/CarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/DriverController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/DriverController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/IncomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/IncomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/PaymentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/Reg_UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/Reg_UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/RentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/controller/RentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/AdminDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/AdminDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/CarDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/CarDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/CustomDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/CustomDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/DriverDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/DriverDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/DriverScheduleDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/DriverScheduleDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/IncomeDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/IncomeDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/PaymentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/PaymentDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/Reg_UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/Reg_UserDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/RentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/RentDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/RentDetailsDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/RentDetailsDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/UserDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/dto/UserDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/embeded/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/embeded/Image.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/embeded/ImageDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/embeded/ImageDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/embeded/Name.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/embeded/Name.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/embeded/Rate.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/embeded/Rate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/Payment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/Reg_User.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/Reg_User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/Rent.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/Rent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/RentDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/RentDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/AdminServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/AdminServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/CarServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/DriverServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/DriverServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/DriverServiceImpl$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/DriverServiceImpl$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/DriverServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/DriverServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/IncomeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/IncomeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/PaymentServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/PaymentServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/PaymentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/PaymentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/Reg_UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/RentServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/RentServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/RentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/RentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/UserServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/UserServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/util/ResponseUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/Back_End/target/classes/com/easy/car_rental/util/ResponseUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Front_End/pages/adminPages/DriverManage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Front_End/pages/adminPages/DriverManage.html" afterDir="false" />
-    </list>
+    <list default="true" id="25ef5272-fef4-40d6-acaf-e53594d2e115" name="Default Changelist" comment="index file refactored" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -174,6 +25,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2XDkrxLwgUgmoEbsDgQR9vDxrCn" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -182,20 +37,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../New folder/Car-Rental-System" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.13456464" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat Server.Tomcat 8.5.90.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/SpringBoot_Angular-Project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Car_Rental_System\Back_End\src\main\java\com\easy" />
@@ -301,6 +162,13 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_392-corretto-1.8.0_392-3183f394aec4-cb300fc7" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -323,14 +191,22 @@
       <workItem from="1698810319198" duration="11903000" />
       <workItem from="1698980816056" duration="503000" />
       <workItem from="1699006918454" duration="4295000" />
-      <workItem from="1699022262052" duration="3533000" />
-    </task>
-    <task id="LOCAL-00018" summary="rentIdGenerate service controller methods added">
-      <created>1698232046511</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1698232046511</updated>
+      <workItem from="1699022262052" duration="3805000" />
+      <workItem from="1699031239475" duration="2168000" />
+      <workItem from="1699061709018" duration="2344000" />
+      <workItem from="1699150822384" duration="7659000" />
+      <workItem from="1699502087862" duration="174000" />
+      <workItem from="1701406352272" duration="2137000" />
+      <workItem from="1706334552810" duration="1859000" />
+      <workItem from="1706359445259" duration="6205000" />
+      <workItem from="1706382427278" duration="1570000" />
+      <workItem from="1707162032954" duration="1210000" />
+      <workItem from="1710039683187" duration="1933000" />
+      <workItem from="1710424901202" duration="49000" />
+      <workItem from="1713414273173" duration="2246000" />
+      <workItem from="1713758045035" duration="2435000" />
+      <workItem from="1713776213145" duration="598000" />
+      <workItem from="1713779125162" duration="2993000" />
     </task>
     <task id="LOCAL-00019" summary="Booking queries added">
       <created>1698233147491</created>
@@ -668,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699015637840</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="project refactored">
+      <created>1699030959203</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1699030959203</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -684,7 +567,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

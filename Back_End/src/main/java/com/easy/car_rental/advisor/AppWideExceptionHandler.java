@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 //Handling logic Global exception handle krnn maintain karnn
 @CrossOrigin
+// eka url ekaka idn thawa url ekakt data access krnn thiyena mechanism ekk
 // domains Web Pages walata security feature eka denna kiyala
 public class AppWideExceptionHandler {
 
